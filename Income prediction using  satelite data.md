@@ -18,7 +18,7 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 ![Economic data from household surveys are infrequent in many African countries](./images/Screenshot%202024-10-26%20220411.png)
 
 >*Figure Description:*  
-**Figure 1** illustrates the efficacy of satellite-based predictions in explaining **variations in survey-measured wealth estimates** across multiple African countries. The CNN model (MS+NL) predictions are validated against **ground-truth survey measures** (DHS and census data) using a 5-fold cross-validation approach. Key panels include:
+**Figure 1**: illustrates the efficacy of satellite-based predictions in explaining **variations in survey-measured wealth estimates** across multiple African countries. The CNN model (MS+NL) predictions are validated against **ground-truth survey measures** (DHS and census data) using a 5-fold cross-validation approach. Key panels include:
 >
 >>- **(a)**:   Frequency of nationally representative household consumption expenditure or asset  wealth surveys across Africa, 2000–2016
 >>- **(b)**:  Average household revisit rate for surveys and average location revisit rate for various resolutions of satellite imagery over time. Survey revisit rate, the average time elapsed between observations of a given household in nationally representative expenditure or wealth surveys, is calculated as number of total person-days (population×365) divided by the number of person-days observed in a given year. Satellite revisit rate estimates are calculated as the number of days in a year divided by the average number of images taken in a year across 500 randomly sampled DHS clusters in African countries, only counting images with <30% cloud cover.
@@ -124,6 +124,38 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >>- **Note**: These estimates likely **understate true targeting accuracy**, as ground-measured data contain inherent noise.
 
 ---
+
+![Spatial Extent of Imagery Enables Large-Scale Wealth Predictions](./images/Screenshot%202024-10-27%20001829.png)
+
+>*Figure Description:*  
+**Figure 6: Spatial Extent of Imagery Enables Large-Scale Wealth Predictions**. This figure illustrates the capacity of satellite imagery to generate wealth predictions across large geographic areas, with Nigeria as the focus. Key panels include:
+>
+>>**(a)**: Wealth Estimates Across Nigeria
+>>- Shows **satellite-based wealth estimates** at the pixel level across Nigeria.
+>>- This spatially detailed view enables insights into wealth distribution patterns on a national scale.
+>
+>>**(b), (d), (f)**:  Zoomed-in imagery over a specific region in **Southern Nigeria** (highlighted in **(a)**).
+>>**Imagery Inputs**:
+>>>- **(b)**: Nightlights (NL) data, capturing urban brightness and other light sources.
+>>>- **(d)**: Multispectral (MS) imagery, offering detailed environmental and land use data.
+>>>- **(f)**: Ground-truth socioeconomic data, used as inputs for model training.
+>
+>>**(c), (e), (g)**:  Model Predictions Using Different Inputs.
+>>>- **(c)**: Predictions using only **nightlights (NL)** data.
+>>>- **(e)**: Predictions using only **multispectral (MS)** imagery.
+>>>- **(g)**: Predictions combining **both NL and MS** features.
+>>- **Findings**:
+>>>- In this Southern Nigeria region, the model shows a stronger reliance on **MS imagery** over NL data.
+>>>- The model disregards light blooms caused by **gas flares** visible in the nightlights data **(b)**, which can skew predictions based solely on NL.
+>
+>>**(h)**: Population-Weighted Wealth Index Across Nigeria
+>>**Deciles of the satellite-based wealth index** are displayed across Nigeria.
+>>- The index is **population-weighted** using the Global Human Settlement Layer and aggregated at the **Local Government Area level**.
+>>- This provides a refined view of wealth distribution adjusted for population density, offering insights into regional inequalities and resource needs.
+>
+>>This visualization highlights the effectiveness of combining NL and MS imagery for wealth predictions, particularly in regions where environmental factors may influence NL data quality, such as gas flaring.
+
+
 ---
 
 ## **Modeling Approach**
