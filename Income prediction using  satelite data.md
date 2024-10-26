@@ -6,7 +6,8 @@
 ## **Introduction**
 
 The paper addresses the **need for accurate local-level measurements of economic well-being** to support effective policy-making and targeted programs in developing regions, particularly **in Africa**. Traditional survey methods for measuring asset wealth are often **infrequent and costly**, leading to **gaps in data availability**. The authors propose an approach using **publicly available multispectral satellite imagery** combined with **deep learning** to predict **asset wealth** across approximately **20,000 African villages**, offering a **timely and scalable method** for economic estimation. 
-Output of models is **wealth index**.
+
+Output of model is **wealth index**.
 ---
 
 ## **Results**
