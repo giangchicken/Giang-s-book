@@ -44,7 +44,7 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >*Figure Description:*  
 **Figure 3: Performance by Model and Across Different Samples**. This figure showcases the predictive performance of satellite-based wealth estimates, evaluated across multiple machine learning models and different sample divisions. Key panels include:
 >
->>**(a)**
+>>**(a)**: Model Comparison
 >>- Performance (R²) of satellite predictions is assessed using five different models:
     - **NL**: Nightlights imagery only.
     - **MS**: Landsat multispectral imagery only.
@@ -57,13 +57,13 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >
 >>**(c)**:  Evaluates model performance based on the amount of training data utilized, showing how different sample sizes impact the accuracy of predictions.
 >
->>**(d)**
+>>**(d)**: Urban vs. Rural
 >>- Performance of the **CNN MS+NL model** across urban (blue) and rural (red) regions in held-out countries.
 >>- The model is trained on the entire training dataset, then applied separately to urban and rural clusters, with:
     - Each dot representing a cluster, displaying **predicted** (x-axis) vs **ground-measured** (y-axis) wealth index.
     - Density plots depict the distribution of wealth index predictions in each region.
 >
->>**(e)**
+>>**(e)**: Wealth Distribution
 >>- Performance analyzed across different wealth percentiles, with experiments run separately for increasing percentages of available clusters. 
 >>- For example, an x-axis value of 4 indicates that clusters below the 40th wealth percentile were included in the test set, allowing examination of model accuracy across wealth distributions.
 >
@@ -76,18 +76,18 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >*Figure Description:*  
 **Figure 4: Satellite Predictions of Ground-Measured Changes in Wealth Over Time**. This figure presents the performance of satellite-based models in predicting changes in wealth over time, as measured at the village and district levels. Key panels include:
 >
->>**(a)**
+>>**(a)**: Village-Level Wealth Change Prediction
 >>- The model predicts an **index of change in wealth** at the village level, based on household asset changes aggregated to form a village-wide wealth index.
 >>- The plot shows the model's accuracy in predicting these changes over time, providing insights into temporal economic trends at the local level.
 >
->>**(b)**
+>>**(b)**: District-Level Wealth Change Prediction
 >>- Similar to Panel a but with predictions aggregated to the district level.
 >>- Dot sizes represent the number of village observations in each district.
 >>- **R² is reported in two ways**:
     - **Weighted** by the number of villages per district (R² = 0.51).
     - **Unweighted**, treating each district equally regardless of the number of villages.
 >
->>**(c)**
+>>**(c)**: Model Comparison by Imagery Type
 >>- Cross-validated R² scores are presented for models trained on:
     - **MS (Multispectral)** imagery (red).
     - **NL (Nightlights)** imagery (blue).
@@ -96,6 +96,34 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >
 >>This figure emphasizes the efficacy of satellite-based models in capturing temporal wealth dynamics, underscoring the value of combined multispectral and nightlights data in improving predictive accuracy.
 
+---
+
+![Using Satellite-Based Wealth Predictions in Downstream Tasks](./images/Screenshot%202024-10-27%20000226.png)
+
+>*Figure Description:*  
+**Figure 5: Using Satellite-Based Wealth Predictions in Downstream Tasks**. This figure demonstrates the utility of satellite-based wealth predictions in addressing downstream tasks such as environmental analysis and program targeting. Key panels include:
+>
+>>**(a)**: Temperature-Wealth Relationship
+>>- Displays the **cross-sectional relationship** between average maximum temperature and wealth across survey locations.
+>>- Comparisons are made using:
+    - **Survey-based wealth data** (black line).
+     - **Three satellite-based models** (colored lines), each representing different prediction approaches.
+>>- Each line results from **100 bootstraps** of cross-sectional regressions, resampling villages with replacement.
+>>- **Key Findings**:
+    - The best-performing CNN-based models closely approximate the temperature-wealth relationships observed in survey data.
+    - CNN-based models significantly outperform scalar nightlights models in replicating the observed temperature-wealth correlation.
+>
+>>**(b)**: Targeting Program Accuracy
+>>- Assesses a **hypothetical targeting program** that provides assistance (e.g., cash transfers) to villages below a specified wealth threshold while excluding villages above it.
+>>- **Targeting Accuracy**: Defined as the percentage of villages correctly included or excluded from the program, assuming survey-based ground data provide the "true" asset distribution.
+>>- **Comparison of Model Accuracy**:
+    - **MS+NL estimates**: Achieve a targeting accuracy of 81% when targeting households below the median wealth threshold.
+    - **CNN Transfer model**: Achieves a 75% targeting accuracy.
+    - **Scalar NL models**: Result in 62% targeting accuracy.
+>
+>>- **Note**: These estimates likely **understate true targeting accuracy**, as ground-measured data contain inherent noise.
+
+---
 ---
 
 ## **Modeling Approach**
