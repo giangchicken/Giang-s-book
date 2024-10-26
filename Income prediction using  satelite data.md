@@ -66,6 +66,8 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >>**(e)**
 >>- Performance analyzed across different wealth percentiles, with experiments run separately for increasing percentages of available clusters. 
 >>- For example, an x-axis value of 4 indicates that clusters below the 40th wealth percentile were included in the test set, allowing examination of model accuracy across wealth distributions.
+>
+>>This figure comprehensively illustrates how different models and varying data samples affect the accuracy and reliability of satellite-based economic predictions, highlighting the robustness of CNN-based approaches across multiple conditions.
 
 ---
 
@@ -84,7 +86,8 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >>- **R² is reported in two ways**:
     - **Weighted** by the number of villages per district (R² = 0.51).
     - **Unweighted**, treating each district equally regardless of the number of villages.
->**(c)**
+>
+>>**(c)**
 >>- Cross-validated R² scores are presented for models trained on:
     - **MS (Multispectral)** imagery (red).
     - **NL (Nightlights)** imagery (blue).
