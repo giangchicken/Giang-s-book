@@ -212,75 +212,89 @@ ee.Authenticate()
 ee.Initialize(project="project-name") #Create project on GGE web
 
 
-# Applies scaling factors.
+# Hàm áp dụng scale factor cho các băng Landsat
 def apply_scale_factors(image):
-  optical_bands = image.select('SR_B.').multiply(0.0000275).add(-0.2)
-  thermal_bands = image.select('ST_B.*').multiply(0.00341802).add(149.0)
-  return image.addBands(optical_bands, None, True).addBands(
-      thermal_bands, None, True
-  )
+    optical_bands = image.select('SR_B.').multiply(0.0000275).add(-0.2)
+    thermal_bands = image.select('ST_B.*').multiply(0.00341802).add(149.0)
+    return image.addBands(optical_bands, None, True).addBands(
+        thermal_bands, None, True
+    )
 
-
-# Hàm lấy ảnh Landsat theo country và year
+# Hàm lấy ảnh Landsat với các băng bổ sung như NIR và SWIR
 def get_landsat_image(lat, lon, year, scale):
-    # Lọc ảnh Landsat theo năm
+    # Lọc ảnh Landsat theo năm và vị trí
     landsat = ee.ImageCollection('LANDSAT/LC09/C02/T1_L2') \
         .filterBounds(ee.Geometry.Point([lon, lat])) \
         .filterDate(f'{year}-01-01', f'{year}-12-31') \
         .sort("CLOUD_COVER").map(apply_scale_factors) \
-        .select("SR_B[1-7]") \
+        .select(["SR_B4", "SR_B3", "SR_B2", "SR_B5", "SR_B6", "SR_B7"]) \
         .first()
-        # .median()  # Lấy ảnh trung bình
 
-    # Chọn các band phổ thông như B4 (red), B3 (green), B2 (blue)
-    image = landsat.select(['SR_B4', 'SR_B3', 'SR_B2'])
+    # Chọn các băng RGB, NIR, và SWIR
+    image = landsat.select(['SR_B4', 'SR_B3', 'SR_B2', 'SR_B5', 'SR_B6', 'SR_B7'])
 
     return image
 
-# Hàm để trực quan hóa ảnh và vẽ khu vực scale
+# Hàm để trực quan hóa ảnh với các băng bổ sung
 def visualize_landsat(lat, lon, year, scale):
-    # Lấy ảnh Landsat theo vị trí lat, lon
+    # Lấy ảnh Landsat tại vị trí và năm mong muốn
     image = get_landsat_image(lat, lon, year, scale)
 
-    # Tạo bản đồ Folium tập trung vào điểm (lat, lon)
-    my_map = folium.Map(location=[lat, lon], zoom_start=20)
+    # Tạo bản đồ Folium
+    my_map = folium.Map(location=[lat, lon], zoom_start=15)
 
-    # Thêm lớp ảnh Landsat vào bản đồ
+    # Thêm các băng RGB vào bản đồ
     folium.TileLayer(
-        tiles=image.getMapId({'min': 0, 'max': 0.5})['tile_fetcher'].url_format,
-        attr='Google Earth Engine',
+        tiles=image.getMapId({'bands': ['SR_B4', 'SR_B3', 'SR_B2'], 'min': 0, 'max': 0.3})['tile_fetcher'].url_format,
+        attr='Google Earth Engine - RGB',
         overlay=True,
-        name='Landsat Image'
+        name='Landsat RGB'
     ).add_to(my_map)
 
-    # Thêm một điểm đánh dấu vị trí tọa độ
+    # Thêm các băng NIR (Near-Infrared) vào bản đồ
+    folium.TileLayer(
+        tiles=image.getMapId({'bands': ['SR_B5'], 'min': 0, 'max': 0.3})['tile_fetcher'].url_format,
+        attr='Google Earth Engine - NIR',
+        overlay=True,
+        name='Landsat NIR'
+    ).add_to(my_map)
+
+    # Thêm các băng SWIR (Short-Wave Infrared) vào bản đồ
+    folium.TileLayer(
+        tiles=image.getMapId({'bands': ['SR_B7'], 'min': 0, 'max': 0.3})['tile_fetcher'].url_format,
+        attr='Google Earth Engine - SWIR',
+        overlay=True,
+        name='Landsat SWIR'
+    ).add_to(my_map)
+
+    # Thêm một điểm đánh dấu vị trí
     folium.Marker([lat, lon], popup=f'Lat: {lat}, Lon: {lon}',
                   icon=folium.Icon(color='red', icon='info-sign')).add_to(my_map)
 
-    # Tính toán vùng ảnh dựa trên scale
+    # Tính toán vùng buffer theo scale
     point = ee.Geometry.Point([lon, lat])
-    buffer = point.buffer(scale * 224).bounds()  # Buffer tính dựa trên scale (500m buffer)
+    buffer = point.buffer(scale * 224).bounds()  # Buffer tính theo scale
 
     # Chuyển đổi vùng buffer thành tọa độ để vẽ hình chữ nhật trên bản đồ
     region = buffer.coordinates().get(0).getInfo()
 
-    # Vẽ một hình chữ nhật bao quanh vùng ảnh theo scale
+    # Vẽ hình chữ nhật xung quanh vùng ảnh theo scale
     folium.Polygon(locations=[[coord[1], coord[0]] for coord in region],
                    color='blue', fill=True, fill_opacity=0.2).add_to(my_map)
 
-    # Thêm control để người dùng có thể bật/tắt lớp ảnh
+    # Thêm control layer cho phép bật/tắt các lớp ảnh
     folium.LayerControl().add_to(my_map)
 
     # Hiển thị bản đồ
     return my_map
 
-# Đầu vào của người dùng
+# Đầu vào từ người dùng
 lat = 21.0285  # Ví dụ: Hà Nội
 lon = 105.8542
 year = 2024
-scale = 30  # Thử nghiệm với scale 30m / Scale ở đây là độ dài cạnh của 1 pixel
+scale = 30  # Đơn vị pixel
 
-# Hiển thị ảnh Landsat tại vị trí lat, lon và vẽ vùng lấy mẫu
+# Hiển thị ảnh Landsat và vùng sample trên bản đồ
 visualize_landsat(lat, lon, year, scale)
 
 ```
@@ -289,14 +303,18 @@ Street map                 |  Landsat (RGB)
 :-------------------------:|:-------------------------:
 ![Street map](./images/Screenshot%202024-10-27%20025057.png)   |  ![Landsat](./images/Screenshot%202024-10-27%20025440.png)
 
+NIR map                    |  SWIR map
+:-------------------------:|:-------------------------:
+![Street map](./images/Screenshot%202024-10-27%20034652.png)   |  ![Landsat](./images/Screenshot%202024-10-27%20034723.png)
+
 ### **Scraping Data & Processing Data**
 
 ---
 
 ## **Running Trained CNN models**
-
+---
 ## **Experimenting with Data in Việt Nam**
-
+---
 
 
 
