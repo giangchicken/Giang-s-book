@@ -69,6 +69,32 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 
 ---
 
+![Satellite predictions of ground-measured changes in wealth over time](./images/Screenshot%202024-10-26%20234704.png)
+
+>*Figure Description:*  
+**Figure 4** Satellite Predictions of Ground-Measured Changes in Wealth Over Time. This figure presents the performance of satellite-based models in predicting changes in wealth over time, as measured at the village and district levels. Key panels include:
+>
+>>**(a)**
+>>- The model predicts an **index of change in wealth** at the village level, based on household asset changes aggregated to form a village-wide wealth index.
+>>- The plot shows the model's accuracy in predicting these changes over time, providing insights into temporal economic trends at the local level.
+>
+>>**(b)**
+>>- Similar to Panel a but with predictions aggregated to the district level.
+>>- Dot sizes represent the number of village observations in each district.
+>>- **R² is reported in two ways**:
+    - **Weighted** by the number of villages per district (R² = 0.51).
+    - **Unweighted**, treating each district equally regardless of the number of villages.
+>**(c)**
+>>- Cross-validated R² scores are presented for models trained on:
+    - **MS (Multispectral)** imagery (red).
+    - **NL (Nightlights)** imagery (blue).
+    - **Combined MSNL (Multispectral and Nightlights)** imagery (green).
+>>- All R² values reported in Panels c and d are **unweighted**, allowing for straightforward comparison across imagery types without adjusting for sample sizes.
+>
+>>This figure emphasizes the efficacy of satellite-based models in capturing temporal wealth dynamics, underscoring the value of combined multispectral and nightlights data in improving predictive accuracy.
+
+---
+
 ## **Modeling Approach**
 
 The authors utilize a **convolutional neural network (CNN)** architecture to predict **village-specific wealth measures** from satellite imagery. Key aspects of the model include:
