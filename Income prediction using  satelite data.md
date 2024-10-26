@@ -44,7 +44,7 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >*Figure Description:*  
 **Figure 3** Performance by Model and Across Different Samples. This figure showcases the predictive performance of satellite-based wealth estimates, evaluated across multiple machine learning models and different sample divisions. Key panels include:
 >
->>- **(a)**:   
+>>**a**  
 >>- Performance (R²) of satellite predictions is assessed using five different models:
     - **NL**: Nightlights imagery only.
     - **MS**: Landsat multispectral imagery only.
@@ -53,14 +53,14 @@ The study demonstrates that **deep learning models trained on satellite imagery*
     - **Black lines and text** denote the average performance across all country-years.
     - **Red lines and text** show the R² for the pooled sample.
 
->>- **(b)**:  Similar to Panel a but evaluated on held-out villages within the same country, testing the model’s intra-country generalization ability.
->>- **(c)**:  Evaluates model performance based on the amount of training data utilized, showing how different sample sizes impact the accuracy of predictions.
->>- **(d)**:  
+>>**b**:  Similar to Panel a but evaluated on held-out villages within the same country, testing the model’s intra-country generalization ability.
+>>**c**:  Evaluates model performance based on the amount of training data utilized, showing how different sample sizes impact the accuracy of predictions.
+>>**d**
 >>- Performance of the **CNN MS+NL model** across urban (blue) and rural (red) regions in held-out countries.
     - The model is trained on the entire training dataset, then applied separately to urban and rural clusters, with:
 >>- Each dot representing a cluster, displaying **predicted** (x-axis) vs. **ground-measured** (y-axis) wealth index.
     - Density plots depict the distribution of wealth index predictions in each region.
->>- **(e)**:
+>>**e**
 >>- Performance analyzed across different wealth percentiles, with experiments run separately for increasing percentages of available clusters. 
 >>- For example, an x-axis value of 4 indicates that clusters below the 40th wealth percentile were included in the test set, allowing examination of model accuracy across wealth distributions.
 
