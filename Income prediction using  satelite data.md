@@ -46,12 +46,12 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >
 >>**(a)**: Model Comparison
 >>- Performance (R²) of satellite predictions is assessed using five different models:
-    - **NL**: Nightlights imagery only.
-    - **MS**: Landsat multispectral imagery only.
-    - **Transfer**: Transfer learning on nightlights combined with RGB Landsat imagery.
+>>>- **NL**: Nightlights imagery only.
+>>>- **MS**: Landsat multispectral imagery only.
+>>>- **Transfer**: Transfer learning on nightlights combined with RGB Landsat imagery.
 >>- Each grey line represents performance on a held-out country-year, while:
-    - **Black lines and text** denote the average performance across all country-years.
-    - **Red lines and text** show the R² for the pooled sample.
+>>>- **Black lines and text** denote the average performance across all country-years.
+>>>- **Red lines and text** show the R² for the pooled sample.
 
 >>**(b)**:  Similar to Panel a but evaluated on held-out villages within the same country, testing the model’s intra-country generalization ability.
 >
@@ -60,8 +60,8 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >>**(d)**: Urban vs. Rural
 >>- Performance of the **CNN MS+NL model** across urban (blue) and rural (red) regions in held-out countries.
 >>- The model is trained on the entire training dataset, then applied separately to urban and rural clusters, with:
-    - Each dot representing a cluster, displaying **predicted** (x-axis) vs **ground-measured** (y-axis) wealth index.
-    - Density plots depict the distribution of wealth index predictions in each region.
+>>>- Each dot representing a cluster, displaying **predicted** (x-axis) vs **ground-measured** (y-axis) wealth index.
+>>>- Density plots depict the distribution of wealth index predictions in each region.
 >
 >>**(e)**: Wealth Distribution
 >>- Performance analyzed across different wealth percentiles, with experiments run separately for increasing percentages of available clusters. 
@@ -89,9 +89,9 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >
 >>**(c)**: Model Comparison by Imagery Type
 >>- Cross-validated R² scores are presented for models trained on:
-    - **MS (Multispectral)** imagery (red).
-    - **NL (Nightlights)** imagery (blue).
-    - **Combined MSNL (Multispectral and Nightlights)** imagery (green).
+>>>- **MS (Multispectral)** imagery (red).
+>>>- **NL (Nightlights)** imagery (blue).
+>>>- **Combined MSNL (Multispectral and Nightlights)** imagery (green).
 >>- All R² values reported in Panels c and d are **unweighted**, allowing for straightforward comparison across imagery types without adjusting for sample sizes.
 >
 >>This figure emphasizes the efficacy of satellite-based models in capturing temporal wealth dynamics, underscoring the value of combined multispectral and nightlights data in improving predictive accuracy.
@@ -106,20 +106,20 @@ The study demonstrates that **deep learning models trained on satellite imagery*
 >>**(a)**: Temperature-Wealth Relationship
 >>- Displays the **cross-sectional relationship** between average maximum temperature and wealth across survey locations.
 >>- Comparisons are made using:
-    - **Survey-based wealth data** (black line).
-     - **Three satellite-based models** (colored lines), each representing different prediction approaches.
+>>>- **Survey-based wealth data** (black line).
+>>>- **Three satellite-based models** (colored lines), each representing different prediction approaches.
 >>- Each line results from **100 bootstraps** of cross-sectional regressions, resampling villages with replacement.
 >>- **Key Findings**:
-    - The best-performing CNN-based models closely approximate the temperature-wealth relationships observed in survey data.
-    - CNN-based models significantly outperform scalar nightlights models in replicating the observed temperature-wealth correlation.
+>>>- The best-performing CNN-based models closely approximate the temperature-wealth relationships observed in survey data.
+>>>- CNN-based models significantly outperform scalar nightlights models in replicating the observed temperature-wealth correlation.
 >
 >>**(b)**: Targeting Program Accuracy
 >>- Assesses a **hypothetical targeting program** that provides assistance (e.g., cash transfers) to villages below a specified wealth threshold while excluding villages above it.
 >>- **Targeting Accuracy**: Defined as the percentage of villages correctly included or excluded from the program, assuming survey-based ground data provide the "true" asset distribution.
 >>- **Comparison of Model Accuracy**:
-    - **MS+NL estimates**: Achieve a targeting accuracy of 81% when targeting households below the median wealth threshold.
-    - **CNN Transfer model**: Achieves a 75% targeting accuracy.
-    - **Scalar NL models**: Result in 62% targeting accuracy.
+>>>- **MS+NL estimates**: Achieve a targeting accuracy of 81% when targeting households below the median wealth threshold.
+>>>- **CNN Transfer model**: Achieves a 75% targeting accuracy.
+>>>- **Scalar NL models**: Result in 62% targeting accuracy.
 >
 >>- **Note**: These estimates likely **understate true targeting accuracy**, as ground-measured data contain inherent noise.
 
