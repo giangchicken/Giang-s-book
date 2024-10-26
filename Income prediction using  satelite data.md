@@ -2,15 +2,25 @@
 
 ---
 
+
 ## **Introduction**
 
 The paper addresses the **need for accurate local-level measurements of economic well-being** to support effective policy-making and targeted programs in developing regions, particularly **in Africa**. Traditional survey methods for measuring asset wealth are often **infrequent and costly**, leading to **gaps in data availability**. The authors propose an approach using **publicly available multispectral satellite imagery** combined with **deep learning** to predict **asset wealth** across approximately **20,000 African villages**, offering a **timely and scalable method** for economic estimation.
 
+Output of models is **wealth index**
 ---
 
 ## **Results**
 
 The study demonstrates that **deep learning models trained on satellite imagery** can **explain about 70% of the variation** in ground-measured village wealth, **outperforming previous benchmarks** that used high-resolution imagery. Furthermore, these models can explain **up to 50% of the variation in district-aggregated wealth changes** over time. The **errors in satellite-based estimates** are also **comparable to those in existing ground data**, indicating the **reliability** of satellite imagery as an economic measurement tool.
+
+![ Economic data from household surveys are infrequent in many African countries](./images/Screenshot%202024-10-26%20220411.png)
+
+*Figure Description:*  
+**Figure 1** illustrates the efficacy of satellite-based predictions in explaining **variations in survey-measured wealth estimates** across multiple African countries. The CNN model (MS+NL) predictions are validated against **ground-truth survey measures** (DHS and census data) using a 5-fold cross-validation approach. Key panels include:
+
+- **(a)**:   Frequency of nationally representative household consumption expenditure or asset  wealth surveys across Africa, 2000–2016
+- **(b)**:  Average household revisit rate for surveys and average location revisit rate for various resolutions of satellite imagery over time. Survey revisit rate, the average time elapsed between observations of a given household in nationally representative expenditure or wealth surveys, is calculated as number of total person-days (population×365) divided by the number of person-days observed in a given year. Satellite revisit rate estimates are calculated as the number of days in a year divided by the average number of images taken in a year across 500 randomly sampled DHS clusters in African countries, only counting images with <30% cloud cover.
 
 ---
 
