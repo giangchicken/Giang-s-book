@@ -195,8 +195,8 @@ Landsat satellites capture images of Earth's surface with multispectral sensors 
 - **Spatial Resolution**: 30 meters per pixel, with select bands at 15 meters.
 - **Spectral Bands**: Includes visible (RGB), near-infrared, shortwave-infrared, and thermal bands, allowing diverse applications in environmental analysis.
 
-[For more infomations](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_L2#description)
-[GGE Tutorial](https://www.youtube.com/@giswqs)
+>[For more infomations](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_L2#description)
+>[GGE Tutorial](https://www.youtube.com/@giswqs)
 
 Landsat data is freely available on GEE and can be accessed and filtered by date, location, cloud cover, and other parameters. Here’s an example of a Landsat image captured in Hà Nội - the capital of Việt Nam, showcasing the rich details of the terrain:
 
