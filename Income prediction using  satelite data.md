@@ -181,6 +181,7 @@ This comprehensive approach illustrates the **feasibility of using satellite ima
 > Training data taken by Landsat
 
 >[Read all paper](https://www.semanticscholar.org/paper/Using-publicly-available-satellite-imagery-and-deep-Yeh-Perez/83bd44a487ea02e19a27e9d77cd736dd4f5bcc00)
+>
 >[Code](https://github.com/chrisyeh96/africa_poverty_clean/tree/main)
 ---
 
@@ -196,6 +197,7 @@ Landsat satellites capture images of Earth's surface with multispectral sensors 
 - **Spectral Bands**: Includes visible (RGB), near-infrared, shortwave-infrared, and thermal bands, allowing diverse applications in environmental analysis.
 
 >[For more infomations](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_L2#description)
+>
 >[GGE Tutorial](https://www.youtube.com/@giswqs)
 
 Landsat data is freely available on GEE and can be accessed and filtered by date, location, cloud cover, and other parameters. Here’s an example of a Landsat image captured in Hà Nội - the capital of Việt Nam, showcasing the rich details of the terrain:
