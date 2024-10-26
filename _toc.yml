@@ -1,0 +1,32 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Theory
+    chapters:
+  
+  - caption: Project
+    chapters:
+    - file: credit-score
+    - file: contextual-bandit
+    - file: web-text based industry classification
+    - file: Face-recognition
+    - file: Word-correction
+    - file: Neighbor nearest seach
+    - file: Income prediction using satelite data
+  
+  - caption: Scraping code
+    chapters:
+    - file: financial_statement.ipynb
+    - file: Stocks_Price_n_shareholders.ipynb
+    - file: News.ipynb
+    - file: WebTexts.ipynb
+  
+  - caption: Technic
+    chapters:
+    - file: Docker
+    - file: Optimizing_Pyspark_code
+    - file: HDFS_Overview
+    
