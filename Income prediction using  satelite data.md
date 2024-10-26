@@ -178,10 +178,10 @@ The study leverages both **satellite imagery** and **ground truth data**:
 
 This comprehensive approach illustrates the **feasibility of using satellite imagery and deep learning** to generate **reliable economic estimates**, providing a valuable resource for **researchers and policymakers** in regions where data is scarce.
 
-> Data given by Landsat
+> Training data taken by Landsat
 
-[Read all paper](https://www.semanticscholar.org/paper/Using-publicly-available-satellite-imagery-and-deep-Yeh-Perez/83bd44a487ea02e19a27e9d77cd736dd4f5bcc00)
-[Code](https://github.com/chrisyeh96/africa_poverty_clean/tree/main)
+>[Read all paper](https://www.semanticscholar.org/paper/Using-publicly-available-satellite-imagery-and-deep-Yeh-Perez/83bd44a487ea02e19a27e9d77cd736dd4f5bcc00)
+>[Code](https://github.com/chrisyeh96/africa_poverty_clean/tree/main)
 ---
 
 ## **Scraping Data with Google Earth Engine**
@@ -204,8 +204,10 @@ Landsat data is freely available on GEE and can be accessed and filtered by date
 import ee
 import folium
 
+# Xác minh tài khoản GGE
+ee.Authenticate()
 # Khởi tạo Google Earth Engine
-ee.Initialize()
+ee.Initialize(project="project-name") #Create project on GGE web
 
 
 # Applies scaling factors.
@@ -274,7 +276,7 @@ def visualize_landsat(lat, lon, year, scale):
 lat = 21.0285  # Ví dụ: Hà Nội
 lon = 105.8542
 year = 2024
-scale = 30  # Thử nghiệm với scale 30m
+scale = 30  # Thử nghiệm với scale 30m / Scale ở đây là độ dài cạnh của 1 pixel
 
 # Hiển thị ảnh Landsat tại vị trí lat, lon và vẽ vùng lấy mẫu
 visualize_landsat(lat, lon, year, scale)
