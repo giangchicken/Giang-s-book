@@ -285,7 +285,20 @@ visualize_landsat(lat, lon, year, scale)
 
 ```
 
-Street map                 |  Landsat
+Street map                 |  Landsat (RGB)
 :-------------------------:|:-------------------------:
 ![Street map](./images/Screenshot%202024-10-27%20025057.png)   |  ![Landsat](./images/Screenshot%202024-10-27%20025440.png)
+
+### **Scraping Data & Processing Data**
+
+---
+
+## **Running Trained CNN models**
+
+## **Experimenting with Data in Việt Nam**
+
+
+
+
+
 
