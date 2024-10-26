@@ -178,5 +178,110 @@ The study leverages both **satellite imagery** and **ground truth data**:
 
 This comprehensive approach illustrates the **feasibility of using satellite imagery and deep learning** to generate **reliable economic estimates**, providing a valuable resource for **researchers and policymakers** in regions where data is scarce.
 
+> Data given by Landsat
 
 [Read all paper](https://www.semanticscholar.org/paper/Using-publicly-available-satellite-imagery-and-deep-Yeh-Perez/83bd44a487ea02e19a27e9d77cd736dd4f5bcc00)
+[Code](https://github.com/chrisyeh96/africa_poverty_clean/tree/main)
+---
+
+## **Scraping Data with Google Earth Engine**
+Google Earth Engine (GEE) is a powerful cloud-based platform for planetary-scale geospatial analysis. It provides extensive satellite data archives and a suite of tools for analyzing this data, making it an essential resource for environmental monitoring, agricultural assessments, urban planning, and more. Leveraging GEE for data scraping allows users to access and process high-resolution images efficiently without the need for massive local storage or computational power.
+
+In this guide, we’ll explore how to use GEE to access and visualize satellite images, focusing specifically on data from the **Landsat** program. Landsat provides continuous data since 1972, offering multispectral images with spatial resolutions that are ideal for detecting changes in land cover, monitoring vegetation, mapping urban areas, and analyzing surface water.
+
+### **Landsat Data Overview**
+Landsat satellites capture images of Earth's surface with multispectral sensors that can detect various surface characteristics. Key features of Landsat data include:
+- **Temporal Coverage**: Long-term, continuous data availability since 1972.
+- **Spatial Resolution**: 30 meters per pixel, with select bands at 15 meters.
+- **Spectral Bands**: Includes visible (RGB), near-infrared, shortwave-infrared, and thermal bands, allowing diverse applications in environmental analysis.
+
+[For more infomations](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T2_L2#description)
+[GGE Tutorial](https://www.youtube.com/@giswqs)
+
+Landsat data is freely available on GEE and can be accessed and filtered by date, location, cloud cover, and other parameters. Here’s an example of a Landsat image captured in Hà Nội - the capital of Việt Nam, showcasing the rich details of the terrain:
+
+```
+import ee
+import folium
+
+# Khởi tạo Google Earth Engine
+ee.Initialize()
+
+
+# Applies scaling factors.
+def apply_scale_factors(image):
+  optical_bands = image.select('SR_B.').multiply(0.0000275).add(-0.2)
+  thermal_bands = image.select('ST_B.*').multiply(0.00341802).add(149.0)
+  return image.addBands(optical_bands, None, True).addBands(
+      thermal_bands, None, True
+  )
+
+
+# Hàm lấy ảnh Landsat theo country và year
+def get_landsat_image(lat, lon, year, scale):
+    # Lọc ảnh Landsat theo năm
+    landsat = ee.ImageCollection('LANDSAT/LC09/C02/T1_L2') \
+        .filterBounds(ee.Geometry.Point([lon, lat])) \
+        .filterDate(f'{year}-01-01', f'{year}-12-31') \
+        .sort("CLOUD_COVER").map(apply_scale_factors) \
+        .select("SR_B[1-7]") \
+        .first()
+        # .median()  # Lấy ảnh trung bình
+
+    # Chọn các band phổ thông như B4 (red), B3 (green), B2 (blue)
+    image = landsat.select(['SR_B4', 'SR_B3', 'SR_B2'])
+
+    return image
+
+# Hàm để trực quan hóa ảnh và vẽ khu vực scale
+def visualize_landsat(lat, lon, year, scale):
+    # Lấy ảnh Landsat theo vị trí lat, lon
+    image = get_landsat_image(lat, lon, year, scale)
+
+    # Tạo bản đồ Folium tập trung vào điểm (lat, lon)
+    my_map = folium.Map(location=[lat, lon], zoom_start=20)
+
+    # Thêm lớp ảnh Landsat vào bản đồ
+    folium.TileLayer(
+        tiles=image.getMapId({'min': 0, 'max': 0.5})['tile_fetcher'].url_format,
+        attr='Google Earth Engine',
+        overlay=True,
+        name='Landsat Image'
+    ).add_to(my_map)
+
+    # Thêm một điểm đánh dấu vị trí tọa độ
+    folium.Marker([lat, lon], popup=f'Lat: {lat}, Lon: {lon}',
+                  icon=folium.Icon(color='red', icon='info-sign')).add_to(my_map)
+
+    # Tính toán vùng ảnh dựa trên scale
+    point = ee.Geometry.Point([lon, lat])
+    buffer = point.buffer(scale * 224).bounds()  # Buffer tính dựa trên scale (500m buffer)
+
+    # Chuyển đổi vùng buffer thành tọa độ để vẽ hình chữ nhật trên bản đồ
+    region = buffer.coordinates().get(0).getInfo()
+
+    # Vẽ một hình chữ nhật bao quanh vùng ảnh theo scale
+    folium.Polygon(locations=[[coord[1], coord[0]] for coord in region],
+                   color='blue', fill=True, fill_opacity=0.2).add_to(my_map)
+
+    # Thêm control để người dùng có thể bật/tắt lớp ảnh
+    folium.LayerControl().add_to(my_map)
+
+    # Hiển thị bản đồ
+    return my_map
+
+# Đầu vào của người dùng
+lat = 21.0285  # Ví dụ: Hà Nội
+lon = 105.8542
+year = 2024
+scale = 30  # Thử nghiệm với scale 30m
+
+# Hiển thị ảnh Landsat tại vị trí lat, lon và vẽ vùng lấy mẫu
+visualize_landsat(lat, lon, year, scale)
+
+```
+
+Street map                 |  Landsat
+:-------------------------:|:-------------------------:
+![Street map](./images/Screenshot%202024-10-27%20025057.png)   |  ![Landsat](./images/Screenshot%202024-10-27%20025440.png)
+
