@@ -22,7 +22,7 @@ parts:
     - file: financial_statement.ipynb
     - file: Stocks_Price_n_shareholders.ipynb
     - file: News.ipynb
-    - file: WebTexts.ipynb
+    - file: intructions.ipynb
   
   - caption: Technic
     chapters:
