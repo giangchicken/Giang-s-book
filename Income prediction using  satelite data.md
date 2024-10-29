@@ -310,12 +310,12 @@ NIR map                    |  SWIR map
 ### **Scraping Data & Processing Data**
 
 The code for scraping and data processing can be found hear, so this section will present notes and describe this code.
-Descripion:
-    - Each pixel is a square with an edge length set SCALE meters (SCALE can be found in the code). Then, 127 pixels are taken on each opposite side to create an image with a shape of 224x224.
-    - The data is collected from a multi-satellite dataset (LANDSAT 6/7/8/9) to reduce noise, minimize missing values, and lessen the impact of clouds. Thus, one location may have several images. The article suggests that using the median of these images can effectively reduce the influence of clouds.
+**Descripion**:
+- Each pixel is a square with an edge length set SCALE meters (SCALE can be found in the code). Then, 127 pixels are taken on each opposite side to create an image with a shape of 224x224.
+- The data is collected from a multi-satellite dataset (LANDSAT 6/7/8/9) to reduce noise, minimize missing values, and lessen the impact of clouds. Thus, one location may have several images. The article suggests that using the median of these images can effectively reduce the influence of clouds.
 
-Notes:
-    - Prepare data to include coordinaté (latitude, longitude), year and country.
+**Notes**:
+- Prepare data to include coordinaté (latitude, longitude), year and country.
     [Needs preparation](./images/Screenshot%202024-10-29%20143143.png)
 ---
 
