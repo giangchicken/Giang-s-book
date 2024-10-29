@@ -316,7 +316,7 @@ The code for scraping and data processing can be found hear, so this section wil
 
 **Notes**:
 - Prepare data to include coordinaté (latitude, longitude), year and country.
-[Needs preparation](./images/Screenshot%202024-10-29%20143143.png)
+![Needs preparation](./images/Screenshot%202024-10-29%20143143.png)
 ---
 
 ## **Running Trained CNN models**
