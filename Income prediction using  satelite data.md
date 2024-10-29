@@ -178,7 +178,7 @@ The study leverages both **satellite imagery** and **ground truth data**:
 
 This comprehensive approach illustrates the **feasibility of using satellite imagery and deep learning** to generate **reliable economic estimates**, providing a valuable resource for **researchers and policymakers** in regions where data is scarce.
 
-> Training data taken by Landsat
+> Training data taken by Landsat 6/7/8
 
 >[Read all paper](https://www.semanticscholar.org/paper/Using-publicly-available-satellite-imagery-and-deep-Yeh-Perez/83bd44a487ea02e19a27e9d77cd736dd4f5bcc00)
 >
@@ -309,6 +309,14 @@ NIR map                    |  SWIR map
 
 ### **Scraping Data & Processing Data**
 
+The code for scraping and data processing can be found hear, so this section will present notes and describe this code.
+Descripion:
+    - Each pixel is a square with an edge length set SCALE meters (SCALE can be found in the code). Then, 127 pixels are taken on each opposite side to create an image with a shape of 224x224.
+    - The data is collected from a multi-satellite dataset (LANDSAT 6/7/8/9) to reduce noise, minimize missing values, and lessen the impact of clouds. Thus, one location may have several images. The article suggests that using the median of these images can effectively reduce the influence of clouds.
+
+Notes:
+    - Prepare data to include coordinaté (latitude, longitude), year and country.
+    [Needs preparation](./images/Screenshot%202024-10-29%20143143.png)
 ---
 
 ## **Running Trained CNN models**
