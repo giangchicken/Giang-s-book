@@ -323,6 +323,7 @@ The code for scraping and data processing can be found hear, so this section wil
 ## **Running Trained CNN models**
 ---
 ## **Experimenting with Data in Việt Nam**
+![Timelapse](./images/timelapse.html)
 ---
 
 
