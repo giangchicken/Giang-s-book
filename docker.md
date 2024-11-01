@@ -82,3 +82,159 @@ docker run -p 3000:5000 name-prj
 This command starts the container and maps port 3000 of the host to port 5000 of the container, allowing you to access the app on localhost:3000.
 
 To access a container, check the corresponding container using the `docker ps` command, then use this command: `docker exec -ti container_id bash`
+
+# Docker Commands Overview
+
+## Docker Management Commands
+- **`docker --version`**  
+  Displays the installed Docker version.
+
+- **`docker info`**  
+  Provides detailed information about Docker, including system status, number of containers, images, etc.
+
+- **`docker help`**  
+  Lists available Docker commands and their descriptions.
+
+## Container Lifecycle Commands
+- **`docker run [options] image`**  
+  Creates and starts a new container from the specified image.
+  
+- **`docker start container_id`**  
+  Starts an existing, stopped container.
+
+- **`docker stop container_id`**  
+  Stops a running container gracefully.
+
+- **`docker restart container_id`**  
+  Stops and then restarts a container.
+
+- **`docker kill container_id`**  
+  Forcefully stops a running container.
+
+- **`docker rm container_id`**  
+  Removes a stopped container.
+
+- **`docker ps`**  
+  Lists currently running containers.
+
+- **`docker ps -a`**  
+  Lists all containers, including stopped ones.
+
+- **`docker logs container_id`**  
+  Fetches and displays logs of a container.
+
+- **`docker exec -it container_id command`**  
+  Executes a command inside a running container (e.g., opening a bash shell).
+
+## Image Management Commands
+- **`docker pull image`**  
+  Downloads an image from a Docker registry (e.g., Docker Hub).
+
+- **`docker build -t image_name .`**  
+  Builds an image from a Dockerfile in the current directory, tagging it with a name.
+
+- **`docker push image_name`**  
+  Uploads a locally tagged image to a Docker registry.
+
+- **`docker images`**  
+  Lists all local Docker images.
+
+- **`docker rmi image_id`**  
+  Deletes a specific Docker image from the local system.
+
+- **`docker tag source_image target_image`**  
+  Tags an image with a new name.
+
+## Volume Commands
+- **`docker volume create volume_name`**  
+  Creates a new named volume for persistent data storage.
+
+- **`docker volume ls`**  
+  Lists all Docker volumes on the system.
+
+- **`docker volume rm volume_name`**  
+  Removes a specific volume.
+
+## Network Commands
+- **`docker network create network_name`**  
+  Creates a custom network for Docker containers.
+
+- **`docker network ls`**  
+  Lists all Docker networks on the system.
+
+- **`docker network connect network_name container_id`**  
+  Connects a container to a specific network.
+
+- **`docker network disconnect network_name container_id`**  
+  Disconnects a container from a network.
+
+## Docker Compose Commands
+- **`docker-compose up`**  
+  Creates and starts containers defined in a `docker-compose.yml` file.
+
+- **`docker-compose down`**  
+  Stops and removes containers, networks, volumes, and images created by `docker-compose up`.
+
+- **`docker-compose build`**  
+  Builds or rebuilds services defined in `docker-compose.yml`.
+
+- **`docker-compose ps`**  
+  Lists containers managed by the `docker-compose.yml` file.
+
+- **`docker-compose logs`**  
+  Displays logs for all containers managed by Docker Compose.
+
+- **`docker-compose stop`**  
+  Stops running containers without removing them.
+
+- **`docker-compose start`**  
+  Starts containers that have been stopped.
+
+## Dockerfile Instructions
+- **`FROM base_image`**  
+  Specifies the base image for building a new image.
+
+- **`RUN command`**  
+  Executes a command during the image building process.
+
+- **`COPY source destination`**  
+  Copies files or directories from the host into the container.
+
+- **`WORKDIR path`**  
+  Sets the working directory within the container.
+
+- **`CMD ["executable", "param1", "param2"]`**  
+  Specifies the default command to run when the container starts.
+
+- **`ENTRYPOINT ["executable", "param1", "param2"]`**  
+  Configures a container to run as an executable.
+
+- **`ENV key=value`**  
+  Sets environment variables inside the container.
+
+- **`EXPOSE port`**  
+  Declares network ports the container will use.
+
+## System Management Commands
+- **`docker system df`**  
+  Shows disk usage of Docker images, containers, and volumes.
+
+- **`docker system prune`**  
+  Removes all stopped containers, unused networks, and dangling images to free up space.
+
+- **`docker stats`**  
+  Shows real-time resource usage statistics for running containers.
+
+## Additional Useful Commands
+- **`docker inspect container_id`**  
+  Retrieves detailed information about a container's configuration and status.
+
+- **`docker history image`**  
+  Shows the history of an image, listing each layer and its command.
+
+- **`docker save -o file.tar image`**  
+  Saves an image to a file, enabling it to be transferred and loaded elsewhere.
+
+- **`docker load -i file.tar`**  
+  Loads an image from a saved file into Docker.
+
