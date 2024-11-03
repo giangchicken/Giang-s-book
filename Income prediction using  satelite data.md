@@ -323,7 +323,9 @@ The code for scraping and data processing can be found hear, so this section wil
 ## **Running Trained CNN models**
 ---
 ## **Experimenting with Data in Việt Nam**
-![Timelapse](./images/screen-capture.webm)
+VietNam Wealth Index (2000)|  VietNam Wealth Index (2024)
+:-------------------------:|:-------------------------:
+![Street map](./images/Screenshot%202024-11-04%20010821.png)|![Landsat](./images/Screenshot%202024-11-04%20010855.png)
 ---
 
 
