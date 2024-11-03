@@ -238,6 +238,6 @@ To access a container, check the corresponding container using the `docker ps` c
 - **`docker load -i file.tar`**  
   Loads an image from a saved file into Docker.
 
-- **`docker cp src_path container_id:dst_path`**
+- **`docker cp src_path container_id:dst_path`** 
   Copy file/folder from local to container.
 
