@@ -322,7 +322,7 @@ The code for scraping and data processing can be found hear, so this section wil
 
 ## **Running Trained CNN models**
 ---
-## **Experimenting with VietNam Data**
+## **Experimenting with Vietnam Data**
 To explore and analyze economic indicators across **Vietnam**, we utilized a combination of datasets. **Province Income** data provides insights into the income levels across various provinces, essential for understanding regional economic disparities. **District Location** data helps in accurately mapping socio-economic indices at a more granular district level, which is crucial for targeted analysis. Additionally, **Vietnam Satellite Imagery** offers valuable visual data, allowing us to make predictions.
 
 ### **Data**
