@@ -1,17 +1,19 @@
-# Giang Dang  
-**Email:** giang123md@gmail.com
+# <span style="color: #2E86C1;">Đặng Trường Giang</span>  
+<div style="text-align: center;">
+**Email:** giang123md@gmail.com  
 **Phone:** 0762479017  
-**LinkedIn:** [linkedin.com/in/giangdang](https://www.linkedin.com/in/giangdangtruong/)  
-**GitHub:** [github.com/giangdang](https://github.com/giangchicken)  
+**LinkedIn:** [linkedin.com/in/giangdangtruong](https://www.linkedin.com/in/giangdangtruong/)  
+**GitHub:** [github.com/giangchicken](https://github.com/giangchicken)  
+</div>
 
 ---
 
 ## **Objective**
-My goal is to apply my expertise in Data Science to tackle challenges and contribute to the success of company. I am eager to work in an environment that encourages continuous learning, collaboration, and innovation. With a strong foundation in both the technical and business aspects of data science, I aim to make a positive impact on decision-making processes and drive business growth through data-driven strategies. 
+My goal is to apply my expertise in Data Science to tackle challenges and contribute to the success of the company. I am eager to work in an environment that encourages continuous learning, collaboration, and innovation. With a strong foundation in both the technical and business aspects of data science, I aim to make a positive impact on decision-making processes and drive business growth through data-driven strategies. 
 
 ---
 
-## Experience
+## **Experience**
 
 ### **Credit Scoring Model Using Telco Data**   
 - **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
@@ -40,35 +42,34 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 
 ---
 
-## Education
+## **Education**
 
-### Ha Long High School for gifted student  
-**Physics specialized class**
+### **Ha Long High School for Gifted Students**  
+**Physics Specialized Class**  
 **2017** - **2020**  
 
-### Ha Noi University of Science and Technology  
-**Embedded System and IoT**
+### **Ha Noi University of Science and Technology**  
+**Embedded System and IoT**  
 **2020** - **2024**
 
 ---
 
-## Skills
+## **Skills**
 - **Programming Languages:** Python, SQL
-- **Math:** Statistics, Linear Algebra, Caculus, Caculus Matrix, Machine Learning, Data Mining, Economometrics, Time series 
+- **Math:** Statistics, Linear Algebra, Calculus, Matrix Calculus, Machine Learning, Data Mining, Econometrics, Time Series 
 - **Web Scraping & Automation:** Selenium, BeautifulSoup
-- **Tools & Libraries:** Jupyter, Docker, Git, Faiss, Google Earth Engine, pandas. PySpark,...
+- **Tools & Libraries:** Jupyter, Docker, Git, Faiss, Google Earth Engine, pandas, PySpark, etc.
 - **Soft Skills:** Problem-solving, teamwork, communication
 
 ---
 
-## Certifications
-
-- **GOLD MEDAL in Internet-based Olympiad of Physics.**, 2016
-- **Silver Medal in Hung King summer camp.**, 2019
-- **Consolation Prize in Vietnamese Physics Olympiad.**, 2019
+## **Certifications**
+- **Gold Medal in Internet-based Olympiad of Physics**, 2016
+- **Silver Medal in Hung King Summer Camp**, 2019
+- **Consolation Prize in Vietnamese Physics Olympiad**, 2019
 
 ---
 
-## Languages
+## **Languages**
 - **Vietnamese:** Native
 - **English:** Read
