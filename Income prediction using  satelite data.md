@@ -349,7 +349,6 @@ Using model A to predict the wealth index at the district level in Vietnam.
 2020  | 0.8643
 2021  | 0.8263
 2022  | 0.8344
-![Street map](./images/Screenshot%202024-11-04%20010855.png)|![Landsat](./images/Screenshot%202024-11-04%20010821.png)
 
 #### **Predicted Wealth Index Distribution Heatmap**
 VietNam Wealth Index (2000)|  VietNam Wealth Index (2024)
