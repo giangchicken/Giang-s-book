@@ -327,11 +327,11 @@ To explore and analyze economic indicators across **Vietnam**, we utilized a com
 
 ### **Data**
 
-#### **Province Income**
+- #### **Province Income**
 
-#### **District location**
+- #### **District location**
 
-#### **Vietnam satelite Imagery**
+- #### **Vietnam satelite Imagery**
 
 ### **Result**
 Using model A to predict the wealth index at the district level in Vietnam. 
