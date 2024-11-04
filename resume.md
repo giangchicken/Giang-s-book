@@ -22,22 +22,28 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 ### **Speech-to-Text**  
 - **Description:** Built a speech-to-text model for sales call quality evaluation.
 - **Tasks:** Model development, training, and deployment.
-- **Technologies:** DeepSpeech, Python, NLP.
+- **Technologies:** Python, NLP, Transformer.
+
+### **Customer Identification Model Using Face Tracking**
+
+- **Description:** Built a model to identify existing and new customers entering a store, allowing for personalized marketing strategies.
+- **Tasks:** Face tracking, feature extraction, and storing face embeddings in a vector database.
+- **Technologies:** YOLOv7, resnet50, Qdrant.
 
 ### **Nearest Neighbor Search for Lead Grouping in Marketing**   
 - **Description:** Implemented KNN-based lead grouping for targeted marketing.
 - **Tasks:** Data preprocessing, KNN implementation, and search optimization.
-- **Technologies:** KNN, Faiss, Python.
+- **Technologies:** KMeanCluster, Faiss, Python.
 
 ### **Industry Classification Model Using Web Text**  
 - **Description:** Developed a web-text-based industry classification model.
 - **Tasks:** Web scraping, text preprocessing, clustering.
-- **Technologies:** Selenium, TF-IDF, KMeans.
+- **Technologies:** Selenium, TF-IDF, KMeans, Hierarchical clustering.
 
 ### **Income Prediction from Satellite Imagery**  
 - **Description:** Built a model to predict income levels using satellite imagery.
 - **Tasks:** Data collection, preprocessing, and model application.
-- **Technologies:** CNN, Google Earth Engine.
+- **Technologies:** CNN, Google Earth Engine, Docker.
 
 ---
 
