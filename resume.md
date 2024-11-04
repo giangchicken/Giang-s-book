@@ -19,7 +19,7 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 - **Tasks:** Feature engineering, model training, and performance monitoring.
 - **Technologies:** Python, Logistic Regression, Gradient Boosting.
 
-### **Speech-to-Text Quality Evaluation for Sales Calls**  
+### **Speech-to-Text**  
 - **Description:** Built a speech-to-text model for sales call quality evaluation.
 - **Tasks:** Model development, training, and deployment.
 - **Technologies:** DeepSpeech, Python, NLP.
