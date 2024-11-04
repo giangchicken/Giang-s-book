@@ -338,17 +338,10 @@ Using model A to predict the wealth index at the district level in Vietnam.
 
 #### **Correlation with Province Income**   
 
- Year | Corr
-:----:|:-----:
-2010  | 0.8559
-2015  | 0.8524
-2016  | 0.8593
-2017  | 0.8293
-2018  | 0.8584
-2019  | 0.8594
-2020  | 0.8643
-2021  | 0.8263
-2022  | 0.8344
+| Year | 2010  | 2015  | 2016  | 2017  | 2018  | 2019  | 2020  | 2021  | 2022  |
+|:----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Corr | 0.8559| 0.8524| 0.8593| 0.8293| 0.8584| 0.8594| 0.8643| 0.8263| 0.8344|
+
 
 #### **Predicted Wealth Index Distribution Heatmap**
 VietNam Wealth Index (2000)|  VietNam Wealth Index (2024)
