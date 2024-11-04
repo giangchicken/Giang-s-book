@@ -348,7 +348,7 @@ VietNam Wealth Index (2000)|  VietNam Wealth Index (2024)
 :-------------------------:|:-------------------------:
 ![Street map](./images/Screenshot%202024-11-04%20010855.png)|![Landsat](./images/Screenshot%202024-11-04%20010821.png)
 
-#### **Predicted Wealth Index vs Province Income by year**
+#### **Predicted Wealth Index vs Province Income Distribution**
 ![](./images/Screenshot%202024-11-04%20092350.png)
 ---
 
