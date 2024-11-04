@@ -15,9 +15,9 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 ## **Experience**
 
 ### **Credit Scoring Model Using Telco Data**   
->- **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
->- **Tasks:** Feature engineering, model training, and performance monitoring.
->- **Technologies:** Python, Logistic Regression, Gradient Boosting.
+>>- **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
+>>- **Tasks:** Feature engineering, model training, and performance monitoring.
+>>- **Technologies:** Python, Logistic Regression, Gradient Boosting.
 
 ### **Speech-to-Text**  
 >- **Description:** Built a speech-to-text model for sales call quality evaluation.
