@@ -2,7 +2,7 @@
 
 # Đặng Trường Giang  
 Data Science / AI Engineer  
-<i class="fa-brands fa-square-google-plus"></i> giang123md@gmail.com <i class="fa-brands fa-whatsapp"></i> 0762479017 <i class="fa-brands fa-linkedin"></i> [linkedin.com/in/giangdang](https://www.linkedin.com/in/giangdangtruong/) <i class="fa-brands fa-github"></i> [github.com/giangdang](https://github.com/giangchicken)  
+✉️ giang123md@gmail.com | 📞 0762479017 | [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/giangdangtruong/) | [![GitHub](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)](https://github.com/giangchicken)
 
 </div>
 
