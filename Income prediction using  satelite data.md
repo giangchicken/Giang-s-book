@@ -322,10 +322,42 @@ The code for scraping and data processing can be found hear, so this section wil
 
 ## **Running Trained CNN models**
 ---
-## **Experimenting with Data in Việt Nam**
+## **Experimenting with VietNam Data**
+To explore and analyze economic indicators across **Vietnam**, we utilized a combination of datasets. **Province Income** data provides insights into the income levels across various provinces, essential for understanding regional economic disparities. **District Location** data helps in accurately mapping socio-economic indices at a more granular district level, which is crucial for targeted analysis. Additionally, **Vietnam Satellite Imagery** offers valuable visual data, allowing us to make predictions.
+
+### **Data**
+
+#### **Province Income**
+
+#### **District location**
+
+#### **Vietnam satelite Imagery**
+
+### **Result**
+Using model A to predict the wealth index at the district level in Vietnam. 
+
+#### **Correlation with Province Income**   
+
+ Year | Corr
+:----:|:-----:
+2010  | 0.8559
+2015  | 0.8524
+2016  | 0.8593
+2017  | 0.8293
+2018  | 0.8584
+2019  | 0.8594
+2020  | 0.8643
+2021  | 0.8263
+2022  | 0.8344
+![Street map](./images/Screenshot%202024-11-04%20010855.png)|![Landsat](./images/Screenshot%202024-11-04%20010821.png)
+
+#### **Predicted Wealth Index Distribution Heatmap**
 VietNam Wealth Index (2000)|  VietNam Wealth Index (2024)
 :-------------------------:|:-------------------------:
-![Street map](./images/Screenshot%202024-11-04%20010821.png)|![Landsat](./images/Screenshot%202024-11-04%20010855.png)
+![Street map](./images/Screenshot%202024-11-04%20010855.png)|![Landsat](./images/Screenshot%202024-11-04%20010821.png)
+
+#### **Predicted Wealth Index vs Province Income by year**
+![](./images/Screenshot%202024-11-04%20092350.png)
 ---
 
 
