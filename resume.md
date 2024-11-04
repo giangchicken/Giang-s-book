@@ -1,13 +1,15 @@
-# <span style="color: #2E86C1;">Đặng Trường Giang</span>  
-<div style="text-align: center;">
+<div align="center">
+
+# Đặng Trường Giang  
+
 **Email:** giang123md@gmail.com  
 **Phone:** 0762479017  
-**LinkedIn:** [linkedin.com/in/giangdangtruong](https://www.linkedin.com/in/giangdangtruong/)  
-**GitHub:** [github.com/giangchicken](https://github.com/giangchicken)  
+**LinkedIn:** [linkedin.com/in/giangdang](https://www.linkedin.com/in/giangdangtruong/)  
+**GitHub:** [github.com/giangdang](https://github.com/giangchicken)  
+
 </div>
 
 ---
-
 ## **Objective**
 My goal is to apply my expertise in Data Science to tackle challenges and contribute to the success of the company. I am eager to work in an environment that encourages continuous learning, collaboration, and innovation. With a strong foundation in both the technical and business aspects of data science, I aim to make a positive impact on decision-making processes and drive business growth through data-driven strategies. 
 
