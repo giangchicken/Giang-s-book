@@ -334,7 +334,7 @@ To explore and analyze economic indicators across **Vietnam**, we utilized a com
 - #### **Vietnam satelite Imagery**
 
 ### **Result**
-Using model A to predict the wealth index at the district level in Vietnam. 
+Using pretrained model ``DHS_OOC_A_ms_samescaled_b64_fc01_conv01_lr0001`` to predict the wealth index at the district level in Vietnam. 
 
 #### **Correlation with Province Income**   
 
