@@ -1,11 +1,8 @@
 <div align="center">
 
 # Đặng Trường Giang  
-
-**Email:** giang123md@gmail.com  
-**Phone:** 0762479017  
-**LinkedIn:** [linkedin.com/in/giangdang](https://www.linkedin.com/in/giangdangtruong/)  
-**GitHub:** [github.com/giangdang](https://github.com/giangchicken)  
+Data Science / AI Engineer
+**Email:** giang123md@gmail.com **Phone:** 0762479017 **LinkedIn:** [linkedin.com/in/giangdang](https://www.linkedin.com/in/giangdangtruong/) **GitHub:** [github.com/giangdang](https://github.com/giangchicken)  
 
 </div>
 
