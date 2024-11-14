@@ -69,7 +69,7 @@ This metric in the Paper measures how well a classification scheme explains stoc
  * **Return on Equity (ROE)**:
 
 ## Data
-The study uses data from **S&P 1500** firms, covering various sectors. The analysis includes:
+The study uses data from **S&P 1500** firms (S&P 500 large-cap, 400 mid-cap, and 600 small-cap), covering various sectors. The analysis includes:
    - **Firm stock returns**: To observe comovements and compare similarities among firms within industry groups.
    - **Financial metrics**: Such as **price-to-book (P/B) ratios**, **enterprise value-to-sales (EV/S) ratios**, and **profitability ratios** (e.g., ROE, ROA) to assess the economic relatedness across industry classifications.
 
@@ -90,13 +90,13 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 > Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
 
-> Panel A reports the number of classification levels, the official number of categories, and the functional number of categories for each classification level for each level of classification. A category is defined as functional if it has at least five members.
+> **Panel A** reports the number of classification levels, the official number of categories, and the functional number of categories for each classification level for each level of classification. A category is defined as functional if it has at least five members.
 
 > Although some research uses the first digit as the broadest level, SIC codes are officially broken into 11 major divisions, labeled A through K. The sixth digit of the NAICS code is an additional level of detail specific to each country. For comparison purposes, the categories in the fifth and sixth digit levels are combined in this table, consistent with the 1997 NAICS manual.
 
 > The level of industry we use for our analysis is boldface.
 
->Panel B reports univariate statistics for each of the preceding classification systems, using S&P 1500 firms as of December 2001, for the corresponding boldface level from Panel A.
+> **Panel B** reports univariate statistics for each of the preceding classification systems, using S&P 1500 firms as of December 2001, for the corresponding boldface level from Panel A.
 
 ---
 
@@ -122,19 +122,25 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
                      
                               FUNCTION:       R(i,t) = α.t + β.R(ind,t) + ε(i,t)
 
+   The dependent variable, R, is the monthly return for firm i within industry j in data month t, 
+   from the CRSP monthly database. The independent variable, Rind, is the monthly average return 
+   for all firms in that industry classification.
+
 ```
 ![](./images/Screenshot%202024-11-14%20211402.png)
 ![](./images/Screenshot%202024-11-14%20225912.png)
 
 > This table reports the firm-months and adjusted R-squared for the above monthly OLS regression.
 
-> The dependent variable, R, is the monthly return for firm i within industry j in data month t, from the CRSP monthly database. The independent variable, Rind, is the monthly average return for all firms in that industry classification.
-
 > Industries are defined by either the first two digits of the firm's SIC code, the first three digits of the firm's NAICS code, the firm's Fama-French classification (FF), or the first 6 digits of the firm's GICS code. Each industry included in these regressions must have at least five members.
 
 > Because classifications differ among SIC, FF, NAICS, and GICS, there will be differences in the number of firm-months reported for each regression.
 
 > We use all firms from the S&P index as of December for each year (from Research Insight) for which we are able to find a PERMNO from CRSP by matching based on CUSIP.
+
+---
+
+### **TABLE 4**:   Comparison of Adjusted R-square for S&P 1500 Firms Among SIC, NAICS, FamaFrench and GICS (Industries for Returns, Financial Ratios and Other Financial Information)
 
 ---
 
