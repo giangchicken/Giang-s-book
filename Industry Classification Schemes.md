@@ -27,8 +27,8 @@ The article compares four prominent industry classification schemes used in fina
 4. **Sub-Industry**:
    - The most granular level of classification, a **sub-industry** identifies firms with highly specific economic activities. Within the **Application Software** industry, for instance, sub-industries might differentiate between **Enterprise Software** and **Educational Software** firms.
 
-:-------------------------:|:-------------------------:
-![#](./images/90452.jpg)   | ![#](./images/90453.jpg)
+
+![#](./images/90452.jpg) ![#](./images/90453.jpg)
 ```
 **Note**: These classification levels apply specifically to **GICS**. Each industry classification scheme (such as SIC, NAICS, and ISIC) has its own hierarchy and terminology for levels. Please consult detailed information on the specific classification scheme before applying it.
 ```
