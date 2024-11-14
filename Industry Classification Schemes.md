@@ -58,7 +58,7 @@ The article compares four prominent industry classification schemes used in fina
 This metric measures how well a classification scheme explains stock return variations. The **Adjusted \( R^2 \)** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
 ![](./images/10_adjusted-r-squared.jpeg)
 
->![For more information](https://builtin.com/data-science/adjusted-r-squared)
+>[For more information](https://builtin.com/data-science/adjusted-r-squared)
 ---
 
 ## Data
