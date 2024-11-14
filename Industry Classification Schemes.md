@@ -117,5 +117,26 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ---
 
+### **TABLE3**:  Comparison of Adjusted R-Square Among SIC, NAICS, FamaFrench and GICS for Returns
+```plaintext
+                  R(i,t) = α.t + β.R(ind,t) + ε(i,t)
+
+```
+
+![](./images/Screenshot%202024-11-14%20211402.png)
+![](./images/Screenshot%202024-11-14%20225912.png)
+
+> This table reports the firm-months and adjusted R-squared for the above monthly OLS regression.
+
+> The dependent variable, R, is the monthly return for firm i within industry j in data month t, from the CRSP monthly database. The independent variable, Rind, is the monthly average return for all firms in that industry classification.
+
+> Industries are defined by either the first two digits of the firm's SIC code, the first three digits of the firm's NAICS code, the firm's Fama-French classification (FF), or the first 6 digits of the firm's GICS code. Each industry included in these regressions must have at least five members.
+
+> Because classifications differ among SIC, FF, NAICS, and GICS, there will be differences in the number of firm-months reported for each regression.
+
+> We use all firms from the S&P index as of December for each year (from Research Insight) for which we are able to find a PERMNO from CRSP by matching based on CUSIP.
+
+---
+
 ## References
 ![#](https://www.ssc.gov.vn/webcenter/portal/ubck/pages_r/l/chitit?dDocName=APPSSCGOVVN162099773)
