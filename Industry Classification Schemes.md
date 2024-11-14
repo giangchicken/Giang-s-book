@@ -35,8 +35,9 @@ The article compares four prominent industry classification schemes used in fina
 
 ---
 
-### **Industry Classification**: 
-   **Industry classification schemes** organize firms to facilitate economic and financial analyses. The effectiveness of these schemes varies based on how accurately they capture industry-specific behaviors.
+### **Industry Classification** 
+**Industry classification schemes** organize firms to facilitate economic and financial analyses. The effectiveness of these schemes varies based on how accurately they capture industry-specific behaviors.
+
 ---
 ### **Classification Schemes**:
    - **SIC (Standard Industrial Classification)**: Developed by the U.S. government, SIC is widely used but is now being phased out in favor of NAICS.
@@ -53,7 +54,8 @@ The article compares four prominent industry classification schemes used in fina
 | **GICS**         | Industry                   |                     | N/A               | N/A              | N/A              | N/A              | N/A              | N/A                         |
 
 ---
-### **Adjusted \( R^2 \)**: This metric measures how well a classification scheme explains stock return variations. The **Adjusted \( R^2 \)** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
+### **Adjusted \( R^2 \)**
+This metric measures how well a classification scheme explains stock return variations. The **Adjusted \( R^2 \)** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
 
 ---
 
