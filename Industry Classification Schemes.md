@@ -81,10 +81,14 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ### **Key Findings to Note**
 ![Univariate Statistics for SIC, NAICS, FamaFrench and GICS](./images/Screenshot%202024-11-14%20191310.png)
-> This table reports univariate statistics for each classification level for SIC (Standard Industrial Classification), NAICS (North American Industry Classification System), Fama-French, and GICS (Global Industry Classification Standard), using S&P 1500 firms as of December 2001.
+> This table reports univariate statistics for each classification level for SIC (Standard Industrial Classification), NAICS (North American Industry Classification System), Fama-French, and GICS (Global Industry Classification Standard), using S&P 1500 firms as of December 2001. 
+
 > Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
+
 > Panel A reports the number of classification levels, the official number of categories, and the functional number of categories for each classification level for each level of classification. A category is defined as functional if it has at least five members.
+
 > Although some research uses the first digit as the broadest level, SIC codes are officially broken into 11 major divisions, labeled A through K. The sixth digit of the NAICS code is an additional level of detail specific to each country. For comparison purposes, the categories in the fifth and sixth digit levels are combined in this table, consistent with the 1997 NAICS manual.
+
 > The level of industry we use for our analysis is boldface.
 
 >Panel B reports univariate statistics for each of the preceding classification systems, using S&P 1500 firms as of December 2001, for the corresponding boldface level from Panel A.
