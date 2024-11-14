@@ -51,12 +51,14 @@ The article compares four prominent industry classification schemes used in fina
 | **SIC**          | Division                   | Major Group         | Industry Group    | Industry         | N/A              | N/A              | N/A              | N/A                         |
 | **NAICS**        | Sector                     |                     | Subsector         | Industry Group   | Industry         | National Industry| N/A              | N/A                         |
 | **GICS**         | Sector                     |                     | Industry Group    |                  | Industry         |                  | Sub-Industry     |                             |
-| **GICS**         | Industry                   |                     | N/A               | N/A              | N/A              | N/A              | N/A              | N/A                         |
+| **FF**           | Industry                   |                     | N/A               | N/A              | N/A              | N/A              | N/A              | N/A                         |
 
 ---
 ### **Adjusted \( R^2 \)**
 This metric measures how well a classification scheme explains stock return variations. The **Adjusted \( R^2 \)** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
+![](./images/10_adjusted-r-squared.jpeg)
 
+![For more information](https://builtin.com/data-science/adjusted-r-squared)
 ---
 
 ## Data
