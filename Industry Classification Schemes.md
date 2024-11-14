@@ -119,6 +119,7 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ### **TABLE 3**:  Comparison of Adjusted R-Square Among SIC, NAICS, FamaFrench and GICS for Returns
 ```plaintext
+                     FUNCTION:
                                           R(i,t) = α.t + β.R(ind,t) + ε(i,t)
 
 ```
