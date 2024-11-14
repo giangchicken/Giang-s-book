@@ -85,7 +85,7 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 ### **Key Findings to Note**
 ![Univariate Statistics for SIC, NAICS, FamaFrench and GICS](./images/Screenshot%202024-11-14%20191310.png)
 
-### **TABLE1**: Univariate Statistics for SIC, NAICS, FamaFrench and GICS
+### **TABLE 1**: Univariate Statistics for SIC, NAICS, FamaFrench and GICS
 > This table reports univariate statistics for each classification level for SIC (Standard Industrial Classification), NAICS (North American Industry Classification System), Fama-French, and GICS (Global Industry Classification Standard), using S&P 1500 firms as of December 2001. 
 
 > Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
@@ -100,7 +100,7 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ---
 
-### **TABLE2**: Bridging Between SIC and NAICS, FamaFrench and GICS
+### **TABLE 2**: Bridging Between SIC and NAICS, FamaFrench and GICS
 
 ![#](./images/Screenshot%202024-11-14%20210541.png) ![#](./images/Screenshot%202024-11-14%20210608.png) ![#](./images/Screenshot%202024-11-14%20211039.png)
 
@@ -117,12 +117,11 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ---
 
-### **TABLE3**:  Comparison of Adjusted R-Square Among SIC, NAICS, FamaFrench and GICS for Returns
+### **TABLE 3**:  Comparison of Adjusted R-Square Among SIC, NAICS, FamaFrench and GICS for Returns
 ```plaintext
-                  R(i,t) = α.t + β.R(ind,t) + ε(i,t)
+                                          R(i,t) = α.t + β.R(ind,t) + ε(i,t)
 
 ```
-
 ![](./images/Screenshot%202024-11-14%20211402.png)
 ![](./images/Screenshot%202024-11-14%20225912.png)
 
