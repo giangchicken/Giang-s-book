@@ -69,7 +69,7 @@ This metric in the Paper measures how well a classification scheme explains stoc
  * **Return on Equity (ROE)**:
 
 ## Data
-The study uses data from **S&P 1500** firms (S&P 500 large-cap, 400 mid-cap, and 600 small-cap), covering various sectors. The analysis includes:
+The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-cap, and **600** small-cap), covering various sectors. The analysis includes:
    - **Firm stock returns**: To observe comovements and compare similarities among firms within industry groups.
    - **Financial metrics**: Such as **price-to-book (P/B) ratios**, **enterprise value-to-sales (EV/S) ratios**, and **profitability ratios** (e.g., ROE, ROA) to assess the economic relatedness across industry classifications.
 
@@ -141,7 +141,38 @@ The study uses data from **S&P 1500** firms (S&P 500 large-cap, 400 mid-cap, and
 ---
 
 ### **TABLE 4**:   Comparison of Adjusted R-square for S&P 1500 Firms Among SIC, NAICS, FamaFrench and GICS (Industries for Returns, Financial Ratios and Other Financial Information)
+```plaintext
+                     
+                              FUNCTION:       vble(i,t) = α1 + β.vble(ind, t) + ε(i,t)
 
+   **vble(i,t)** is one of the following: returns, price-to-book (P/B, market capitalization divided 
+   by total common equity), enterprise value-to-sales (EV/S, the sum of market capitalization and 
+   long-term debt divided by net sales), price-to-earnings (P/E, market capitalization divided by 
+   net income before extraordinary items), return on net operating assets (RNOA, net operating 
+   income after depreciation divided by the sum of property, plant, and equipment and current 
+   assets, less current liabilities), return on equity (ROE, net income before extraordinary items 
+   divided by total common equity), asset turnover (AT, total assets divided by net sales), profit 
+   margin (PM, net operating income after depreciation divided by net sales), leverage (LEV, total 
+   liabilities divided by total stockholders' equity), long-term analyst growth forecast 
+   (LT Growth), one-year-ahead realized sales growth (Sales Growth), and scaled research and 
+   development expense (R&D, research and development expense divided by net sales) for firm i 
+   within industry j in data year t.
+
+   **vble(ind)** is the yearly average for that variable for all firms in that industry 
+   classification.
+
+```
+
+![#](./images/Screenshot%202024-11-15%20031545.png)
+![#](./images/Screenshot%202024-11-15%20031627.png)
+
+> This table reports the average adjusted R-squared for **S&P 1500 firms**, from Research Insight, for the above OLS regression. Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat, for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
+
+> Industries are defined by either the first two digits of the firm's SIC code, the firm's Fama-French classification (FF), the first three digits of the firm's NAICS code, or the first six digits of the firm's GICS code. Each industry included in these regressions must have at least five members. 
+
+> For each variable, the highest adjusted **R-squared** is boldface. We perform a two-tailed t-test on the difference between GICS and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). 
+
+> **Panel A** shows our results for returns, **panel B** shows our results for valuation multiples, **panel C** shows our results for financial ratios, and **panel D** shows our results for other financial information.
 ---
 
 ## References
