@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 parts:
   - caption: Theory
-    chapters:
+    chapters: Industry Classification Schemes
   
   - caption: Project
     chapters:
