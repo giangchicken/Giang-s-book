@@ -102,7 +102,7 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ### **TABLE2**: Bridging Between SIC and NAICS, FamaFrench and GICS
 
-![#](./images/Screenshot%202024-11-14%20210541.png) ![#](./images/Screenshot%202024-11-14%20210608.png)
+![#](./images/Screenshot%202024-11-14%20210541.png) ![#](./images/Screenshot%202024-11-14%20210608.png) ![#](./images/Screenshot%202024-11-14%20211039.png)
 
 > This table reports the degree of correspondence between SIC, Fama-French (FF), NAICS, and GICS for the December 2001 S&P 1500 firms by showing the level of agreement between SIC and the other three classifications.
 
