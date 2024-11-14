@@ -44,13 +44,16 @@ The article compares four prominent industry classification schemes used in fina
    - **FF (Fama-French Classification)**: Tailored for academic research, the FF classification organizes industries to examine stock returns based on firm size and value.   
 
 
-| Scheme           | 1st Digit (Broadest Level) | 2nd Digit           | 3rd Digit         | 4th Digit        | 5th Digit        | 6th Digit        | 7th Digit        | 8th Digit (Narrowest Level) |
-|------------------|----------------------------|---------------------|-------------------|------------------|------------------|------------------|------------------|-----------------------------|
-| **SIC**          | Division                   | Major Group         | Industry Group    | Industry         | N/A              | N/A              | N/A              | N/A                         |
-| **NAICS**        | Sector                     |                     | Subsector         | Industry Group   | Industry         | National Industry| N/A              | N/A                         |
-| **GICS**         | Sector                     |                     | Industry Group    |                  | Industry         |                  | Sub-Industry     |                             |
-| **FF**           | Industry                   |                     | N/A               | N/A              | N/A              | N/A              | N/A              | N/A                         |
+```
 
+      | Scheme    | 1st Digit (Broadest Level) | 2nd Digit    | 3rd Digit         | 4th Digit        | 5th Digit | 6th Digit        | 7th Digit      | 8th Digit (Narrowest Level) |
+      |-----------|----------------------------|--------------|-------------------|------------------|-----------|------------------|----------------|-----------------------------|
+      | **SIC**   | Division                   | Major Group  | Industry Group    | Industry         | N/A       | N/A              | N/A            | N/A                         |
+      | **NAICS** | Sector                                    | Subsector         | Industry Group   | Industry  | National Industry| N/A            | N/A                         |
+      | **GICS**  | Sector                                    | Industry Group                         Industry  |                  | Sub-Industry                                 |
+      | **FF**    | Industry                                  | N/A               | N/A              | N/A       | N/A              | N/A            | N/A                         |
+
+```
 ---
 ### **Adjusted R-square**
 This metric in the Paper measures how well a classification scheme explains stock return variations. The **Adjusted R-square** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
@@ -98,6 +101,9 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 ---
 
 ### **TABLE2**: Bridging Between SIC and NAICS, FamaFrench and GICS
+
+![#](./images/Screenshot%202024-11-14%20210541.png) ![#](./images/Screenshot%202024-11-14%20210608.png)
+
 > This table reports the degree of correspondence between SIC, Fama-French (FF), NAICS, and GICS for the December 2001 S&P 1500 firms by showing the level of agreement between SIC and the other three classifications.
 
 > Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997). See their Appendix A for a description and definition of their industry names.
@@ -108,57 +114,6 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 > For brevity, only the category with the highest level of correspondence is shown. Note that the FF correspondence is slightly misleading because there is an explicit mapping from SIC into FF using all four SIC digits. However, for comparative purposes, we use only two-digit SIC here.
 
-```
-         |                                    |                 NAICS(3digit)                    |                    FamaFrench                    |                    GICS(6digit)                  |
-         | Two-Digit SIC Group  | Total Firms | Primary Equivalent | Firms | Proportion of Total | Primary Equivalent | Firms | Proportion of Total | Primary Equivalent | Firms | Proportion of Total |
-         |----------------------|-------------|--------------------|-------|---------------------|--------------------|-------|---------------------|--------------------|-------|---------------------|
-         | 27                   | 28          | 511                | 17    | 61%                 | Books              | 20    | 71%                | 254010              | 16    | 57%                 |
-         | 28                   | 98          | 325                | 98    | 100%                | Drugs              | 51    | 52%                | 151010              | 36    | 37%                 |
-         | 29                   | 14          | 324                | 14    | 100%                | Enrgy              | 13    | 93%                | 101020              | 12    | 86%                 |
-         | 30                   | 10          | 326                | 8     | 80%                 | NotClassified      | 4     | 40%                | 251010              | 3     | 30%                 |
-         | 31                   | 6           | 316                | 6     | 100%                | Clths              | 6     | 100%               | 252030              | 6     | 100%                |
-         | 32                   | 5           | 327                | 5     | 100%                | BldMt              | 2     | 40%                | 151020              | 2     | 40%                 |
-         | 33                   | 32          | 331                | 28    | 88%                 | Steel              | 32    | 100%               | 151040              | 19    | 59%                 |
-         | 34                   | 26          | 332                | 25    | 96%                 | BldMt              | 17    | 65%                | 201060              | 8     | 31%                 |
-         | 35                   | 91          | 333                | 58    | 64%                 | Mach               | 59    | 65%                | 201060              | 29    | 32%                 |
-         | 36                   | 128         | 334                | 102   | 80%                 | Chips              | 100   | 78%                | 452050              | 44    | 34%                 |
-         | 37                   | 40          | 336                | 40    | 100%                | Autos              | 24    | 60%                | 201010              | 12    | 30%                 |
-         | 38                   | 73          | 334                | 41    | 56%                 | LabEq              | 33    | 45%                | 351010              | 35    | 48%                 | 
-         | 39                   | 12          | 339                | 12    | 100%                | Toys               | 7     | 58%                | 252020              | 6     | 50%                 |
-         | 40                   | 5           | 482                | 5     | 100%                | Trans              | 5     | 100%               | 203040              | 5     | 100%                |
-         | 42                   | 9           | 484                | 9     | 100%                | Trans              | 9     | 100%               | 203040              | 9     | 100%                |
-         | 44                   | 6           | 483                | 5     | 83%                 | Trans              | 6     | 100%               | 203030              | 3     | 50%                 |
-         | 45                   | 15          | 481                | 12    | 80%                 | Trans              | 15    | 100%               | 203020              | 10    | 67%                 |
-         | 47                   | 5           | 488                | 5     | 100%                | Trans              | 5     | 100%               | 203010              | 3     | 60%                 |
-         | 48                   | 27          | 513                | 27    | 100%                | Telcm              | 27    | 100%               | 501010              | 12    | 44%                 |
-         | 49                   | 99          | 221                | 86    | 87%                 | Util               | 99    | 100%               | 551010              | 54    | 55%                 |
-         | 50                   | 30          | 421                | 29    | 97%                 | Whlsl              | 30    | 100%               | 452030              | 5     | 17%                 |
-         | 51                   | 21          | 422                | 21    | 100%                | Whlsl              | 21    | 100%               | 351020              | 6     | 29%                 |
-         | 52                   | 5           | 444                | 4     | 80%                 | Rtail              | 5     | 100%               | 255040              | 4     | 80%                 |
-         | 53                   | 19          | 452                | 19    | 100%                | Rtail              | 19    | 100%               | 255030              | 19    | 100%                |
-         | 54                   | 7           | 445                | 7     | 100%                | Rtail              | 7     | 100%               | 301010              | 7     | 100%                |
-         | 55                   | 6           | 441                | 5     | 83%                 | Rtail              | 6     | 100%               | 255040              | 5     | 83%                 |
-         | 56                   | 25          | 448                | 25    | 100%                | Rtail              | 25    | 100%               | 255040              | 22    | 88%                 |
-         | 57                   | 9           | 442                | 5     | 56%                 | Rtail              | 9     | 100%               | 255040              | 9     | 100%                |
-         | 58                   | 24          | 722                | 24    | 100%                | Meals              | 24    | 100%               | 253010              | 24    | 100%                |
-         | 59                   | 22          | 451                | 6     | 27%                 | Rtail              | 22    | 100%               | 255040              | 11    | 50%                 |
-         | 60                   | 92          | 522                | 92    | 100%                | Banks              | 92    | 100%               | 401010              | 87    | 95%                 |
-         | 61                   | 13          | 522                | 13    | 100%                | Banks              | 13    | 100%               | 402010              | 11    | 85%                 |
-         | 62                   | 21          | 523                | 21    | 100%                | Fin                | 21    | 100%               | 402010              | 19    | 90%                 |
-         | 63                   | 61          | 524                | 60    | 98%                 | Insur              | 61    | 100%               | 403010              | 47    | 77%                 |
-         | 64                   | 9           | 524                | 9     | 100%                | Insur              | 9     | 100%               | 403010              | 4     | 44%                 |
-         | 67                   | 15          | 533                | 8     | 53%                 | Fin                | 15    | 100%               | 253010              | 2     | 13%                 |
-         | 70                   | 6           | 721                | 6     | 100%                | Meals              | 6     | 100%               | 253010              | 6     | 100%                |
-         | 72                   | 5           | 812                | 3     | 60%                 | PerSrv             | 5     | 100%               | 202010              | 4     | 80%                 |
-         | 73                   | 140         | 511                | 55    | 39%                 | BusSv              | 123   | 88%                | 451030              | 59    | 42%                 |
-         | 75                   | 2           | 532                | 1     | 50%                 | BusSv              | 1     | 50%                | 203040              | 1     | 50%                 |
-         | 78                   | 1           | 512                | 1     | 100%                | Fun                | 1     | 100%               | 254010              | 1     | 100%                |
-         | 79                   | 10          | 713                | 4     | 40%                 | Fun                | 10    | 100%               | 253010              | 9     | 90%                 |
-         | 80                   | 22          | 621                | 13    | 59%                 | Hlth               | 22    | 100%               | 351020              | 20    | 91%                 | 
-         | 82                   | 6           | 611                | 6     | 100%                | PerSrv             | 6     | 100%               | 202010              | 6     | 100%                | 
-         | 87                   | 15          | 541                | 13    | 87%                 | BusSv              | 15    | 100%               | 202010              | 7     | 47%                 |
-         | 99                   | 6           | 999                | 6     | 100%                | Misc               | 6     | 100%               | 201050              | 6     | 100%                |
-```
 
 ---
 
