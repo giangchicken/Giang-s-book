@@ -29,9 +29,10 @@ The article compares four prominent industry classification schemes used in fina
 
 
 ![#](./images/90452.jpg) ![#](./images/90453.jpg)
-```
-**Note**: These classification levels apply specifically to **GICS**. Each industry classification scheme (such as SIC, NAICS, and ISIC) has its own hierarchy and terminology for levels. Please consult detailed information on the specific classification scheme before applying it.
-```
+
+
+>**Note**: These classification levels apply specifically to **GICS**. Each industry classification scheme (such as SIC, NAICS, and ISIC) has its own hierarchy and terminology for levels. Please consult detailed information on the specific classification scheme before applying it.
+
 
 ### **Industry Classification**: 
    **Industry classification schemes** organize firms to facilitate economic and financial analyses. The effectiveness of these schemes varies based on how accurately they capture industry-specific behaviors.
