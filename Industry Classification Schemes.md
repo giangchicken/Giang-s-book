@@ -11,6 +11,8 @@ The article compares four prominent industry classification schemes used in fina
 
 ### Explanation of Sector, Industry Group, Industry, and Sub-Industry
 
+![](./images/Screenshot%202024-11-14%20160138.png)
+
 1. **Sector**: 
    - The highest level in an industry classification system, grouping broad areas of economic activity. For example, sectors like **Technology**, **Healthcare**, or **Finance** encompass various industries that share similar high-level economic roles.
 
@@ -37,14 +39,15 @@ The article compares four prominent industry classification schemes used in fina
    - **SIC (Standard Industrial Classification)**: Developed by the U.S. government, SIC is widely used but is now being phased out in favor of NAICS.
    - **NAICS (North American Industry Classification System)**: Created collaboratively by the U.S., Canada, and Mexico, NAICS aims for more updated classification compared to SIC.
    - **GICS (Global Industry Classification Standard)**: A classification developed by Standard & Poor’s and MSCI, widely used in global financial markets.
-   - **FF (Fama-French Classification)**: Tailored for academic research, the FF classification organizes industries to examine stock returns based on firm size and value.
+   - **FF (Fama-French Classification)**: Tailored for academic research, the FF classification organizes industries to examine stock returns based on firm size and value.   
 
-| Scheme           | 1st Digit (Broadest Level) | 2nd Digit           | 3rd Digit         | 4th Digit        | 5th Digit        | 6th Digit (Narrowest Level) |
-|------------------|----------------------------|---------------------|-------------------|------------------|------------------|
-| **SIC**          | Division                   | Major Group         | Industry Group    | Industry         | N/A              |
-| **NAICS**        | Sector                     | Subsector           | Subsector         | Industry Group   | National Industry|
-| **GICS**         | Sector                     | Industry Group      | Industry          | Sub-Industry     | N/A              |
-| **ISIC**         | Section                    | Division            | Group             | Class            | N/A              |
+
+| Scheme           | 1st Digit (Broadest Level) | 2nd Digit           | 3rd Digit         | 4th Digit        | 5th Digit        | 6th Digit        | 7th Digit        | 8th Digit (Narrowest Level) |
+|------------------|----------------------------|---------------------|-------------------|------------------|------------------|------------------|------------------|-----------------------------|
+| **SIC**          | Division                   | Major Group         | Industry Group    | Industry         | N/A              | N/A              | N/A              | N/A                         |
+| **NAICS**        | Sector                                           | Subsector         | Industry Group   | Industry         | National Industry| N/A              | N/A                         |
+| **GICS**         | Sector                                           | Industry Group                       | Industry                            | Sub-Industry                                   |
+| **GICS**         | Industry                                         | N/A               | N/A              | N/A              | N/A              | N/A              | N/A                         |
 
 ### **Adjusted \( R^2 \)**: This metric measures how well a classification scheme explains stock return variations. The **Adjusted \( R^2 \)** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
 
