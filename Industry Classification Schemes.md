@@ -32,9 +32,7 @@ The article compares four prominent industry classification schemes used in fina
 
 
 >**Note**: These classification levels apply specifically to **GICS**. Each industry classification scheme (such as SIC, NAICS, and ISIC) has its own hierarchy and terminology for levels. Please consult detailed information on the specific classification scheme before applying it.
-
 ---
-
 ### **Industry Classification** 
 **Industry classification schemes** organize firms to facilitate economic and financial analyses. The effectiveness of these schemes varies based on how accurately they capture industry-specific behaviors.
 
@@ -54,12 +52,18 @@ The article compares four prominent industry classification schemes used in fina
 | **FF**           | Industry                   |                     | N/A               | N/A              | N/A              | N/A              | N/A              | N/A                         |
 
 ---
-### **Adjusted \( R^2 \)**
-This metric measures how well a classification scheme explains stock return variations. The **Adjusted \( R^2 \)** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
+### **Adjusted R-square**
+This metric in the Paper measures how well a classification scheme explains stock return variations. The **Adjusted R-square** accounts for the number of independent variables used, providing a more accurate reflection of a model’s explanatory power without overfitting.
 ![](./images/10_adjusted-r-squared.jpeg)
 
 >[For more information](https://builtin.com/data-science/adjusted-r-squared)
 ---
+
+### Economic Indicators 
+ * **Price-to-Book (P/B) Ratio**:
+ * **Enterprise Value-to-Sales (EV/S) Ratio**:
+ * **Price-to-Earnings (P/E) Ratio**:
+ * **Return on Equity (ROE)**:
 
 ## Data
 The study uses data from **S&P 1500** firms, covering various sectors. The analysis includes:
@@ -69,7 +73,21 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ---
 
+## Results
 
+* **Performance of GICS**: GICS consistently outperforms SIC, NAICS, and FF in explaining cross-sectional variations in firm-level returns, valuation multiples, and financial ratios. The study finds that GICS classifications explain, on average, 26.3% of monthly stock return variations compared to 22.9% for SIC.
+* **Homogeneity in Valuation Multiples**: GICS also shows higher explanatory power for valuation multiples, especially for large-cap firms, making it more effective for classifying economically related firms.
+* **Analyst Growth Forecasts**: The authors find that GICS classifications are more aligned with analyst forecasts, suggesting it better reflects market perceptions.
+
+### **Key Findings to Note**
+![Univariate Statistics for SIC, NAICS, FamaFrench and GICS](./images/Screenshot%202024-11-14%20191310.png)
+> This table reports univariate statistics for each classification level for SIC (Standard Industrial Classification), NAICS (North American Industry Classification System), Fama-French, and GICS (Global Industry Classification Standard), using S&P 1500 firms as of December 2001.
+> Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
+> Panel A reports the number of classification levels, the official number of categories, and the functional number of categories for each classification level for each level of classification. A category is defined as functional if it has at least five members.
+> Although some research uses the first digit as the broadest level, SIC codes are officially broken into 11 major divisions, labeled A through K. The sixth digit of the NAICS code is an additional level of detail specific to each country. For comparison purposes, the categories in the fifth and sixth digit levels are combined in this table, consistent with the 1997 NAICS manual.
+> The level of industry we use for our analysis is boldface.
+
+>Panel B reports univariate statistics for each of the preceding classification systems, using S&P 1500 firms as of December 2001, for the corresponding boldface level from Panel A.
 
 ---
 
