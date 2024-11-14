@@ -82,7 +82,7 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 ### **Key Findings to Note**
 ![Univariate Statistics for SIC, NAICS, FamaFrench and GICS](./images/Screenshot%202024-11-14%20191310.png)
 
-**TABLE1**
+### **TABLE1**: Univariate Statistics for SIC, NAICS, FamaFrench and GICS
 > This table reports univariate statistics for each classification level for SIC (Standard Industrial Classification), NAICS (North American Industry Classification System), Fama-French, and GICS (Global Industry Classification Standard), using S&P 1500 firms as of December 2001. 
 
 > Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
@@ -97,11 +97,15 @@ The study uses data from **S&P 1500** firms, covering various sectors. The analy
 
 ---
 
-**TABLE2**: Bridging Between SIC and NAICS, FamaFrench and GICS
+### **TABLE2**: Bridging Between SIC and NAICS, FamaFrench and GICS
 > This table reports the degree of correspondence between SIC, Fama-French (FF), NAICS, and GICS for the December 2001 S&P 1500 firms by showing the level of agreement between SIC and the other three classifications.
+
 > Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997). See their Appendix A for a description and definition of their industry names.
+
 > We show the primary equivalent (i.e., the other system's category that has the highest level of correspondence) measured by the total number of firms for each two-digit SIC code. Only industry classifications that actually have member firms are considered.
+
 > For example, the S&P 1500 has 38 firms in SIC industry 20 (Food and Kindred Products). The NAICS classification system classifies 30 of these firms in subsector 311 (Food Manufacturing) for a 79% correspondence. The FF classification system classifies 29 of these firms in their category of "Food" for a 76% correspondence. Finally, the GICS classification system classifies 25 of these firms in industry 302020 (Food Products) for a 66% correspondence.
+
 > For brevity, only the category with the highest level of correspondence is shown. Note that the FF correspondence is slightly misleading because there is an explicit mapping from SIC into FF using all four SIC digits. However, for comparative purposes, we use only two-digit SIC here.
 
 ```
