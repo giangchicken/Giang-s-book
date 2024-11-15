@@ -166,13 +166,17 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 ![#](./images/Screenshot%202024-11-15%20031545.png)
 ![#](./images/Screenshot%202024-11-15%20031627.png)
 
-> This table reports the average adjusted R-squared for **S&P 1500 firms**, from Research Insight, for the above OLS regression. Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat, for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
+> This table reports the average **adjusted R-squared** for **S&P 1500 firms**, from Research Insight, for the above OLS regression. Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat, for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
 
-> Industries are defined by either the first two digits of the firm's SIC code, the firm's Fama-French classification (FF), the first three digits of the firm's NAICS code, or the first six digits of the firm's GICS code. Each industry included in these regressions must have at least five members. 
+> Industries are defined by either the first two digits of the firm's **SIC** code, the firm's **Fama-French** classification (FF), the first three digits of the firm's **NAICS** code, or the first six digits of the firm's **GICS** code. Each industry included in these regressions must have at least five members. 
 
-> For each variable, the highest adjusted **R-squared** is boldface. We perform a two-tailed t-test on the difference between GICS and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). 
+> For each variable, the highest adjusted **R-squared** is boldface. We perform a two-tailed **t-test** on the difference between GICS and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). 
 
 > **Panel A** shows our results for returns, **panel B** shows our results for valuation multiples, **panel C** shows our results for financial ratios, and **panel D** shows our results for other financial information.
+---
+
+
+
 ---
 
 ## References
