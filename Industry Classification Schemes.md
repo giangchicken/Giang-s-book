@@ -50,7 +50,7 @@ The article compares four prominent industry classification schemes used in fina
 |-----------|----------------------------|--------------|-------------------|------------------|-----------|------------------|----------------|-----------------------------|
 | **SIC**   | Division                   | Major Group  | Industry Group    | Industry         | N/A       | N/A              | N/A            | N/A                         |
 | **NAICS** | Sector                                    | Subsector         | Industry Group   | Industry  | National Industry| N/A            | N/A                         |
-| **GICS**  | Sector                                    | Industry Group                         Industry  |                  | Sub-Industry                                 |
+| **GICS**  | Sector                                    | Industry Group                       | Industry  |                  | Sub-Industry                                 |
 | **FF**    | Industry                                  | N/A               | N/A              | N/A       | N/A              | N/A            | N/A                         |
 
 ```
@@ -92,7 +92,7 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 
 > **Panel A** reports the number of classification levels, the official number of categories, and the functional number of categories for each classification level for each level of classification. A category is defined as functional if it has at least five members.
 
-> Although some research uses the first digit as the broadest level, SIC codes are officially broken into 11 major divisions, labeled A through K. The sixth digit of the NAICS code is an additional level of detail specific to each country. For comparison purposes, the categories in the fifth and sixth digit levels are combined in this table, consistent with the 1997 NAICS manual.
+> Although some research uses the first digit as the broadest level, **SIC** codes are officially broken into 11 major divisions, labeled A through K. The sixth digit of the **NAICS** code is an additional level of detail specific to each country. For comparison purposes, the categories in the fifth and sixth digit levels are combined in this table, consistent with the 1997 **NAICS** manual.
 
 > The level of industry we use for our analysis is boldface.
 
