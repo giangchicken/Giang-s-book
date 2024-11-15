@@ -46,12 +46,12 @@ The article compares four prominent industry classification schemes used in fina
 
 ```
 
-      | Scheme    | 1st Digit (Broadest Level) | 2nd Digit    | 3rd Digit         | 4th Digit        | 5th Digit | 6th Digit        | 7th Digit      | 8th Digit (Narrowest Level) |
-      |-----------|----------------------------|--------------|-------------------|------------------|-----------|------------------|----------------|-----------------------------|
-      | **SIC**   | Division                   | Major Group  | Industry Group    | Industry         | N/A       | N/A              | N/A            | N/A                         |
-      | **NAICS** | Sector                                    | Subsector         | Industry Group   | Industry  | National Industry| N/A            | N/A                         |
-      | **GICS**  | Sector                                    | Industry Group                         Industry  |                  | Sub-Industry                                 |
-      | **FF**    | Industry                                  | N/A               | N/A              | N/A       | N/A              | N/A            | N/A                         |
+| Scheme    | 1st Digit (Broadest Level) | 2nd Digit    | 3rd Digit         | 4th Digit        | 5th Digit | 6th Digit        | 7th Digit      | 8th Digit (Narrowest Level) |
+|-----------|----------------------------|--------------|-------------------|------------------|-----------|------------------|----------------|-----------------------------|
+| **SIC**   | Division                   | Major Group  | Industry Group    | Industry         | N/A       | N/A              | N/A            | N/A                         |
+| **NAICS** | Sector                                    | Subsector         | Industry Group   | Industry  | National Industry| N/A            | N/A                         |
+| **GICS**  | Sector                                    | Industry Group                         Industry  |                  | Sub-Industry                                 |
+| **FF**    | Industry                                  | N/A               | N/A              | N/A       | N/A              | N/A            | N/A                         |
 
 ```
 ---
