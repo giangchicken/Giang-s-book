@@ -287,11 +287,6 @@ Industries are defined by:
 >
 > Firm \(i\) within industry \(ind\) at year \(t\), the independent variable, \(vbleind\), is the yearly average (or monthly average for returns) for that variable across all firms in that industry classification.
 >
-> Industries are defined using one of the following classifications:
-> 1. The first two digits of the firm’s SIC code.
-> 2. The firm’s Fama-French classification (FF).
-> 3. The first three digits of the firm’s NAICS code.
-> 4. The first six digits of the firm’s GICS code.
 >
 > Each industry included in these regressions must have at least five members. For each variable, the highest average adjusted \(R^2\) is highlighted in boldface. We perform a two-tailed t-test on the difference between GICS and other classifications based on the time series of differences.
 >
