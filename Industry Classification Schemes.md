@@ -200,17 +200,56 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 ![](./images/Screenshot%202024-11-16%20154725.png)
 ![](./images/Screenshot%202024-11-16%20154749.png)
 
->This table compares the average adjusted R-squared for S&P 1500 firms, from Research Insight, to simulated adjusted R-squared values created by randomly allocating firms to industry classifications. We repeated each simulation 500 times and present the average adjusted R-squared. The "Revised" column is created by subtracting the actual average R-squared from the average of the simulations.
+>This table compares the average adjusted **R-squared** for **S&P 1500** firms, from Research Insight, to simulated adjusted **R-squared** values created by randomly allocating firms to industry classifications. We repeated each simulation 500 times and present the average adjusted R-squared. The "Revised" column is created by subtracting the actual average **R-squared** from the average of the simulations.
 
 >Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
 
 >The dependent variable is one of the following: returns, price-to-book (P/B, market capitalization divided by total common equity), enterprise value-to-sales (EV/S, the sum of market capitalization and long-term debt divided by net sales), price-to-earnings (P/E, market capitalization divided by net income before extraordinary items), return on net operating assets (RNOA, net operating income after depreciation divided by the sum of property, plant, and equipment and current assets, less current liabilities), return on equity (ROE, net income before extraordinary items divided by total common equity), asset turnover (AT, total assets divided by net sales), profit margin (PM, net operating income after depreciation divided by net sales), leverage (LEV, total liabilities divided by total stockholders' equity), long-term analyst growth forecast (LT Growth), one-year-ahead realized sales growth (Sales Growth), and scaled research and development expense (R&D, research and development expense divided by net sales) for firm i within industry j in data year t.
 
->Panel A shows our results for returns, panel B shows our results for valuation multiples, panel C shows our results for financial ratios, and panel D shows our results for other financial information.
+>**Panel A** shows our results for returns, **panel B** shows our results for valuation multiples, **panel C** shows our results for financial ratios and **panel D** shows our results for other financial information.
 
->Industries are defined by either the first two digits of the firm's SIC code, the firm's Fama-French classification (FF), the first three digits of the firm's NAICS code, or the first six digits of the firm's GICS code. Each industry included in these regressions must have at least five members.
+>Industries are defined by either the first two digits of the firm's **SIC** code, the firm's **Fama-French** classification (FF), the first three digits of the firm's **NAICS** code, or the first six digits of the firm's **GICS** code. Each industry included in these regressions must have at least five members.
 
->We perform a two-tailed t-test on the adjusted difference between GICS and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). We treat the average simulated adjusted R-squared as a constant for these tests.
+>We perform a two-tailed **t-test** on the adjusted difference between **GICS** and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). We treat the average simulated adjusted **R-squared** as a constant for these tests.
+
+---
+
+### **TABLE 6**:    Comparison of Adjusted R2 Among SIC, NAICS, FamaFrench and GICS Industries for Returns, Financial Ratios and Other Financial Information
+
+![](./images/Screenshot%202024-11-16%20160104.png)
+![](./images/Screenshot%202024-11-16%20160127.png)
+![](./images/Screenshot%202024-11-16%20160149.png)
+
+> This table reports the average adjusted \(R^2\) for firms from 1994 to 2000 (2001 for returns) based on Research Insight for the above OLS regression. Returns are sourced from CRSP’s monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, sourced from IBES.
+>
+> The dependent variable, \(vble\), is one of the following:
+> - **Returns**: Stock returns from the CRSP database.
+> - **Price-to-book (pb)**: Market capitalization divided by total common equity.
+> - **Enterprise value-to-sales (evs)**: The sum of market capitalization and long-term debt divided by net sales.
+> - **Price-to-earnings (pe)**: Market capitalization divided by net income before extraordinary items (for firms with positive net income only).
+> - **Return on net operating assets (rnoa)**: Net operating income after depreciation divided by the sum of property, plant, and equipment, and current assets, less current liabilities.
+> - **Return on equity (roe)**: Net income before extraordinary items divided by total common equity.
+> - **Asset turnover (at)**: Total assets divided by net sales.
+> - **Profit margin (pm)**: Net operating income after depreciation divided by net sales.
+> - **Leverage (lev)**: Total liabilities divided by total stockholders’ equity.
+> - **Long-term analyst growth forecast (ltgrowth)**: Analyst predictions for future growth.
+> - **One-year-ahead realized sales growth (salesgrowth)**: Actual sales growth for the subsequent year.
+> - **Scaled research and development expense (R&D)**: Research and development expense divided by net sales.
+>
+> For firm \(i\) within industry \(ind\) at year \(t\), the independent variable, \(vbleind\), is the yearly average (or monthly average for returns) for that variable across all firms in that industry classification.
+>
+> Industries are defined using one of the following classifications:
+> 1. The first two digits of the firm’s SIC code.
+> 2. The firm’s Fama-French classification (FF).
+> 3. The first three digits of the firm’s NAICS code.
+> 4. The first six digits of the firm’s GICS code.
+>
+> Each industry included in these regressions must have at least five members. For each variable, the highest average adjusted \(R^2\) is highlighted in boldface. We perform a two-tailed t-test on the difference between GICS and other classifications based on the time series of differences.
+>
+> - **Panel A** shows results for S&P 500 firms.
+> - **Panel B** shows results for S&P 400 (midcap) firms.
+> - **Panel C** shows results for S&P 600 (small-cap) firms.
+
 
 ---
 
