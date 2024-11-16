@@ -86,17 +86,24 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 ![Univariate Statistics for SIC, NAICS, FamaFrench and GICS](./images/Screenshot%202024-11-14%20191310.png)
 
 ### **TABLE 1**: Univariate Statistics for SIC, NAICS, FamaFrench and GICS
-> This table reports univariate statistics for each classification level for **SIC (Standard Industrial Classification)**, **NAICS (North American Industry Classification System)**, **Fama-French**, and **GICS (Global Industry Classification Standard)**, using S&P 1500 firms as of December 2001. 
-
-> **Fama-French** refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
-
-> **Panel A** reports the number of classification levels, the official number of categories, and the functional number of categories for each classification level for each level of classification. A category is defined as functional if it has at least five members.
-
-> Although some research uses the first digit as the broadest level, **SIC** codes are officially broken into 11 major divisions, labeled A through K. The sixth digit of the **NAICS** code is an additional level of detail specific to each country. For comparison purposes, the categories in the fifth and sixth digit levels are combined in this table, consistent with the 1997 **NAICS** manual.
-
-> The level of industry we use for our analysis is boldface.
-
-> **Panel B** reports univariate statistics for each of the preceding classification systems, using S&P 1500 firms as of December 2001, for the corresponding boldface level from Panel A.
+> This table reports univariate statistics for each classification level for **SIC (Standard Industrial Classification)**, **NAICS (North American Industry Classification System)**, **Fama-French**, and **GICS (Global Industry Classification Standard)**, using S&P 1500 firms as of December 2001.
+>
+> **Fama-French Classification**:
+> - Refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997).
+>
+> **Panel A**:
+> - Reports the following for each classification system:
+>   1. The number of classification levels.
+>   2. The official number of categories.
+>   3. The functional number of categories for each classification level.
+> - A **functional category** is defined as one with at least **five members**.
+> - Although the first digit of **SIC** codes is often used as the broadest level, the official system divides industries into **11 major divisions** labeled **A through K**.
+> - The sixth digit of the **NAICS** code provides additional country-specific detail. For comparison purposes, this table combines the categories at the fifth and sixth levels, consistent with the **1997 NAICS manual**.
+> - The **boldface level** represents the level of industry classification used for subsequent analysis.
+>
+> **Panel B**:
+> - Reports univariate statistics for each classification system using the **S&P 1500 firms** as of December 2001.
+> - These statistics correspond to the **boldface level** from Panel A for each classification system.
 
 ---
 
@@ -104,15 +111,26 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 
 ![#](./images/Screenshot%202024-11-14%20210541.png) ![#](./images/Screenshot%202024-11-14%20210608.png) ![#](./images/Screenshot%202024-11-14%20211039.png)
 
-> This table reports the degree of correspondence between **SIC**, **Fama-French (FF)**, **NAICS**, and **GICS** for the December 2001 S&P 1500 firms by showing the level of agreement between SIC and the other three classifications.
-
-> Fama-French refers to the industry classification system developed in their paper "Industry Costs of Equity" (1997). See their Appendix A for a description and definition of their industry names.
-
-> We show the primary equivalent (i.e., the other system's category that has the highest level of correspondence) measured by the total number of firms for each two-digit SIC code. Only industry classifications that actually have member firms are considered.
-
-> For example, the **S&P 1500** has 38 firms in **SIC industry** 20 (Food and Kindred Products). The **NAICS** classification system classifies 30 of these firms in subsector 311 (Food Manufacturing) for a 79% correspondence. The **FF** classification system classifies 29 of these firms in their category of "Food" for a 76% correspondence. Finally, the **GICS** classification system classifies 25 of these firms in industry 302020 (Food Products) for a 66% correspondence.
-
-> For brevity, only the category with the highest level of correspondence is shown. Note that the FF correspondence is slightly misleading because there is an explicit mapping from SIC into FF using all four SIC digits. However, for comparative purposes, we use only two-digit SIC here.
+> This table reports the degree of correspondence between **SIC**, **Fama-French (FF)**, **NAICS**, and **GICS** for the December 2001 **S&P 1500 firms** by showing the level of agreement between SIC and the other three classifications.
+>
+> **Fama-French Classification**:
+> - Refers to the industry classification system developed in the paper "Industry Costs of Equity" (1997) by Fama and French.
+> - See **Appendix A** of their paper for a detailed description and definition of their industry names.
+>
+> **Methodology**:
+> - The primary equivalent for each two-digit SIC code is determined by identifying the category in the other classification system (**NAICS**, **FF**, or **GICS**) with the highest level of correspondence.
+> - Correspondence is measured by the total number of firms classified in each system.
+> - Only industry classifications with actual member firms are considered.
+>
+> **Example**:
+> - In **SIC industry 20** (Food and Kindred Products), there are **38 firms** in the **S&P 1500**:
+>   - The **NAICS** system classifies **30 firms** in subsector **311 (Food Manufacturing)**, resulting in a **79% correspondence**.
+>   - The **FF** system classifies **29 firms** in the category "Food", resulting in a **76% correspondence**.
+>   - The **GICS** system classifies **25 firms** in industry **302020 (Food Products)**, resulting in a **66% correspondence**.
+>
+> **Key Note**:
+> - Only the category with the highest level of correspondence is shown for brevity.
+> - The FF correspondence might appear slightly misleading because there is an explicit mapping from **SIC** into **FF** using all four SIC digits. However, for comparative purposes, this table uses only the two-digit SIC codes.
 
 
 ---
@@ -131,12 +149,20 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 ![](./images/Screenshot%202024-11-14%20225912.png)
 
 > This table reports the firm-months and adjusted **R-squared** for the above monthly OLS regression.
-
-> Industries are defined by either the first two digits of the firm's **SIC** code, the first three digits of the firm's **NAICS** code, the firm's **Fama-French** classification (FF), or the first 6 digits of the firm's **GICS** code. Each industry included in these regressions must have at least five members.
-
-> Because classifications differ among **SIC**, **FF**, **NAICS**, and **GICS**, there will be differences in the number of firm-months reported for each regression.
-
-> We use all firms from the S&P index as of December for each year (from Research Insight) for which we are able to find a PERMNO from CRSP by matching based on CUSIP.
+>
+> **Industries Classification**:
+> Industries are defined using one of the following methods:
+> 1. The first two digits of the firm's **SIC** code.
+> 2. The first three digits of the firm's **NAICS** code.
+> 3. The firm's **Fama-French** classification (FF).
+> 4. The first six digits of the firm's **GICS** code.
+>
+> Each industry included in these regressions must have at least **five members**.
+>
+> **Methodology**:
+> - Because the definitions of industries differ among **SIC**, **FF**, **NAICS**, and **GICS**, the number of firm-months reported will vary across the regressions.
+> - The analysis uses all firms in the **S&P index** as of December for each year, sourced from **Research Insight**.
+> - Firms are matched to a **PERMNO** from CRSP using their **CUSIP**.
 
 ---
 
@@ -166,12 +192,27 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 ![#](./images/Screenshot%202024-11-15%20031627.png)
 
 > This table reports the average **adjusted R-squared** for **S&P 1500 firms**, from Research Insight, for the above OLS regression. Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat, for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
+>
+> **Industries Classification**:
+> Industries are defined by:
+> 1. The first two digits of the firm's **SIC** code.
+> 2. The firm's **Fama-French** classification (FF).
+> 3. The first three digits of the firm's **NAICS** code.
+> 4. The first six digits of the firm's **GICS** code.
+>
+> Each industry included in these regressions must have at least **five members**.
+>
+> **Key Methodology**:
+> - For each variable, the highest adjusted **R-squared** is highlighted in boldface.
+> - A two-tailed **t-test** is performed to compare the adjusted differences between **GICS** and other classifications.
+> - The analysis is based on the time series of differences from **1994 to 2000** (2001 for returns).
+>
+> **Panel Descriptions**:
+> - **Panel A**: Reports results for stock returns.
+> - **Panel B**: Reports results for valuation multiples.
+> - **Panel C**: Reports results for financial ratios.
+> - **Panel D**: Reports results for other financial information.
 
-> Industries are defined by either the first two digits of the firm's **SIC** code, the firm's **Fama-French** classification (FF), the first three digits of the firm's **NAICS** code, or the first six digits of the firm's **GICS** code. Each industry included in these regressions must have at least five members. 
-
-> For each variable, the highest adjusted **R-squared** is boldface. We perform a two-tailed **t-test** on the difference between GICS and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). 
-
-> **Panel A** shows our results for returns, **panel B** shows our results for valuation multiples, **panel C** shows our results for financial ratios, and **panel D** shows our results for other financial information.
 ---
 
 ### **TABLE 5**:    Monte Carlo Simulated Adjusted R2
@@ -200,17 +241,43 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 ![](./images/Screenshot%202024-11-16%20154725.png)
 ![](./images/Screenshot%202024-11-16%20154749.png)
 
->This table compares the average adjusted **R-squared** for **S&P 1500** firms, from Research Insight, to simulated adjusted **R-squared** values created by randomly allocating firms to industry classifications. We repeated each simulation 500 times and present the average adjusted R-squared. The "Revised" column is created by subtracting the actual average **R-squared** from the average of the simulations.
-
->Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
-
->The dependent variable is one of the following: returns, price-to-book (P/B, market capitalization divided by total common equity), enterprise value-to-sales (EV/S, the sum of market capitalization and long-term debt divided by net sales), price-to-earnings (P/E, market capitalization divided by net income before extraordinary items), return on net operating assets (RNOA, net operating income after depreciation divided by the sum of property, plant, and equipment and current assets, less current liabilities), return on equity (ROE, net income before extraordinary items divided by total common equity), asset turnover (AT, total assets divided by net sales), profit margin (PM, net operating income after depreciation divided by net sales), leverage (LEV, total liabilities divided by total stockholders' equity), long-term analyst growth forecast (LT Growth), one-year-ahead realized sales growth (Sales Growth), and scaled research and development expense (R&D, research and development expense divided by net sales) for firm i within industry j in data year t.
-
->**Panel A** shows our results for returns, **panel B** shows our results for valuation multiples, **panel C** shows our results for financial ratios and **panel D** shows our results for other financial information.
-
->Industries are defined by either the first two digits of the firm's **SIC** code, the firm's **Fama-French** classification (FF), the first three digits of the firm's **NAICS** code, or the first six digits of the firm's **GICS** code. Each industry included in these regressions must have at least five members.
-
->We perform a two-tailed **t-test** on the adjusted difference between **GICS** and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). We treat the average simulated adjusted **R-squared** as a constant for these tests.
+> This table compares the average adjusted **R-squared** for **S&P 1500** firms, obtained from Research Insight, with simulated adjusted **R-squared** values generated by randomly assigning firms to industry classifications. Each simulation was repeated 500 times, and the table presents the average adjusted **R-squared** from these simulations. The "Revised" column represents the difference between the actual average **R-squared** and the average simulated values.
+>
+> **Data Sources**:
+> - Returns are sourced from CRSP's monthly database.
+> - Share prices and shares outstanding are from CRSP as of December 31 of each year.
+> - Financial statement information is from Compustat for the fiscal year ending in that year.
+> - Analyst long-term growth forecasts are the most recent December consensus forecast for that year, obtained from IBES.
+>
+> The dependent variable (\(Y_{i,j,t}\)) is one of the following:
+> - **Returns**: Stock returns from the CRSP database.
+> - **Price-to-Book (P/B)**: Market capitalization divided by total common equity.
+> - **Enterprise Value-to-Sales (EV/S)**: The sum of market capitalization and long-term debt divided by net sales.
+> - **Price-to-Earnings (P/E)**: Market capitalization divided by net income before extraordinary items.
+> - **Return on Net Operating Assets (RNOA)**: Net operating income after depreciation divided by the sum of property, plant, and equipment, and current assets less current liabilities.
+> - **Return on Equity (ROE)**: Net income before extraordinary items divided by total common equity.
+> - **Asset Turnover (AT)**: Total assets divided by net sales.
+> - **Profit Margin (PM)**: Net operating income after depreciation divided by net sales.
+> - **Leverage (LEV)**: Total liabilities divided by total stockholders' equity.
+> - **Long-term Analyst Growth Forecast (LT Growth)**: Analyst predictions for long-term growth.
+> - **One-year-ahead Realized Sales Growth (Sales Growth)**: Actual sales growth for the next year.
+> - **Scaled Research and Development Expense (R&D)**: Research and development expense divided by net sales.
+>
+> **Panel Descriptions**:
+> - **Panel A**: Results for stock returns.
+> - **Panel B**: Results for valuation multiples.
+> - **Panel C**: Results for financial ratios.
+> - **Panel D**: Results for other financial information.
+>
+> Industries are classified using one of the following methods:
+> 1. The first two digits of the firm’s **SIC** code.
+> 2. The firm’s **Fama-French** classification (FF).
+> 3. The first three digits of the firm’s **NAICS** code.
+> 4. The first six digits of the firm’s **GICS** code.
+>
+> Each industry must have at least five members to be included in these regressions.
+>
+> We conduct two-tailed **t-tests** to compare the adjusted differences between the **GICS** classification and other methods. These tests are based on the time series of differences from 1994 to 2000 (2001 for returns). For these tests, the average simulated adjusted **R-squared** is treated as a constant.
 
 ---
 
