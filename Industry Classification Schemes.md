@@ -63,17 +63,30 @@ This metric in the Paper measures how well a classification scheme explains stoc
 ---
 
 ### Economic Indicators 
- * **Price-to-Book (P/B) Ratio**:
- * **Enterprise Value-to-Sales (EV/S) Ratio**:
- * **Price-to-Earnings (P/E) Ratio**:
- * **Return on Equity (ROE)**:
+ - **Returns**: Stock returns from the CRSP database.
+ - **Price-to-book (pb)**: Market capitalization divided by total common equity.
+ - **Enterprise value-to-sales (evs)**: The sum of market capitalization and long-term debt divided by net sales.
+ - **Price-to-earnings (pe)**: Market capitalization divided by net income before extraordinary items (for firms with positive net income only).
+ - **Return on net operating assets (rnoa)**: Net operating income after depreciation divided by the sum of property, plant, and equipment, and current assets, less current liabilities.
+ - **Return on equity (roe)**: Net income before extraordinary items divided by total common equity.
+ - **Asset turnover (at)**: Total assets divided by net sales.
+ - **Profit margin (pm)**: Net operating income after depreciation divided by net sales.
+ - **Leverage (lev)**: Total liabilities divided by total stockholders’ equity.
+ - **Long-term analyst growth forecast (ltgrowth)**: Analyst predictions for future growth.
+ - **One-year-ahead realized sales growth (salesgrowth)**: Actual sales growth for the subsequent year.
+ - **Scaled research and development expense (R&D)**: Research and development expense divided by net sales.
 
 ## Data
 The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-cap, and **600** small-cap), covering various sectors. The analysis includes:
    - **Firm stock returns**: To observe comovements and compare similarities among firms within industry groups.
    - **Financial metrics**: Such as **price-to-book (P/B) ratios**, **enterprise value-to-sales (EV/S) ratios** and **profitability ratios** (e.g., ROE, ROA) to assess the economic relatedness across industry classifications.
 
-
+**Industries Classification**:
+Industries are defined by:
+   1. The first two digits of the firm's **SIC** code.
+   2. The firm's **Fama-French** classification (FF).
+   3. The first three digits of the firm's **NAICS** code.
+   4. The first six digits of the firm's **GICS** code.
 ---
 
 ## Results
@@ -150,12 +163,6 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 
 > This table reports the firm-months and adjusted **R-squared** for the above monthly OLS regression.
 >
-> **Industries Classification**:
-> Industries are defined using one of the following methods:
-> 1. The first two digits of the firm's **SIC** code.
-> 2. The first three digits of the firm's **NAICS** code.
-> 3. The firm's **Fama-French** classification (FF).
-> 4. The first six digits of the firm's **GICS** code.
 >
 > Each industry included in these regressions must have at least **five members**.
 >
@@ -193,12 +200,6 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 
 > This table reports the average **adjusted R-squared** for **S&P 1500 firms**, from Research Insight, for the above OLS regression. Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat, for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
 >
-> **Industries Classification**:
-> Industries are defined by:
-> 1. The first two digits of the firm's **SIC** code.
-> 2. The firm's **Fama-French** classification (FF).
-> 3. The first three digits of the firm's **NAICS** code.
-> 4. The first six digits of the firm's **GICS** code.
 >
 > Each industry included in these regressions must have at least **five members**.
 >
@@ -249,20 +250,6 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 > - Financial statement information is from Compustat for the fiscal year ending in that year.
 > - Analyst long-term growth forecasts are the most recent December consensus forecast for that year, obtained from IBES.
 >
-> The dependent variable (\(Y_{i,j,t}\)) is one of the following:
-> - **Returns**: Stock returns from the CRSP database.
-> - **Price-to-Book (P/B)**: Market capitalization divided by total common equity.
-> - **Enterprise Value-to-Sales (EV/S)**: The sum of market capitalization and long-term debt divided by net sales.
-> - **Price-to-Earnings (P/E)**: Market capitalization divided by net income before extraordinary items.
-> - **Return on Net Operating Assets (RNOA)**: Net operating income after depreciation divided by the sum of property, plant, and equipment, and current assets less current liabilities.
-> - **Return on Equity (ROE)**: Net income before extraordinary items divided by total common equity.
-> - **Asset Turnover (AT)**: Total assets divided by net sales.
-> - **Profit Margin (PM)**: Net operating income after depreciation divided by net sales.
-> - **Leverage (LEV)**: Total liabilities divided by total stockholders' equity.
-> - **Long-term Analyst Growth Forecast (LT Growth)**: Analyst predictions for long-term growth.
-> - **One-year-ahead Realized Sales Growth (Sales Growth)**: Actual sales growth for the next year.
-> - **Scaled Research and Development Expense (R&D)**: Research and development expense divided by net sales.
->
 > **Panel Descriptions**:
 > - **Panel A**: Results for stock returns.
 > - **Panel B**: Results for valuation multiples.
@@ -283,27 +270,22 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 
 ### **TABLE 6**:    Comparison of Adjusted R2 Among SIC, NAICS, FamaFrench and GICS Industries for Returns, Financial Ratios and Other Financial Information
 
+```plaintext
+
+                              FUNCTION:       vble(i,t) = α.t + β.vble(ind,t) + ε(i,t)
+
+   The dependent variable, vble, represents the yearly value for firm i within industry j in year t. 
+   The independent variable, vble(ind), is the yearly average value for all firms in that industry classification.
+
+```
+
 ![](./images/Screenshot%202024-11-16%20160104.png)
 ![](./images/Screenshot%202024-11-16%20160127.png)
 ![](./images/Screenshot%202024-11-16%20160149.png)
 
 > This table reports the average adjusted \(R^2\) for firms from 1994 to 2000 (2001 for returns) based on Research Insight for the above OLS regression. Returns are sourced from CRSP’s monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, sourced from IBES.
 >
-> The dependent variable, \(vble\), is one of the following:
-> - **Returns**: Stock returns from the CRSP database.
-> - **Price-to-book (pb)**: Market capitalization divided by total common equity.
-> - **Enterprise value-to-sales (evs)**: The sum of market capitalization and long-term debt divided by net sales.
-> - **Price-to-earnings (pe)**: Market capitalization divided by net income before extraordinary items (for firms with positive net income only).
-> - **Return on net operating assets (rnoa)**: Net operating income after depreciation divided by the sum of property, plant, and equipment, and current assets, less current liabilities.
-> - **Return on equity (roe)**: Net income before extraordinary items divided by total common equity.
-> - **Asset turnover (at)**: Total assets divided by net sales.
-> - **Profit margin (pm)**: Net operating income after depreciation divided by net sales.
-> - **Leverage (lev)**: Total liabilities divided by total stockholders’ equity.
-> - **Long-term analyst growth forecast (ltgrowth)**: Analyst predictions for future growth.
-> - **One-year-ahead realized sales growth (salesgrowth)**: Actual sales growth for the subsequent year.
-> - **Scaled research and development expense (R&D)**: Research and development expense divided by net sales.
->
-> For firm \(i\) within industry \(ind\) at year \(t\), the independent variable, \(vbleind\), is the yearly average (or monthly average for returns) for that variable across all firms in that industry classification.
+> Firm \(i\) within industry \(ind\) at year \(t\), the independent variable, \(vbleind\), is the yearly average (or monthly average for returns) for that variable across all firms in that industry classification.
 >
 > Industries are defined using one of the following classifications:
 > 1. The first two digits of the firm’s SIC code.
