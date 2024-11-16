@@ -31,15 +31,15 @@ The article compares four prominent industry classification schemes used in fina
 ![#](./images/90452.jpg) ![#](./images/90453.jpg)
 
 
->**Note**: These classification levels apply specifically to **GICS**. Each industry classification scheme (such as SIC, NAICS, and ISIC) has its own hierarchy and terminology for levels. Please consult detailed information on the specific classification scheme before applying it.
+>**Note**: These classification levels apply specifically to **GICS**. Each industry classification scheme (such as **SIC**, **NAICS** and **ISIC**) has its own hierarchy and terminology for levels. Please consult detailed information on the specific classification scheme before applying it.
 ---
 ### **Industry Classification** 
 **Industry classification schemes** organize firms to facilitate economic and financial analyses. The effectiveness of these schemes varies based on how accurately they capture industry-specific behaviors.
 
 ---
 ### **Classification Schemes**:
-   - **SIC (Standard Industrial Classification)**: Developed by the U.S. government, SIC is widely used but is now being phased out in favor of NAICS.
-   - **NAICS (North American Industry Classification System)**: Created collaboratively by the U.S., Canada, and Mexico, NAICS aims for more updated classification compared to SIC.
+   - **SIC (Standard Industrial Classification)**: Developed by the U.S. government, **SIC** is widely used but is now being phased out in favor of **NAICS**.
+   - **NAICS (North American Industry Classification System)**: Created collaboratively by the U.S., Canada, and Mexico, **NAICS** aims for more updated classification compared to SIC.
    - **GICS (Global Industry Classification Standard)**: A classification developed by Standard & Poor’s and MSCI, widely used in global financial markets.
    - **FF (Fama-French Classification)**: Tailored for academic research, the FF classification organizes industries to examine stock returns based on firm size and value.   
 
@@ -71,7 +71,7 @@ This metric in the Paper measures how well a classification scheme explains stoc
 ## Data
 The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-cap, and **600** small-cap), covering various sectors. The analysis includes:
    - **Firm stock returns**: To observe comovements and compare similarities among firms within industry groups.
-   - **Financial metrics**: Such as **price-to-book (P/B) ratios**, **enterprise value-to-sales (EV/S) ratios**, and **profitability ratios** (e.g., ROE, ROA) to assess the economic relatedness across industry classifications.
+   - **Financial metrics**: Such as **price-to-book (P/B) ratios**, **enterprise value-to-sales (EV/S) ratios** and **profitability ratios** (e.g., ROE, ROA) to assess the economic relatedness across industry classifications.
 
 
 ---
@@ -145,7 +145,7 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
                      
                               FUNCTION:       vble(i,t) = α1 + β.vble(ind, t) + ε(i,t)
 
-   **vble(i,t)** is one of the following: returns, price-to-book (P/B, market capitalization divided 
+   vble(i,t) is one of the following: returns, price-to-book (P/B, market capitalization divided 
    by total common equity), enterprise value-to-sales (EV/S, the sum of market capitalization and 
    long-term debt divided by net sales), price-to-earnings (P/E, market capitalization divided by 
    net income before extraordinary items), return on net operating assets (RNOA, net operating 
@@ -158,8 +158,7 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
    development expense (R&D, research and development expense divided by net sales) for firm i 
    within industry j in data year t.
 
-   **vble(ind)** is the yearly average for that variable for all firms in that industry 
-   classification.
+   vble(ind) is the yearly average for that variable for all firms in that industry classification.
 
 ```
 
@@ -175,7 +174,43 @@ The study uses data from **S&P 1500** firms (**S&P 500** large-cap, **400** mid-
 > **Panel A** shows our results for returns, **panel B** shows our results for valuation multiples, **panel C** shows our results for financial ratios, and **panel D** shows our results for other financial information.
 ---
 
+### **TABLE 5**:    Monte Carlo Simulated Adjusted R2
 
+>**Note**: Although we attempt to ensure that the numbers of industry groups are
+         similar across the classification schemes, differences remain. Because we
+         require at least five firms per industry, one possible concern is that one
+         industry definition might have a mechanical advantage over others. For 
+         example, a classification system with fewer industry partitions has an inherent
+         disadvantage when the total number of firms is held constant. If ones cheme
+         has 10 functional industries consisting of 6 member firms each,and another
+         scheme has 3 functional industries consisting of 20 members each, we can
+         expect the first scheme to achieve a higher R2 than the second, even if the
+         actual allocation of firms for both schemes was random.
+         To ensure our results are not due to these differences, we conduct Monte
+         Carlo simulations that neutralize the advantage a scheme derives from 
+         having a greater number of industry categories. To conduct the simulation,
+         we randomly assign S&P 1500 firms into the same number of industry cat
+         egories, with the same number of firms per industry, as a given scheme.
+         We then conduct the regression on the simulated data, generating a 
+         simulated R2. We then repeat the procedure 500 times, producing an average
+         simulated R2 for each classification scheme. Each simulated R2 serves as a
+         performance benchmark for the scheme in question.
+
+![](./images/Screenshot%202024-11-16%20154647.png)
+![](./images/Screenshot%202024-11-16%20154725.png)
+![](./images/Screenshot%202024-11-16%20154749.png)
+
+>This table compares the average adjusted R-squared for S&P 1500 firms, from Research Insight, to simulated adjusted R-squared values created by randomly allocating firms to industry classifications. We repeated each simulation 500 times and present the average adjusted R-squared. The "Revised" column is created by subtracting the actual average R-squared from the average of the simulations.
+
+>Returns are from CRSP's monthly database. Share prices and shares outstanding are drawn from CRSP as of December 31 of each year. Financial statement information is from Compustat for the fiscal year ending in that year. Analyst long-term growth forecasts are the most recent December consensus forecast for that year, from IBES.
+
+>The dependent variable is one of the following: returns, price-to-book (P/B, market capitalization divided by total common equity), enterprise value-to-sales (EV/S, the sum of market capitalization and long-term debt divided by net sales), price-to-earnings (P/E, market capitalization divided by net income before extraordinary items), return on net operating assets (RNOA, net operating income after depreciation divided by the sum of property, plant, and equipment and current assets, less current liabilities), return on equity (ROE, net income before extraordinary items divided by total common equity), asset turnover (AT, total assets divided by net sales), profit margin (PM, net operating income after depreciation divided by net sales), leverage (LEV, total liabilities divided by total stockholders' equity), long-term analyst growth forecast (LT Growth), one-year-ahead realized sales growth (Sales Growth), and scaled research and development expense (R&D, research and development expense divided by net sales) for firm i within industry j in data year t.
+
+>Panel A shows our results for returns, panel B shows our results for valuation multiples, panel C shows our results for financial ratios, and panel D shows our results for other financial information.
+
+>Industries are defined by either the first two digits of the firm's SIC code, the firm's Fama-French classification (FF), the first three digits of the firm's NAICS code, or the first six digits of the firm's GICS code. Each industry included in these regressions must have at least five members.
+
+>We perform a two-tailed t-test on the adjusted difference between GICS and other classifications based on the time series of differences from 1994 to 2000 (2001 for returns). We treat the average simulated adjusted R-squared as a constant for these tests.
 
 ---
 
