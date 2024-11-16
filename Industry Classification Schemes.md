@@ -298,6 +298,6 @@ Industries are defined by:
 ---
 
 ## References
-![SSC](https://www.ssc.gov.vn/webcenter/portal/ubck/pages_r/l/chitit?dDocName=APPSSCGOVVN162099773)
-![Paper](https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1475-679X.2003.00122.x)
-![GICS](https://www.msci.com/our-solutions/indexes/gics)
+[SSC](https://www.ssc.gov.vn/webcenter/portal/ubck/pages_r/l/chitit?dDocName=APPSSCGOVVN162099773)
+[Paper](https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1475-679X.2003.00122.x)
+[GICS](https://www.msci.com/our-solutions/indexes/gics)
