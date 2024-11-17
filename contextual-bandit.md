@@ -1,5 +1,7 @@
 # Contextual Bandit: A Powerful Approach in Reinforcement Learning
 
+[](./images/1_FH4t-DcuKWfLYRWvd4JIjA.jpeg)
+
 ## 1. Introduction
 
 In the world of decision-making and experimentation, **A/B Testing** has long been the go-to method for comparing two options. Imagine you are running an experiment to determine whether version A or version B of a website layout drives more clicks. You split your users into two groups: 50% of users see version A, while the other 50% see version B. After two weeks, you analyze the results to declare a winner. This static allocation of traffic is the hallmark of A/B testing, making it simple and intuitive.
@@ -63,7 +65,7 @@ This tradeoff is critical in contextual bandits, where the agent must not only c
 
 ---
 
-### 4.1 Why Exploration and Exploitation Are Important
+### 4.1 Why Exploration and Exploitation Are Important?
 
 Imagine the following scenario:
 - You are designing a personalized recommendation system for a streaming service.
