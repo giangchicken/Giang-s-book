@@ -1,6 +1,6 @@
 # Contextual Bandit: A Powerful Approach in Reinforcement Learning
 
-[](./images/1_FH4t-DcuKWfLYRWvd4JIjA.jpeg)
+![#](./images/1_FH4t-DcuKWfLYRWvd4JIjA.jpeg)
 
 ## 1. Introduction
 
