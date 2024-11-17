@@ -39,7 +39,7 @@ In this guide, we will walk through these method Contextual Bandit—step by ste
    The policy `π` is the decision-making function that chooses actions based on the context.
 
 
-## 3. Contextual Bandits vs Full RL
+## 3. Contextual Bandits vs Full Reinforcement Learning (RL)
 While contextual bandits extend the multi-armed bandit problem to incorporate contexts, they are simpler than the full RL problem. Here's how they compare:
 
 ### 3.1. Similarities to Full RL
@@ -51,16 +51,17 @@ While contextual bandits extend the multi-armed bandit problem to incorporate co
 - **No state transitions**: Contextual bandits assume the context for each round is independent, whereas full RL involves learning how actions influence the state transitions in an environment.
 
 ### 3.3. Why Contextual Bandits?
-    Contextual bandits provide a practical framework for scenarios where:
-    - Decisions depend on contextual information.
-    - Immediate rewards are the sole focus, without concern for future impacts.
 
-    This makes them highly applicable in fields such as:
-    - Personalized recommendations (e.g., choosing ads based on user profiles).
-    - Dynamic pricing (e.g., adjusting prices based on market signals).
-    - Clinical trials (e.g., assigning treatments based on patient characteristics).
+**Contextual bandits** provide a practical framework for scenarios where:
+- Decisions depend on contextual information.
+- Immediate rewards are the sole focus, without concern for future impacts.
 
-    A few examples should make this distinction clearer. Let’s say that we are building a system to decide what ads to show to users based on their age. We would expect that users from different age groups may find different ads more relevant to them, which means that a user’s age should affect what ads we should show them. However, the ad we showed them doesn’t in turn affect their age, so the one-step assumption of CB seems to hold. However, if we move one step further and find out that serving expensive ads deplete our inventory (and limit which ads we can serve in the future) or that the ad we show today affect whether the user will visit our site again, then the one-step assumption is indirectly inviolated, so we may want to consider developing a full-blown RL system instead.
+This makes them highly applicable in fields such as:
+- Personalized recommendations (e.g., choosing ads based on user profiles).
+- Dynamic pricing (e.g., adjusting prices based on market signals).
+- Clinical trials (e.g., assigning treatments based on patient characteristics).
+
+A few examples should make this distinction clearer. Let’s say that we are building a system to decide what ads to show to users based on their age. We would expect that users from different age groups may find different ads more relevant to them, which means that a user’s age should affect what ads we should show them. However, the ad we showed them doesn’t in turn affect their age, so the one-step assumption of CB seems to hold. However, if we move one step further and find out that serving expensive ads deplete our inventory (and limit which ads we can serve in the future) or that the ad we show today affect whether the user will visit our site again, then the one-step assumption is indirectly inviolated, so we may want to consider developing a full-blown RL system instead.
 
 
 ## 4. Exploration and Exploitation in Contextual Bandits
