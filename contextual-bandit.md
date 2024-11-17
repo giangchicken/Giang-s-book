@@ -83,16 +83,16 @@ This tradeoff is critical in contextual bandits, where the agent must not only c
 
 Imagine the following scenario:
 - You are designing a personalized recommendation system for a streaming service.
-- For each user (context), you recommend a movie (action) and observe their engagement (reward).
+- For each user `context`, you recommend a movie `action` and observe their engagement `reward`.
 
 If you **only exploit** the current best recommendation for similar users:
-- You might miss out on discovering new or better movies for different user groups.
-- Additionally, the initial rewards might not have converged to the true optimal rewards, leading to suboptimal decisions.
+- You might **miss out** on discovering new or better movies for different user groups.
+- Additionally, the initial rewards might not have converged to the **true optimal rewards**, leading to suboptimal decisions.
 
 If you **only explore**, trying random recommendations without leveraging past data:
-- The overall system performance might suffer due to suboptimal suggestions.
+- The overall system performance might **suffer** due to suboptimal suggestions.
 
-An effective contextual bandit algorithm needs to strike the right balance between exploring new possibilities and exploiting known high-reward actions.
+An effective **contextual bandit algorithm** needs to strike the right balance between exploring new possibilities and exploiting known high-reward actions.
 
 ### 4.2 Examples
 
@@ -113,7 +113,7 @@ An effective contextual bandit algorithm needs to strike the right balance betwe
 - **Exploration** is critical for long-term learning, ensuring the system doesn’t overly rely on historical data and can adapt to unknown preferences.
 
 
-## 5. Algorithm for Contextual Bandit
+## 5. Contextual Bandit Algorithm
 
 ## 6.
 
