@@ -40,7 +40,7 @@ In this guide, we will walk through these method Contextual Bandit—step by ste
 
 
 ## 3. Contextual Bandits vs Full RL
-    While contextual bandits extend the multi-armed bandit problem to incorporate contexts, they are simpler than the full RL problem. Here's how they compare:
+While contextual bandits extend the multi-armed bandit problem to incorporate contexts, they are simpler than the full RL problem. Here's how they compare:
 
 ### 3.1. Similarities to Full RL
 - **Learning a policy**: Contextual bandits involve mapping situations (contexts) to actions, much like RL.
