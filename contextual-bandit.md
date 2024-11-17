@@ -30,13 +30,13 @@ In this guide, we will walk through these method Contextual Bandit—step by ste
    The context **x** can be a vector of features representing the environment, user preferences, or any relevant information.
    
 2. **Action Space**:
-   A set of possible actions `{a_1, a_2, ..., a_k}`, where `**k**` is the number of actions.
+   A set of possible actions `{a_1, a_2, ..., a_k}`, where `k` is the number of actions.
 
 3. **Reward Signal**:
-   After taking action **a**, a reward **r** is observed, which serves as feedback for learning.
+   After taking action `a`, a reward `r` is observed, which serves as feedback for learning.
 
 4. **Policy**:
-   The policy **π** is the decision-making function that chooses actions based on the context.
+   The policy `π` is the decision-making function that chooses actions based on the context.
 
 
 ## 3. Contextual Bandits vs Full RL
