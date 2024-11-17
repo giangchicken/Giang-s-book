@@ -27,7 +27,7 @@ In this guide, we will walk through these method Contextual Bandit—step by ste
 ## 2. Key Components
 
 1. **Context Representation**:
-   The context **x** can be a vector of features representing the environment, user preferences, or any relevant information.
+   The context `x` can be a vector of features representing the environment, user preferences, or any relevant information.
    
 2. **Action Space**:
    A set of possible actions `{a_1, a_2, ..., a_k}`, where `k` is the number of actions.
@@ -94,13 +94,35 @@ If you **only explore**, trying random recommendations without leveraging past d
 
 An effective contextual bandit algorithm needs to strike the right balance between exploring new possibilities and exploiting known high-reward actions.
 
+### 4.2 Examples
+
+<div align="center">
+
+![#](./images/Screenshot%202024-11-18%20002951.png)
+
+</div>
+
+**Exploitation**:
+- Items such as Nike, Adidas, and Puma are categorized as **"Similar Items based on History"**.
+- This represents leveraging what is already known about the user's preferences or previous interactions.
+- **Exploitation** involves recommending these high-confidence items that align with the user's historical data to maximize immediate rewards.
+
+**Exploration**:
+- Items marked as **"New Brand"** are categorized as **"Low-confidence Items"**.
+- This represents exploring **new possibilities or untested options**, which might not align with the user's previous behavior but could help discover new preferences.
+- **Exploration** is critical for long-term learning, ensuring the system doesn’t overly rely on historical data and can adapt to unknown preferences.
+
 
 ## 5. Algorithm for Contextual Bandit
 
 ## 6.
 
 ## References
-[an-overview-of-contextual-bandits](https://towardsdatascience.com/an-overview-of-contextual-bandits-53ac3aa45034)  
+[An-overview-of-contextual-bandits](https://towardsdatascience.com/an-overview-of-contextual-bandits-53ac3aa45034)  
 
-[dynamic-traffic-allocation](https://www.kameleoon.com/blog/dynamic-traffic-allocation)
+[Dynamic-traffic-allocation](https://www.kameleoon.com/blog/dynamic-traffic-allocation)
+
+[Contextual-bandit-for-marketing-treatment-optimization](https://www.aboutwayfair.com/careers/tech-blog/contextual-bandit-for-marketing-treatment-optimization)
+
+[Neural Contextual Bandits for Personalized Recommendation](https://www.youtube.com/watch?v=uzD-hRuH0s0)
 
