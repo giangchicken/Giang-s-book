@@ -22,7 +22,7 @@ This is where **Multi-Armed Bandits (MAB)** come in. Unlike A/B testing, MAB dyn
 
 </div>
 
-In this guide, we will walk through these method Contextual Bandit—step by step. Let’s start!
+In this guide, we will walk through these method Contextual Bandit—step by step. **Let’s start!**
 
 ## 2. Key Components
 
@@ -104,7 +104,7 @@ An effective contextual bandit algorithm needs to strike the right balance betwe
 
 **Exploitation**:
 - Items such as Nike, Adidas, and Puma are categorized as **"Similar Items based on History"**.
-- This represents leveraging what is already known about the user's preferences or previous interactions.
+- This represents leveraging **what is already known** about the user's preferences or previous interactions.
 - **Exploitation** involves recommending these high-confidence items that align with the user's historical data to maximize immediate rewards.
 
 **Exploration**:
