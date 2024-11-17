@@ -79,7 +79,7 @@ This tradeoff is critical in contextual bandits, where the agent must not only c
 
 ---
 
-### 4.1 Why Exploration and Exploitation Are Important?
+### 4.1. Why Exploration and Exploitation Are Important?
 
 Imagine the following scenario:
 - You are designing a personalized recommendation system for a streaming service.
@@ -94,7 +94,7 @@ If you **only explore**, trying random recommendations without leveraging past d
 
 An effective **contextual bandit algorithm** needs to strike the right balance between exploring new possibilities and exploiting known high-reward actions.
 
-### 4.2 Examples
+### 4.2. Examples
 
 <div align="center">
 
