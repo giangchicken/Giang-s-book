@@ -38,6 +38,11 @@ In this guide, we will walk through these method Contextual Bandit—step by ste
 4. **Policy**:
    The policy `π` is the decision-making function that chooses actions based on the context.
 
+<div align="center">
+
+![#](./images/download.jpeg)
+
+</div>
 
 ## 3. Contextual Bandits vs Full Reinforcement Learning (RL)
 While contextual bandits extend the multi-armed bandit problem to incorporate contexts, they are simpler than the full RL problem. Here's how they compare:
