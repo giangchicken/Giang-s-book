@@ -17,7 +17,9 @@ This is where **Multi-Armed Bandits (MAB)** come in. Unlike A/B testing, MAB dyn
 **Contextual Bandit** is an extension of MAB algorithm. Taking dynamic traffic allocation a step further, Contextual Bandits consider user-specific features—such as demographics, behavior, or preferences—to decide which option to serve. For example, if the algorithm learns that frequent shoppers prefer version A, it will show them version A more often, while steering casual visitors toward version B. This personalized approach optimizes outcomes for each user group in real-time.
 
 <div align="center">
+
 ![#](./images/Screenshot%202024-11-17%20160833.png)
+
 </div>
 
 In this guide, we will walk through these method Contextual Bandit—step by step. Let’s start!
