@@ -71,7 +71,7 @@ Imagine the following scenario:
 
 If you **only exploit** the current best recommendation for similar users:
 - You might miss out on discovering new or better movies for different user groups.
-- **Additionally**, the initial rewards might not have converged to the true optimal rewards, leading to suboptimal decisions.
+- Additionally, the initial rewards might not have converged to the true optimal rewards, leading to suboptimal decisions.
 
 If you **only explore**, trying random recommendations without leveraging past data:
 - The overall system performance might suffer due to suboptimal suggestions.
