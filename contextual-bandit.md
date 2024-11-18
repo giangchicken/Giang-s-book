@@ -114,8 +114,8 @@ An effective **contextual bandit algorithm** needs to strike the right balance b
 
 
 ## 5. Contextual Bandit Algorithm
-In contextual bandits, at each round `t`, a context `c_t` is provided. This information helps the learner decide which action `A_t` to take from `k` arms.  
-After choosing `A_t`, the learner receives a reward `x_{t, A_t}` corresponding to the chosen arm.  
+In contextual bandits, at each round `t`, a context $$c_t$$ is provided. This information helps the learner decide which action $$A_t$$ to take from `k` arms.  
+After choosing $$A_t$$, the learner receives a reward $$x_{t, A_t}$$ corresponding to the chosen arm.  
 The goal of the learner is to select actions in a way that maximizes the total reward after `n` rounds.  
 However, since the learner does not know the rewards of the arms in advance, the action selection process may not be optimal, leading to regret.
 
@@ -126,17 +126,17 @@ In the case of contextual bandits, each context  `c in C` may have a different o
 $$R_n = \mathbb{E} \left[ \sum_{c \in C} \max_{i \in [k]} \sum_{t \in [n] : c_t = c} \left( x_{t, i} - x_{t, A_t} \right) \right]$$
 
 - $$\sum_{t \in [n]: c_t = c}$$
-    * Gathers all rounds \( t \) where the context \( c_t = c \).
+    * Gathers all rounds `t` where the context `c_t = c`.
     * This allows us to group rounds by context.
-    * For each context \( c \), we calculate regret separately
+    * For each context `c`, we calculate regret separately
 
 - $$\max_{i \in [k]} \sum_{t \in [n]: c_t = c} x_{t, i}$$
-    * Computes the total reward of the optimal arm for context \( c \).
-    * For each context \( c \), there is an optimal arm \( i \) in hindsight (the arm that would yield the highest total reward if always chosen for \( c \)).
+    * Computes the total reward of the optimal arm for context `c`.
+    * For each context `c`, there is an optimal arm `i` in hindsight (the arm that would yield the highest total reward if always chosen for `c`).
 
 
 - $$x_{t, i} - x_{t, A_t}$$
-    * Regret at a single round \( t \): the difference between the reward of the optimal arm (\( x*{t, i} \)) and the reward of the arm chosen by the learner (\( x_{t, A_t} \)).
+    * Regret at a single round `t`: the difference between the reward of the optimal arm $$x*{t, i}$$ and the reward of the arm chosen by the learner $$x_{t, A_t}$$.
 
 
 
