@@ -166,40 +166,30 @@ Let’s consider the following setup:
 
 #### Learner’s Actions (Example)
 Let’s assume the learner chooses the following arms for each round:
-- \( A_1 = 1 \), \( A_2 = 2 \), \( A_3 = 2 \), \( A_4 = 3 \), \( A_5 = 1 \), \( A_6 = 3 \).
+- $$A_1 = 1 $$, $$A_2 = 2$$, $$A_3 = 2$$, $$A_4 = 3$$, $$A_5 = 1$$, $$A_6 = 3$$.
 
 #### Learner’s Reward
 The rewards obtained by the learner are:
-\[
+$$
 x_{t, A_t} = 0.5 + 0.7 + 0.6 + 0.7 + 0.5 + 0.3 = 3.3
-\]
+$$
 
 #### Regret Calculation
-- For \( c_1 \):  
-  Total reward collected by the learner:  
-  \[
-  0.5 + 0.7 + 0.5 = 1.7
-  \]  
-  Regret for \( c_1 \):  
-  \[
-  1.9 - 1.7 = 0.2
-  \]
+- For $$c_1$$:  
+  Total reward collected by the learner:  **0.5 + 0.7 + 0.5 = 1.7**
+ 
+  Regret for $$c_1$$: **1.9 - 1.7 = 0.2**
 
-- For \( c_2 \):  
-  Total reward collected by the learner:  
-  \[
-  0.6 + 0.7 + 0.3 = 1.6
-  \]  
-  Regret for \( c_2 \):  
-  \[
-  2.4 - 1.6 = 0.8
-  \]
+- For $$c_2$$:  
+  Total reward collected by the learner: **0.6 + 0.7 + 0.3 = 1.6**
+
+  Regret for $$c_2$$: **2.4 - 1.6 = 0.8**
 
 #### Total Regret
-The total regret is the sum of the regrets for \( c_1 \) and \( c_2 \):
-\[
+The total regret is the sum of the regrets for $$c_1$$ and $$c_2$$:
+$$
 R_n = 0.2 + 0.8 = 1.0
-\]
+$$
 
 ## 6.
 
