@@ -114,14 +114,14 @@ An effective **contextual bandit algorithm** needs to strike the right balance b
 
 
 ## 5. Contextual Bandit Algorithm
-In contextual bandits, at each round `t`, a context $$c_t$$ is provided. This information helps the learner decide which action $$A_t$$ to take from `k` arms.  
+In **contextual bandits**, at each round `t`, a context $$c_t$$ is provided. This information helps the learner decide which action $$A_t$$ to take from `k` arms.  
 After choosing $$A_t$$, the learner receives a reward $$x_{t, A_t}$$ corresponding to the chosen arm.  
-The goal of the learner is to select actions in a way that maximizes the total reward after `n` rounds.  
-However, since the learner does not know the rewards of the arms in advance, the action selection process may not be optimal, leading to regret.
+The goal of the learner is to select actions in a way that **maximizes the total reward** after `n` rounds.  
+However, since the learner does not know the rewards of the arms in advance, the action selection process may not be optimal, leading to **regret**.
 
-Regret measures the "loss" of the learner compared to the optimal policy in hindsight (knowing all the information beforehand).
+**Regret measures** the "loss" of the learner compared to the optimal policy in hindsight (knowing all the information beforehand).
 
-In the case of contextual bandits, each context  `c in C` may have a different optimal arm. Therefore, to compute regret, we compare the learner's actual total reward with the total reward of the optimal context-dependent policy.
+In the case of **contextual bandits**, each context  `c in C` may have a different optimal arm. Therefore, to compute regret, we compare the learner's actual total reward with the total reward of the **optimal context-dependent policy**.
 
 $$R_n = \mathbb{E} \left[ \sum_{c \in C} \max_{i \in [k]} \sum_{t \in [n] : c_t = c} \left( x_{t, i} - x_{t, A_t} \right) \right]$$
 
