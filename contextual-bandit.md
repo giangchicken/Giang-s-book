@@ -147,7 +147,7 @@ Let’s consider the following setup:
 - `n = 6`: 6 rounds.  
 - `k = 3`: 3 arms.  
 - Contexts $$c_t$$ belong to the set $${c_1, c_2}$$.  
-- Reward matrix (\( x_{t, i} \)):
+- Reward matrix $$x_{t, i}$$:
 
 <div align="center">
 
