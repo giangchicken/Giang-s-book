@@ -141,6 +141,65 @@ $$R_n = \mathbb{E} \left[ \sum_{c \in C} \max_{i \in [k]} \sum_{t \in [n] : c_t 
 - $$\mathbb{E}[\cdot]$$
     * Takes the expectation to ensure the formula applies in cases where the learner uses a randomized algorithm (e.g., selecting actions based on a probability distribution).
 
+### 5.1. Example
+Let’s consider the following setup:
+
+- `n = 6`: 6 rounds.  
+- `k = 3`: 3 arms.  
+- Contexts $$c_t$$ belong to the set $${c_1, c_2}$$.  
+- Reward matrix (\( x_{t, i} \)):
+
+| Round t  | Context $$c_t$$ | Arm 1 $$x_{t,1}$$ | Arm 2 $$x_{t,2}$$ | Arm 3 $$x_{t,3} $$ |
+|-----------------|--------------------|-----------------------|-----------------------|-----------------------|
+| 1               | $$c_1$$          | 0.5                   | 0.6                   | 0.3                   |
+| 2               | $$c_1$$          | 0.4                   | 0.7                   | 0.5                   |
+| 3               | $$c_2$$          | 0.8                   | 0.6                   | 0.4                   |
+| 4               | $$c_2$$          | 0.9                   | 0.5                   | 0.7                   |
+| 5               | $$c_1$$          | 0.5                   | 0.6                   | 0.2                   |
+| 6               | $$c_2$$          | 0.7                   | 0.8                   | 0.3                   |
+
+#### Optimal Reward for Each Context (Hindsight)
+- For $$c_1$$:  
+  The optimal arm is arm 2, with a total reward of:  **0.6 + 0.7 + 0.6 = 1.9**
+- For $$c_2$$:  
+  The optimal arm is arm 1, with a total reward of:  **0.8 + 0.9 + 0.7 = 2.4**
+
+#### Learner’s Actions (Example)
+Let’s assume the learner chooses the following arms for each round:
+- \( A_1 = 1 \), \( A_2 = 2 \), \( A_3 = 2 \), \( A_4 = 3 \), \( A_5 = 1 \), \( A_6 = 3 \).
+
+#### Learner’s Reward
+The rewards obtained by the learner are:
+\[
+x_{t, A_t} = 0.5 + 0.7 + 0.6 + 0.7 + 0.5 + 0.3 = 3.3
+\]
+
+#### Regret Calculation
+- For \( c_1 \):  
+  Total reward collected by the learner:  
+  \[
+  0.5 + 0.7 + 0.5 = 1.7
+  \]  
+  Regret for \( c_1 \):  
+  \[
+  1.9 - 1.7 = 0.2
+  \]
+
+- For \( c_2 \):  
+  Total reward collected by the learner:  
+  \[
+  0.6 + 0.7 + 0.3 = 1.6
+  \]  
+  Regret for \( c_2 \):  
+  \[
+  2.4 - 1.6 = 0.8
+  \]
+
+#### Total Regret
+The total regret is the sum of the regrets for \( c_1 \) and \( c_2 \):
+\[
+R_n = 0.2 + 0.8 = 1.0
+\]
 
 ## 6.
 
