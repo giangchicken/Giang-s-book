@@ -138,6 +138,8 @@ $$R_n = \mathbb{E} \left[ \sum_{c \in C} \max_{i \in [k]} \sum_{t \in [n] : c_t 
 - $$x_{t, i} - x_{t, A_t}$$
     * Regret at a single round `t`: the difference between the reward of the optimal arm $$x*{t, i}$$ and the reward of the arm chosen by the learner $$x_{t, A_t}$$.
 
+- $$\mathbb{E}[\cdot]$$
+    * Takes the expectation to ensure the formula applies in cases where the learner uses a randomized algorithm (e.g., selecting actions based on a probability distribution).
 
 
 ## 6.
