@@ -198,7 +198,7 @@ $$R_n = 0.2 + 0.8 = 1.0$$
 [Check this blog](https://hackernoon.com/contextual-multi-armed-bandit-problems-in-reinforcement-learning)
 [Check this book](https://tor-lattimore.com/downloads/book/book.pdf)
 
-## 6.
+## 6. Demo
 
 ## References
 [An-overview-of-contextual-bandits](https://towardsdatascience.com/an-overview-of-contextual-bandits-53ac3aa45034)  
