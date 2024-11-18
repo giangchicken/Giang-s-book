@@ -123,7 +123,9 @@ Regret measures the "loss" of the learner compared to the optimal policy in hind
 
 In the case of contextual bandits, each context  `c in C` may have a different optimal arm. Therefore, to compute regret, we compare the learner's actual total reward with the total reward of the optimal context-dependent policy.
 
+\[
 R_n = \mathbb{E} \left[ \sum_{c \in C} \max_{i \in [k]} \sum_{t \in [n] : c_t = c} \left( x_{t, i} - x_{t, A_t} \right) \right]
+\]
 
 
 ## 6.
