@@ -114,6 +114,7 @@ An effective **contextual bandit algorithm** needs to strike the right balance b
 
 
 ## 5. Contextual Bandit Algorithm
+
 In **contextual bandits**, at each round `t`, a context $$c_t$$ is provided. This information helps the **learner** decide which **action** $$A_t$$ to take from `k` arms.  
 After choosing $$A_t$$, the learner receives a **reward** $$x_{t, A_t}$$ corresponding to the chosen arm.  
 The goal of the **learner** is to select actions in a way that **maximizes the total reward** after `n` rounds.  
@@ -191,9 +192,11 @@ $$
 
 #### Total Regret
 The total regret is the sum of the regrets for $$c_1$$ and $$c_2$$:
-$$
-R_n = 0.2 + 0.8 = 1.0
-$$
+$$R_n = 0.2 + 0.8 = 1.0$$
+
+### 5.2. Algorithms
+[Check this blog](https://hackernoon.com/contextual-multi-armed-bandit-problems-in-reinforcement-learning)
+[Check this book](https://tor-lattimore.com/downloads/book/book.pdf)
 
 ## 6.
 
