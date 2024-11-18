@@ -114,10 +114,10 @@ An effective **contextual bandit algorithm** needs to strike the right balance b
 
 
 ## 5. Contextual Bandit Algorithm
-In **contextual bandits**, at each round `t`, a context $$c_t$$ is provided. This information helps the learner decide which action $$A_t$$ to take from `k` arms.  
-After choosing $$A_t$$, the learner receives a reward $$x_{t, A_t}$$ corresponding to the chosen arm.  
-The goal of the learner is to select actions in a way that **maximizes the total reward** after `n` rounds.  
-However, since the learner does not know the rewards of the arms in advance, the action selection process may not be optimal, leading to **regret**.
+In **contextual bandits**, at each round `t`, a context $$c_t$$ is provided. This information helps the **learner** decide which **action** $$A_t$$ to take from `k` arms.  
+After choosing $$A_t$$, the learner receives a **reward** $$x_{t, A_t}$$ corresponding to the chosen arm.  
+The goal of the **learner** is to select actions in a way that **maximizes the total reward** after `n` rounds.  
+However, since the **learner** does not know the rewards of the arms in advance, the action selection process may not be optimal, leading to **regret**.
 
 **Regret measures** the "loss" of the learner compared to the optimal policy in hindsight (knowing all the information beforehand).
 
