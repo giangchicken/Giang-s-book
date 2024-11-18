@@ -149,6 +149,8 @@ Let’s consider the following setup:
 - Contexts $$c_t$$ belong to the set $${c_1, c_2}$$.  
 - Reward matrix (\( x_{t, i} \)):
 
+<div align="center">
+
 | Round t  | Context $$c_t$$ | Arm 1 $$x_{t,1}$$ | Arm 2 $$x_{t,2}$$ | Arm 3 $$x_{t,3} $$ |
 |-----------------|--------------------|-----------------------|-----------------------|-----------------------|
 | 1               | $$c_1$$          | 0.5                   | 0.6                   | 0.3                   |
@@ -157,6 +159,8 @@ Let’s consider the following setup:
 | 4               | $$c_2$$          | 0.9                   | 0.5                   | 0.7                   |
 | 5               | $$c_1$$          | 0.5                   | 0.6                   | 0.2                   |
 | 6               | $$c_2$$          | 0.7                   | 0.8                   | 0.3                   |
+
+</div>
 
 #### Optimal Reward for Each Context (Hindsight)
 - For $$c_1$$:  
