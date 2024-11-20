@@ -199,6 +199,7 @@ $$R_n = 0.2 + 0.8 = 1.0$$
 [Check this book](https://tor-lattimore.com/downloads/book/book.pdf)
 
 ## 6. Demo
+[Notebook](https://colab.research.google.com/drive/11X2qPYKlPdaAJivUoMEY1oVNBClGfm6h?usp=sharing)
 
 ## References
 [An-overview-of-contextual-bandits](https://towardsdatascience.com/an-overview-of-contextual-bandits-53ac3aa45034)  
