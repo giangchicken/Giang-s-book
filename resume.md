@@ -75,7 +75,7 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 ## **Certifications**
 
 | **Achievement** | **Year** |
-|:--------------:|:-------:|
+|--------------:|:-------:|
 | **Gold Medal in Internet-based Olympiad of Physics** | 2016 |
 | **Silver Medal in Hung King Summer Camp** | 2019 |
 | **Consolation Prize in Vietnamese Physics Olympiad** | 2019 |
