@@ -14,36 +14,40 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 
 ## **Experience**
 
-### **Credit Scoring Model Using Telco Data**   
+### **Credit Scoring Model Using Telco Data (MBF)**   
 - **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
 - **Tasks:** Feature engineering, model training, and performance monitoring.
-- **Technologies:** Python, Logistic Regression, Gradient Boosting.
+- **Technologies:** Python, Logistic Regression, Gradient Boosting, Pyspark...
+
+### **Credit Scoring Model Using Telco Data (VNPT)**   
+- **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
+- **Tasks:** Feature engineering, model training, and performance monitoring.
+- **Technologies:** Python, XGB, Gradient Boosting, Evolutionary Algorithms, Pyspark...
 
 ### **Speech-to-Text**  
 - **Description:** Built a speech-to-text model for sales call quality evaluation.
 - **Tasks:** Model development, training, and deployment.
-- **Technologies:** Python, NLP, Transformer.
+- **Technologies:** Python, NLP, Transformer, Pytorch...
 
 ### **Customer Identification Model Using Face Tracking**
-
 - **Description:** Built a model to identify existing and new customers entering a store, allowing for personalized marketing strategies.
 - **Tasks:** Face tracking, feature extraction, and storing face embeddings in a vector database.
-- **Technologies:** YOLOv7, resnet50, Qdrant.
+- **Technologies:** YOLOv7, resnet50, Qdrant, Pytorch...
 
 ### **Nearest Neighbor Search for Lead Grouping in Marketing**   
 - **Description:** Implemented KNN-based lead grouping for targeted marketing.
 - **Tasks:** Data preprocessing, KNN implementation, and search optimization.
-- **Technologies:** KMeanCluster, Faiss, Python.
+- **Technologies:** KMeanCluster, Faiss, Python...
 
 ### **Industry Classification Model Using Web Text**  
 - **Description:** Developed a web-text-based industry classification model.
 - **Tasks:** Web scraping, text preprocessing, clustering.
-- **Technologies:** Selenium, TF-IDF, KMeans, Hierarchical clustering.
+- **Technologies:** Selenium, TF-IDF, KMeans, Hierarchical clustering, Python...
 
 ### **Income Prediction from Satellite Imagery**  
 - **Description:** Built a model to predict income levels using satellite imagery.
 - **Tasks:** Data collection, preprocessing, and model application.
-- **Technologies:** CNN, Google Earth Engine, Docker.
+- **Technologies:** CNN, Google Earth Engine, Docker, Python...
 
 ---
 
@@ -62,9 +66,9 @@ My goal is to apply my expertise in Data Science to tackle challenges and contri
 ## **Skills**
 - **Programming Languages:** Python, SQL
 - **Math:** Statistics, Linear Algebra, Calculus, Matrix Calculus, Machine Learning, Data Mining, Econometrics, Time Series 
-- **Web Scraping & Automation:** Selenium, BeautifulSoup
+- **Web Scraping & Automation:** Selenium, BeautifulSoup, Playwright
 - **Tools & Libraries:** Jupyter, Docker, Git, Faiss, Google Earth Engine, pandas, PySpark, etc.
-- **Soft Skills:** Problem-solving, teamwork, communication
+- **Soft Skills:** Problem-solving, Teamwork, Communication
 
 ---
 
