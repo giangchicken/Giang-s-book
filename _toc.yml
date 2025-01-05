@@ -30,4 +30,5 @@ parts:
     - file: Optimizing_Pyspark_code
     - file: HDFS_Overview
     - file: Notes_AWS
+    - file: FastAPI
     

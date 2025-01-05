@@ -91,7 +91,6 @@ The other analysis to conduct is a roll rate analysis. This is commonly used in 
 
 So, if the baseline score is 550 meaning good bad odds 20:1 and PDO is 40, then a score of 590 will means good bad odds of 40:1, 630 means a good bad odds of 80:1 and so on.
 
-#### **Master Scale**
 
 
 #### **Calibration**
