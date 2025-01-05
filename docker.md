@@ -241,3 +241,63 @@ To access a container, check the corresponding container using the `docker ps` c
 - **`docker cp src_path container_id:dst_path`**  
   Copy file/folder from local to container.
 
+
+---
+
+# Hướng dẫn: Cho phép user sử dụng Docker mà không cần `sudo`
+
+Dưới đây là các bước chi tiết để cho phép user sử dụng Docker mà không cần quyền `sudo`.
+
+---
+
+## **1. Kiểm tra nhóm `docker` đã tồn tại hay chưa**
+Trên hầu hết các hệ thống, khi Docker được cài đặt, nhóm `docker` sẽ tự động được tạo ra. Để kiểm tra, chạy lệnh sau:
+
+```bash
+getent group docker
+```
+Nếu nhóm docker đã tồn tại, bạn sẽ thấy một dòng như sau:
+
+```bash
+docker:x:999:
+```
+Nếu không, tạo nhóm này bằng lệnh:
+
+```bash
+sudo groupadd docker
+```
+
+## **2. Thêm user vào nhóm `docker`**
+
+Thêm user của bạn vào nhóm `docker` bằng lệnh:
+
+```bash
+sudo usermod -aG docker <username>
+#Thay <username> bằng tên của user bạn muốn cấp quyền.
+#Nếu muốn thêm user hiện tại của bạn, thay <username> bằng $(whoami).
+```
+
+## **3. Kiểm tra thay đổi**
+
+Để thay đổi có hiệu lực:
+
+- Đăng xuất và đăng nhập lại user.
+- Hoặc chạy lệnh sau để áp dụng ngay mà không cần đăng xuất: 
+```bash
+  newgrp docker
+```
+
+## **4.Lưu ý quan trọng**
+Quyền hạn của nhóm docker:
+- Khi một user thuộc nhóm docker, họ có quyền kiểm soát toàn bộ hệ thống thông qua Docker (ví dụ: chạy container với quyền root). Hãy cân nhắc khi thêm user vào nhóm này.
+- Nếu bạn quản lý một máy chủ dùng chung, hãy hạn chế quyền này hoặc sử dụng giải pháp thay thế như sudo docker kèm chính sách.
+
+Để kiểm tra xem user đã thuộc nhóm docker chưa:
+```bash
+  groups <username>
+```
+
+Nếu muốn gỡ một user khỏi nhóm docker, chạy lệnh:
+```bash
+  sudo gpasswd -d <username> docker
+```
