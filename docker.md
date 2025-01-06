@@ -21,6 +21,7 @@ A **Dockerfile** is a script with instructions to create a Docker image. Each co
 **Docker Compose** is a tool that allows you to define and manage multi-container Docker applications using a single YAML file, simplifying deployment and service connections.
 
 For more information [docker docs](https://docs.docker.com/get-started/docker-overview/)
+For more information abt the difference bw dockerfile and docker-compose [dockerfile_docker-compose](https://viblo.asia/p/docker-vs-docker-compose-RnB5pXGd5PG)
 
 ---
 
@@ -34,7 +35,7 @@ The following steps outline how to create a Docker container from a Dockerfile.
 
 Write a `Dockerfile` in the project directory. Here's an example `Dockerfile` for a simple deep-learning application:
 
-```dockerfile
+```bash
 
 #Base Image
 FROM python:3.7-slim
@@ -70,19 +71,79 @@ EXPOSE 5000
 ### Step 2: Build the Docker Image
 Run the following command in the terminal to build the Docker image:
 
-```
+```bash
 docker build -t name-prj .
 ```
 
 ### Step 3: Run the Docker Container
 After building the image, run the container using:
-```
+```bash
 docker run -p 3000:5000 name-prj
 ```
 This command starts the container and maps port 3000 of the host to port 5000 of the container, allowing you to access the app on localhost:3000.
 
 To access a container, check the corresponding container using the `docker ps` command, then use this command: `docker exec -ti container_id bash`
 
+---
+
+## 2. Using a docker-compose
+
+### Step 1: Write a `Dockerfile`
+
+Before creating a docker-compose.yml file, you must have a functional Dockerfile (see the example in the previous section).
+
+### Step 2: Create a `docker-compose.yml` File
+
+Below is an example docker-compose.yml file for orchestrating a JupyterLab container:
+
+```bash
+version: '3'
+
+services:
+  jupyterlab:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8080:8888"  # Map local port 8080 to container port 8888
+    volumes:
+      - ./data_quanhuyen:/data_quanhuyen
+      - ./data_xaphuong:/data_xaphuong
+      - ./data_tinh:/data_tinh
+      - ./features_xaphuong:/features_xaphuong
+      - ./features_quanhuyen:/features_quanhuyen
+      - ./features_tinh:/features_tinh
+    environment:
+      - JUPYTER_ENABLE_LAB=yes  # Enable JupyterLab
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+
+```
+
+### Step 3: Build and Run the Containers Using `docker-compose`
+
+Build the services: Run the following command to build the services defined in the docker-compose.yml file:
+```bash
+docker-compose build
+```
+
+Start the containers: Use this command to run the containers:
+
+```bash
+docker-compose up
+```
+
+Stop the containers: To stop the running containers, use:
+```bash
+docker-compose down
+```
+
+Run in detached mode: If you want to run the containers in the background (detached mode), use:
+
+```bash
+docker-compose up -d
+```
+
+---
 # Docker Commands Overview
 
 ## Docker Management Commands
