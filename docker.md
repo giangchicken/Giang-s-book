@@ -142,6 +142,27 @@ Run in detached mode: If you want to run the containers in the background (detac
 ```bash
 docker-compose up -d
 ```
+---
+# **Docker Engine**
+
+Docker supports the following types
+---
+## **Storage**
+
+Data written to the container layer doesn't persist when the container is destroyed. This means that it can be difficult to get the data out of the container if another process needs it.
+
+Docker supports the following types of storage mounts for storing data outside of the writable layer of the container: `Volume mounts`, `Bind mounts`, `tmpfs mounts`, `Named pipes`
+
+| Types  | Usage |
+|------|-----------|
+| Volume mounts  |    Volumes are persistent storage mechanisms managed by the Docker daemon. They retain data even after the containers using them are removed. Volume data is stored on the filesystem on the host, but in order to interact with the data in the volume, you must mount the volume to a container. Directly accessing or interacting with the volume data is unsupported, undefined behavior, and may result in the volume or its data breaking in unexpected ways.    |
+| Bind mounts  |    Bind mounts create a direct link between a host system path and a container, allowing access to files or directories stored anywhere on the host. Since they aren't isolated by Docker, both non-Docker processes on the host and container processes can modify the mounted files simultaneously.    |
+| tmpfs mounts  |    A tmpfs mount stores files directly in the host machine's memory, ensuring the data is not written to disk. This storage is ephemeral: the data is lost when the container is stopped or restarted, or when the host is rebooted. tmpfs mounts do not persist data either on the Docker host or within the container's filesystem.    |
+| Named pipes   |    Named pipes can be used for communication between the Docker host and a container. Common use case is to run a third-party tool inside of a container and connect to the Docker Engine API using a named pipe    |
+
+---
+## **Volumes**
+
 
 ---
 # Docker Commands Overview
@@ -362,3 +383,10 @@ Nếu muốn gỡ một user khỏi nhóm docker, chạy lệnh:
 ```bash
   sudo gpasswd -d <username> docker
 ```
+
+
+---
+
+# Docker Multi-stage builds
+
+[Tutorial](https://pythonspeed.com/articles/smaller-python-docker-images/)
