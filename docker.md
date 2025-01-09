@@ -161,8 +161,9 @@ Docker supports the following types of storage mounts for storing data outside o
 | Named pipes   |    Named pipes can be used for communication between the Docker host and a container. Common use case is to run a third-party tool inside of a container and connect to the Docker Engine API using a named pipe    |
 
 ---
-## **Volumes**
+## **Networking**
 
+[https://viblo.asia/p/cac-khai-niem-duoc-su-dung-trong-network-07LKXNVrlV4](https://viblo.asia/p/cac-khai-niem-duoc-su-dung-trong-network-07LKXNVrlV4)
 
 ---
 # Docker Commands Overview
