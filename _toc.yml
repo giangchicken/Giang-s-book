@@ -31,4 +31,8 @@ parts:
     - file: HDFS_Overview
     - file: Notes_AWS
     - file: FastAPI
+
+  - caption: Papers
+    chapters:
+    - file: Factors and Anomalies in the Vietnamese Stock Market
     
