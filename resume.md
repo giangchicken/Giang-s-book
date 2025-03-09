@@ -1,87 +1,113 @@
 <div align="center">
 
-# Đặng Trường Giang  
-Data Science / AI Engineer  
-✉️ giang123md@gmail.com &nbsp;&nbsp;&nbsp;&nbsp; 📞 0762479017 &nbsp;&nbsp;&nbsp;&nbsp; [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/giangdangtruong/) &nbsp;&nbsp;&nbsp;&nbsp; [![GitHub](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)](https://github.com/giangchicken)
+# **Đặng Trường Giang**  
+### Data Scientist | AI Engineer  
+✉️ giang123md@gmail.com &nbsp;&nbsp;&nbsp;&nbsp; 📞 0762479017  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/giangdangtruong/) &nbsp;&nbsp;&nbsp;&nbsp;  
+[![GitHub](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)](https://github.com/giangchicken)
 
 </div>
 
 ---
+
 ## **Objective**
-My goal is to apply my expertise in Data Science to tackle challenges and contribute to the success of the company. I am eager to work in an environment that encourages continuous learning, collaboration, and innovation. With a strong foundation in both the technical and business aspects of data science, I aim to make a positive impact on decision-making processes and drive business growth through data-driven strategies. 
+I am passionate about leveraging **Data Science & AI** to solve complex business challenges and optimize decision-making. With a strong technical background and a deep understanding of data-driven strategies, I seek opportunities to work in **collaborative, innovative** environments that foster continuous learning and impact-driven problem-solving.
 
 ---
 
-## **Experience**
+## **Experiments & Projects**
 
-### **Credit Scoring Model Using Telco Data (MBF)**   
-- **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
-- **Tasks:** Feature engineering, model training, and performance monitoring.
-- **Technologies:** Python, Logistic Regression, Gradient Boosting, Pyspark...
+### **M&A News Detection Model**
+- **Description:** Developed a **Mergers & Acquisitions (M&A) detection model** to identify and classify M&A-related news articles.  
+- **Tasks:** Data preprocessing, entity recognition, hybrid search optimization.  
+- **Technologies:** **Auto-ML**, **Hybrid Search (Keywords Search + Semantic Search)**, **Qdrant**, **LangChain**, Python.
 
-### **Credit Scoring Model Using Telco Data (VNPT)**   
-- **Description:** Developed and implemented a credit scoring model using telco data to assess customer creditworthiness.
-- **Tasks:** Feature engineering, model training, and performance monitoring.
-- **Technologies:** Python, XGB, Gradient Boosting, Evolutionary Algorithms, Pyspark...
+### **Credit Scoring Model Using Telco Data (MBF)**
+- **Description:** Built a credit scoring model using telco data for **customer creditworthiness assessment**.  
+- **Tasks:** Feature engineering, model training, and performance monitoring.  
+- **Technologies:** Python, Logistic Regression, Gradient Boosting, PySpark.
 
-### **Speech-to-Text**  
-- **Description:** Built a speech-to-text model for sales call quality evaluation.
-- **Tasks:** Model development, training, and deployment.
-- **Technologies:** Python, NLP, Transformer, Pytorch...
+### **Credit Scoring Model Using Telco Data (VNPT)**
+- **Description:** Similar to the MBF model but incorporating **Evolutionary Algorithms** for optimization.  
+- **Technologies:** Python, XGBoost, Gradient Boosting, Evolutionary Algorithms, PySpark.
 
-### **Customer Identification Model Using Face Tracking**
-- **Description:** Built a model to identify existing and new customers entering a store, allowing for personalized marketing strategies.
-- **Tasks:** Face tracking, feature extraction, and storing face embeddings in a vector database.
-- **Technologies:** YOLOv7, resnet50, Qdrant, Pytorch...
+### **Speech-to-Text Model for Sales Calls**
+- **Description:** Developed an AI-powered **speech-to-text** system to evaluate **sales call quality**.  
+- **Tasks:** Model training, fine-tuning Transformer-based architectures, deployment.  
+- **Technologies:** **Whisper**, Transformer, Pytorch, NLP.
 
-### **Nearest Neighbor Search for Lead Grouping in Marketing**   
-- **Description:** Implemented KNN-based lead grouping for targeted marketing.
-- **Tasks:** Data preprocessing, KNN implementation, and search optimization.
-- **Technologies:** KMeanCluster, Faiss, Python...
+### **Customer Identification Using Face Tracking**
+- **Description:** Built a **face-tracking model** for identifying **existing & new customers** in stores to enable personalized marketing.  
+- **Tasks:** Face tracking, feature extraction, vector database storage.  
+- **Technologies:** **YOLOv7**, ResNet50, Qdrant, PyTorch.
 
-### **Industry Classification Model Using Web Text**  
-- **Description:** Developed a web-text-based industry classification model.
-- **Tasks:** Web scraping, text preprocessing, clustering.
-- **Technologies:** Selenium, TF-IDF, KMeans, Hierarchical clustering, Python...
+### **Nearest Neighbor Search for Lead Grouping in Marketing**
+- **Description:** Implemented a **KNN-based lead grouping system** to improve targeted marketing.  
+- **Tasks:** Data preprocessing, KNN-based clustering, search optimization.  
+- **Technologies:** KMeans, Faiss, Python.
 
-### **Income Prediction from Satellite Imagery**  
-- **Description:** Built a model to predict income levels using satellite imagery.
-- **Tasks:** Data collection, preprocessing, and model application.
-- **Technologies:** CNN, Google Earth Engine, Docker, Python...
+### **Industry Classification Model Using Web Text**
+- **Description:** Built an **industry classification system** based on web text extraction.  
+- **Tasks:** Web scraping, text vectorization, clustering.  
+- **Technologies:** **Selenium, TF-IDF, KMeans, Hierarchical Clustering, Python**.
+
+### **Income Prediction from Satellite Imagery**
+- **Description:** Developed a model to predict **income levels** based on **satellite imagery**.  
+- **Tasks:** Data collection, preprocessing, CNN-based model application.  
+- **Technologies:** **CNN, Google Earth Engine, Docker, Python**.
 
 ---
 
 ## **Education**
 
 ### **Ha Long High School for Gifted Students**  
->**Physics Specialized Class**  
->**2017** - **2020**  
+- **Physics Specialized Class** (**2017 - 2020**)  
 
-### **Ha Noi University of Science and Technology**  
->**Embedded System and IoT**  
->**2020** - **2024**
+### **Hanoi University of Science and Technology**  
+- **Smart Embedded Systems & IoT** (**2020 - 2024**)  
 
 ---
 
 ## **Skills**
-- **Programming Languages:** Python, SQL
-- **Math:** Statistics, Linear Algebra, Calculus, Matrix Calculus, Machine Learning, Data Mining, Econometrics, Time Series 
-- **Web Scraping & Automation:** Selenium, BeautifulSoup, Playwright
-- **Tools & Libraries:** Jupyter, Docker, Git, Faiss, Google Earth Engine, pandas, PySpark, etc.
-- **Soft Skills:** Problem-solving, Teamwork, Communication
+
+### **Programming**
+- **Languages:** Python, SQL  
+- **Data Processing:** Pandas, NumPy, PySpark  
+- **Web Scraping & Automation:** Selenium, BeautifulSoup, Playwright  
+
+### **Machine Learning & AI**
+- **ML/DL Frameworks:** Scikit-learn, TensorFlow, PyTorch  
+- **LLM & NLP:** LangChain, Transformer-based Models, FAISS, Qdrant  
+- **Information Retrieval:** BM25, Hybrid Search, Vector Databases  
+
+### **Cloud & Deployments**
+- **Cloud Platforms:** AWS (EC2, S3, Lambda, SageMaker)  
+- **Containerization & Deployment:** Docker, FastAPI  
+- **Version Control & CI/CD:** Git, GitHub Actions  
+
+### **Mathematics & Business Analytics**
+- **Statistics, Linear Algebra, Calculus, Time Series Analysis**  
+- **Econometrics, Machine Learning, Data Mining**  
+
+### **Soft Skills**
+- **Problem-solving, Analytical Thinking, Communication, Teamwork**  
 
 ---
 
-## **Certifications**
+## **Certifications & Achievements**
 
 | **Achievement** | **Year** |
 |:--------------|:-------:|
-| **Gold Medal in Internet-based Olympiad of Physics** | 2016 |
-| **Silver Medal in Hung King Summer Camp** | 2019 |
-| **Consolation Prize in Vietnamese Physics Olympiad** | 2019 |
+| **Gold Medal - Internet-based Olympiad of Physics** | 2016 |
+| **Silver Medal - Hung King Summer Camp** | 2019 |
+| **Consolation Prize - Vietnamese Physics Olympiad** | 2019 |
 
 ---
 
 ## **Languages**
-- **Vietnamese:** Native
-- **English:** Read
+- **Vietnamese:** Native  
+- **English:** Proficient in reading & technical writing  
+
+---
+
+✨ *Passionate about AI-driven solutions, financial modeling, and optimizing decision-making through data science.* 🚀
