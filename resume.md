@@ -16,43 +16,39 @@ I am passionate about leveraging **Data Science & AI** to solve complex business
 ## 🔬 **Experiments & Projects**  
 
 ### 📌 **M&A News Detection Model**  
-- **📝 Description:** Developed a **Mergers & Acquisitions (M&A) detection model** to identify and classify M&A-related news articles.  
-- **🔍 Tasks:** Data preprocessing, entity recognition, hybrid search optimization.  
-- **⚙️ Technologies:** **Auto-ML**, **Hybrid Search (Keywords Search + Semantic Search)**, **Qdrant**, **LangChain**, Python.
+- **📝 Description:** I have developed a **Mergers & Acquisitions (M&A) detection model** to classify M&A-related news articles,  with automated training and data processing in a containerized environment.
+- **🔍 Tasks:** Doc Embedding, Hybrid search optimization, containerization.  
+- **⚙️ Technologies:** Auto-ML, Hybrid Search (Keywords Search + Semantic Search), Qdrant.
 
-### 📌 **Credit Scoring Model Using Telco Data (MBF)**  
-- **📝 Description:** Built a credit scoring model using telco data for **customer creditworthiness assessment**.  
+### 📌 **Credit Scoring Model Using Telco Data (MBF & VNPT)**  
+- **📝 Description:** Using Telco data and Sales Funnel log results, I built a credit scoring model for **customer creditworthiness assessment**.  I focused on selecting features to mitigate data shift issues and applied evolutional algorithm to feature selection and hyper parameter tuning.
 - **🔍 Tasks:** Feature engineering, model training, and performance monitoring.  
-- **⚙️ Technologies:** Python, Logistic Regression, Gradient Boosting, PySpark.
+- **⚙️ Technologies:** Machine Learning Algorithms, PySpark.
 
-### 📌 **Credit Scoring Model Using Telco Data (VNPT)**  
-- **📝 Description:** Similar to the MBF model but incorporating **Evolutionary Algorithms** for optimization.  
-- **⚙️ Technologies:** Python, XGBoost, Gradient Boosting, Evolutionary Algorithms, PySpark.
-
-### 📌 **Speech-to-Text Model for Sales Calls**  
-- **📝 Description:** Developed an AI-powered **speech-to-text** system to evaluate **sales call quality**.  
+### 📌 **Word correction Model**  
+- **📝 Description:** Developed a word correction model leveraging **Transformer-based architectures** to improve text accuracy and readability. The model was fine-tuned for error correction and deployed for real-world applications.  
 - **🔍 Tasks:** Model training, fine-tuning Transformer-based architectures, deployment.  
-- **⚙️ Technologies:** **Whisper**, Transformer, Pytorch, NLP.
+- **⚙️ Technologies:** Transformer, Pytorch, NLP.
 
 ### 📌 **Customer Identification Using Face Tracking**  
-- **📝 Description:** Built a **face-tracking model** for identifying **existing & new customers** in stores to enable personalized marketing.  
-- **🔍 Tasks:** Face tracking, feature extraction, vector database storage.  
-- **⚙️ Technologies:** **YOLOv7**, ResNet50, Qdrant, PyTorch.
+- **📝 Description:** This was my graduation project at university, where I built a **face-embedding model** and **search system** for identifying **existing & new customers** in stores to enable personalized marketing.  
+- **🔍 Tasks:** Face embedding, feature extraction, vector database storage.  
+- **⚙️ Technologies:** YOLOv7, ResNet50, Qdrant, PyTorch.
 
 ### 📌 **Nearest Neighbor Search for Lead Grouping in Marketing**  
-- **📝 Description:** Implemented a **KNN-based lead grouping system** to improve targeted marketing.  
+- **📝 Description:** This was a research project I conducted at 3TIT after my leads incidentally shared the **FAISS** paper with me. Inspired by its potential, I applied it to big data and implemented a KNN-based lead grouping system to enhance targeted marketing.  
 - **🔍 Tasks:** Data preprocessing, KNN-based clustering, search optimization.  
-- **⚙️ Technologies:** KMeans, Faiss, Python.
+- **⚙️ Technologies:** KMeans, Faiss, Pyspark.
 
-### 📌 **Industry Classification Model Using Web Text**  
-- **📝 Description:** Built an **industry classification system** based on web text extraction.  
+### 📌 **Domain Segmentation Model Using Web Text**  
+- **📝 Description:** This idea was inspired by the paper **"Text-Based Network Industries and Endogenous Product Differentiation"**. I scraped web text from various domains, leveraging content extraction libraries and **SBERT** to generate vector representations for each domain. This was followed by a **distributed computation process** to calculate the similarity matrix under **RAM limitations** and select an appropriate **clustering algorithm**.
 - **🔍 Tasks:** Web scraping, text vectorization, clustering.  
-- **⚙️ Technologies:** **Selenium, TF-IDF, KMeans, Hierarchical Clustering, Python**.
+- **⚙️ Technologies:** Playwright, Clustering Algorithms (KMeans, Hierarchical Clustering, HDBSCAN,..), Dask, Polars, Text embedding Model.
 
 ### 📌 **Income Prediction from Satellite Imagery**  
-- **📝 Description:** Developed a model to predict **income levels** based on **satellite imagery**.  
+- **📝 Description:** I implemented a model to predict **income levels** based on **satellite imagery** from **Google Earth Engine**.  
 - **🔍 Tasks:** Data collection, preprocessing, CNN-based model application.  
-- **⚙️ Technologies:** **CNN, Google Earth Engine, Docker, Python**.
+- **⚙️ Technologies:** CNN, Google Earth Engine, Docker.
 
 ---
 
@@ -68,13 +64,13 @@ I am passionate about leveraging **Data Science & AI** to solve complex business
 
 ## 🛠 **Skills**  
 
-### **💻 Programming & Data Engineering**  
-- **📝 Languages:** Python, SQL  
-- **🗂 Data Processing:** Pandas, NumPy, PySpark  
-- **🌐 Web Scraping & Automation:** Selenium, BeautifulSoup, Playwright  
+### **💻 Programming & Big Data**  
+- **📝 Languages:** Python, SQL.
+- **🗂 Data Processing:** Pandas, NumPy, PySpark, Polars, Dask.
+- **🌐 Web Scraping & Automation:** Selenium, BeautifulSoup, Playwright.
 
 ### **🤖 Machine Learning & AI**  
-- **📚 ML/DL Frameworks:** Scikit-learn, TensorFlow, PyTorch  
+- **📚 ML/DL Frameworks:** Scikit-learn, TensorFlow, PyTorch, H2O.  
 - **🧠 LLM & NLP:** LangChain, Transformer-based Models, FAISS, Qdrant  
 - **🔍 Information Retrieval:** BM25, Hybrid Search, Vector Databases  
 
