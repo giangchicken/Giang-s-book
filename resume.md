@@ -15,8 +15,6 @@ I am passionate about leveraging **Data Science & AI** to solve complex business
 
 ## **Experiments & Projects**  
 
-### 📌 Projects Summary
-
 | Project | Description | Tasks | Technologies |
 |--------|-------------|-------|--------------|
 | **Location Tracking** | Built a **graph-based location tracking system** for HCVN Purchasing Dept to update outdated addresses using legal decrees parsed via GPT. Released an integration **API** after data cleaning and outlier handling. | EDA, fuzzy matching, graph DB demo | Neo4j, GPT API |
