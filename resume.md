@@ -38,7 +38,7 @@ I am passionate about leveraging **Data Science & AI** to solve complex business
 
 ---
 
-## 🛠 **Skills**  
+## **Skills**  
 
 ### **Programming & Big Data**  
 - **Languages:** Python, SQL.
