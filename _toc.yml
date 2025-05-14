@@ -31,6 +31,7 @@ parts:
     - file: HDFS_Overview
     - file: Notes_AWS
     - file: FastAPI
+    - file: MLOps
 
   - caption: Papers
     chapters:
