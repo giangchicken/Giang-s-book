@@ -15,45 +15,18 @@ I am passionate about leveraging **Data Science & AI** to solve complex business
 
 ## **Experiments & Projects**  
 
-### **Location Tracking**
-- **Description:** At the request of the HCVN Purchasing Department, we developed a **location tracking system** to update outdated addresses to their most recent versions. By extracting changes from public administrative units and legal decrees using GPT, we structured these changes in a **graph database**. After carefully cleaning the input data and handling outliers, we released an **API** for them to integrate.
-- **Tasks:** Exploratory Data Analysis (EDA), fuzzy matching for location names, building a demo graph database.
-- **Technologies:** Neo4j, GPT API.
+### 📌 Projects Summary
 
-### **M&A News Detection Model**  
-- **Description:** I have developed a **Mergers & Acquisitions (M&A) detection model** to classify M&A-related news articles,  with automated training and data processing in a containerized environment.
-- **Tasks:** Doc Embedding, Hybrid search optimization, containerization.  
-- **Technologies:** Auto-ML, Hybrid Search (Keywords Search + Semantic Search), Qdrant.
-
-### **Credit Scoring Model Using Telco Data (MBF & VNPT)**  
-- **Description:** Using Telco data and Sales Funnel log results, I built a credit scoring model for **customer creditworthiness assessment**.  I focused on selecting features to mitigate data shift issues and applied evolutional algorithm to feature selection and hyper parameter tuning.
-- **Tasks:** Feature engineering, model training, and performance monitoring.  
-- **Technologies:** Machine Learning Algorithms, PySpark.
-
-### **Word correction Model**  
-- **Description:** Developed a word correction model leveraging **Transformer-based architectures** to improve text accuracy and readability. The model was fine-tuned for error correction and deployed for real-world applications.  
-- **Tasks:** Model training, fine-tuning Transformer-based architectures, deployment.  
-- **Technologies:** Transformer, Pytorch, NLP.
-
-### **Customer Identification Using Face Tracking**  
-- **Description:** This was my graduation project at university, where I built a **face-embedding model** and **search system** for identifying **existing & new customers** in stores to enable personalized marketing.  
-- **Tasks:** Face embedding, feature extraction, vector database storage.  
-- **Technologies:** YOLOv7, ResNet50, Qdrant, PyTorch.
-
-### **Nearest Neighbor Search for Lead Grouping in Marketing**  
-- **Description:** This was a research project I conducted at 3TIT after my leads incidentally shared the **FAISS** paper with me. Inspired by its potential, I applied it to big data and implemented a KNN-based lead grouping system to enhance targeted marketing.  
-- **Tasks:** Data preprocessing, KNN-based clustering, search optimization.  
-- **Technologies:** KMeans, Faiss, Pyspark.
-
-### **Domain Segmentation Model Using Web Text**  
-- **Description:** This idea was inspired by the paper **"Text-Based Network Industries and Endogenous Product Differentiation"**. I scraped web text from various domains, leveraging content extraction libraries and **SBERT** to generate vector representations for each domain. This was followed by a **distributed computation process** to calculate the similarity matrix under **RAM limitations** and select an appropriate **clustering algorithm**.
-- **Tasks:** Web scraping, text vectorization, clustering.  
-- **Technologies:** Playwright, Clustering Algorithms (KMeans, Hierarchical Clustering, HDBSCAN,..), Dask, Polars, Text embedding Model.
-
-### **Income Prediction from Satellite Imagery**  
-- **Description:** I implemented a model to predict **income levels** based on **satellite imagery** from **Google Earth Engine**.  
-- **Tasks:** Data collection, preprocessing, CNN-based model application.  
-- **Technologies:** CNN, Google Earth Engine, Docker.
+| Project | Description | Tasks | Technologies |
+|--------|-------------|-------|--------------|
+| **Location Tracking** | Built a **graph-based location tracking system** for HCVN Purchasing Dept to update outdated addresses using legal decrees parsed via GPT. Released an integration **API** after data cleaning and outlier handling. | EDA, fuzzy matching, graph DB demo | Neo4j, GPT API |
+| **M&A News Detection** | Developed a **Mergers & Acquisitions (M&A) detection model** to classify M&A-related news articles,  with automated training and data processing in a containerized environment. | Doc embedding, hybrid search optimization, containerization | Auto-ML, Hybrid Search, Qdrant |
+| **Credit Scoring with Telco Data** | Assessed creditworthiness using Telco & Sales Funnel data, addressing data shift and optimizing features via feature selection. Applied evolutional algorithm to feature selection and hyper parameter tuning. | Feature engineering, model training, monitoring | PySpark, ML Algorithms |
+| **Word Correction Model** | Created a Transformer-based model for error correction and text clarity, deployed for real usage. | Training, fine-tuning, deployment | PyTorch, NLP, Transformer |
+| **Customer Identification via Face Tracking** | Graduation project: face-embedding & tracking & realtime-searching system to identify customers for personalized in-store marketing. | Embedding, feature extraction, vector DB | YOLOv7, ResNet50, Qdrant, PyTorch |
+| **Lead Grouping via KNN Search** | Inspired by the FAISS paper, built a lead-grouping system for marketing using big data clustering. | Preprocessing, KNN clustering, optimization | Faiss, KMeans, PySpark |
+| **Domain Segmentation with Web Text** | Segmented domains via scraped web content, vectorized with SBERT, and clustered using **clustering algorithm**. | Web scraping, vectorization, clustering, RAM-efficient computation | Playwright, Dask, Polars, SBERT, KMeans, HDBSCAN |
+| **Income Prediction from Satellite Imagery** | Predicted income levels from satellite imagery via CNN models on Google Earth Engine. | Data collection, preprocessing, CNN application | CNN, GEE, Docker |
 
 ---
 
