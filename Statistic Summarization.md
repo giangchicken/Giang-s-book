@@ -10,13 +10,13 @@ Statistics is vital for data-driven decisions in fields like business, science, 
 ## Descriptive Statistics
 Tools to summarize data:
 - **Central Tendency**:
-  - Mean: \[\mu = \frac{\sum x_i}{n}\] (average).
+  - Mean: $\mu = \frac{\sum x_i}{n}$ (average).
   - Median: Middle value.
   - Mode: Most frequent value.
 - **Variability**:
   - Range: Max - Min.
-  - Variance: \[\sigma^2 = \frac{\sum (x_i - \mu)^2}{n}\].
-  - Standard Deviation: \(\sigma = \sqrt{\sigma^2}\).
+  - Variance: $\sigma^2 = \frac{\sum (x_i - \mu)^2}{n}$.
+  - Standard Deviation: $\sigma = \sqrt{\sigma^2}$.
 - **Distributions**: Normal (bell curve), binomial, Poisson.
 
 These help describe data patterns, like user engagement metrics.
@@ -24,13 +24,13 @@ These help describe data patterns, like user engagement metrics.
 ## Probability
 The foundation of statistical inference:
 - **Rules**:
-  - Addition: \(P(A \cup B) = P(A) + P(B)\) (mutually exclusive).
-  - Multiplication: \(P(A \cap B) = P(A) \times P(B)\) (independent).
-  - Conditional: \(P(A|B) = \frac{P(A \cap B)}{P(B)}\).
+  - Addition: $P(A \cup B) = P(A) + P(B)$ (mutually exclusive).
+  - Multiplication: $P(A \cap B) = P(A) \times P(B)$ (independent).
+  - Conditional: $P(A|B) = \frac{P(A \cap B)}{P(B)}$.
 - **Distributions**:
   - Discrete: Binomial, Poisson.
   - Continuous: Normal, Exponential.
-- **Expected Value**: \(E(X) = \sum x_i P(x_i)\) (discrete).
+- **Expected Value**: $E(X) = \sum {x_i P(x_i)}$ (discrete).
 
 Probability models uncertainty, crucial for predicting outcomes.
 
