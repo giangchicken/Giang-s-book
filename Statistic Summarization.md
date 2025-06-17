@@ -53,18 +53,14 @@ Used in AB testing to assess if changes are significant.
   t = \frac{\bar{Y}_t - \bar{Y}_c}{\sqrt{\frac{s_t^2}{n_t} + \frac{s_c^2}{n_c}}}
   $$
 - **Z-Test** (proportions):
-  $$
-  z = \frac{\hat{p}_t - \hat{p}_c}{\sqrt{\hat{p}(1 - \hat{p}) \left( \frac{1}{n_t} + \frac{1}{n_c} \right)}}
-  $$
+  $$z = \frac{\hat{p}_t - \hat{p}_c}{\sqrt{\hat{p}(1 - \hat{p}) \left( \frac{1}{n_t} + \frac{1}{n_c} \right)}}$$
 
 Tests determine if differences between control and test groups are real.
 
 ## Minimum Detectable Effect (MDE)
 Smallest effect an experiment can detect:
 - For means: 
-$$
-\delta = \sqrt{\frac{2(\sigma_t^2 + \sigma_c^2)}{n}} \times \left(Z_{1 - \alpha/2} + Z_{1 - \beta}\right)
-$$
+$$\delta = \sqrt{\frac{2(\sigma_t^2 + \sigma_c^2)}{n}} \times \left(Z_{1 - \alpha/2} + Z_{1 - \beta}\right)$$
 
 Guides sample size planning.
 
