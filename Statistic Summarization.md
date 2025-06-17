@@ -10,12 +10,12 @@ Statistics is vital for data-driven decisions in fields like business, science, 
 ## Descriptive Statistics
 Tools to summarize data:
 - **Central Tendency**:
-  - Mean: \(\mu = \frac{\sum x_i}{n}\) (average).
+  - Mean: \[\mu = \frac{\sum x_i}{n}\] (average).
   - Median: Middle value.
   - Mode: Most frequent value.
 - **Variability**:
   - Range: Max - Min.
-  - Variance: \(\sigma^2 = \frac{\sum (x_i - \mu)^2}{n}\).
+  - Variance: \[\sigma^2 = \frac{\sum (x_i - \mu)^2}{n}\].
   - Standard Deviation: \(\sigma = \sqrt{\sigma^2}\).
 - **Distributions**: Normal (bell curve), binomial, Poisson.
 
