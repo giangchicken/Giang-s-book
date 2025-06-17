@@ -49,9 +49,7 @@ Used in AB testing to assess if changes are significant.
 
 ## Hypothesis Testing in AB Testing
 - **T-Test** (means):
-  $$
-  t = \frac{\bar{Y}_t - \bar{Y}_c}{\sqrt{\frac{s_t^2}{n_t} + \frac{s_c^2}{n_c}}}
-  $$
+  $$t = \frac{\bar{Y}_t - \bar{Y}_c}{\sqrt{\frac{s_t^2}{n_t} + \frac{s_c^2}{n_c}}}$$
 - **Z-Test** (proportions):
   $$z = \frac{\hat{p}_t - \hat{p}_c}{\sqrt{\hat{p}(1 - \hat{p}) \left( \frac{1}{n_t} + \frac{1}{n_c} \right)}}$$
 
