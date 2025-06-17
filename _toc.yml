@@ -16,6 +16,7 @@ parts:
     - file: Word-correction
     - file: Neighbor nearest seach
     - file: Income prediction using satelite data
+    - file: Location Tracking using Graph Database
   
   - caption: Scraping code
     chapters:
@@ -36,4 +37,8 @@ parts:
   - caption: Papers
     chapters:
     - file: Factors and Anomalies in the Vietnamese Stock Market
+
+  - caption: Hypothesis-Testing
+    chapters:
+    - file: Statistic Summarization
     
