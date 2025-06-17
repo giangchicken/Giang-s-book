@@ -65,7 +65,7 @@ Guides sample size planning.
 ## Variance Reduction
 Increases test sensitivity:
 - **Stratified Sampling**: Reduces variance by grouping (e.g., by user type).
-- **CUPED**: Adjusts metrics with pre-experiment data: $(Y_CUPED) = Y - \theta (X - \bar{X})$.
+- **CUPED**: Adjusts metrics with pre-experiment data: $$Y_{\text{CUPED}} = Y - \theta \left( X - \bar{X} \right)$$.
 
 Key for detecting small changes, like at Netflix.
 
