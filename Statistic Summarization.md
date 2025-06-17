@@ -39,10 +39,10 @@ Draws conclusions from samples:
 - **Sampling**: Random, stratified (ensures representativeness).
 - **Central Limit Theorem**: Sample means approximate a normal distribution as sample size grows.
 - **Hypothesis Testing**:
-  - Null $H_0: No effect.
-  - Alternative $H_a: Effect exists.
+  - Null ($H_0$): No effect.
+  - Alternative ($H_a): Effect exists.
   - P-Value: Probability of data under $H_0.
-  - Significance $alpha: Risk of false positive (Type I error).
+  - Significance ($\alpha$): Risk of false positive (Type I error).
 - **Confidence Intervals**: Range for population parameter (e.g., 95%).
 
 Used in AB testing to assess if changes are significant.
