@@ -33,6 +33,7 @@ parts:
     - file: Notes_AWS
     - file: FastAPI
     - file: MLOps
+    - file: UNPROTECTED_PRIVATE_KEY_FILE
 
   - caption: Papers
     chapters:
