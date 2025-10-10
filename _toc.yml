@@ -35,6 +35,7 @@ parts:
     - file: MLOps
     - file: UNPROTECTED_PRIVATE_KEY_FILE
     - file: Gitlab_connection_by_access_token
+    - file: The_use_of_tailscale_to_connect_server
 
   - caption: Papers
     chapters:
